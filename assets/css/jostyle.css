@@ -12,9 +12,9 @@
     --gold-shade-200: hsl(40, 58%, 15%);
     --gold-shade-300: hsla(40, 66%, 7%, 50%);
 
-    --blue-white-100: hsl(222, 80%, 92%);
-    --blue-white-100: hsl(224, 83%, 87%);
-    --blue-white-200: hsl(223, 86%, 78%);
+    --blue-white-100: hsl(212, 80%, 92%);
+    --blue-white-200: hsl(220, 70%, 77%);
+    --blue-white-300: hsl(225, 60%, 68%);
 
     --blue-basic-100: hsl(223, 88%, 60%);
     --blue-basic-200: hsl(223, 88%, 65%);
@@ -94,10 +94,30 @@ main {
     height: 100%;
     text-align: center;
     width: 100%;
-    display: grid;
-    place-content: center;
+    /* display: grid;
+    place-content: center; */
+    /* margin-top: 10vw; */
+    /* padding: 3em; */
     z-index: -1;
 }
+
+.header-skew {
+    padding: 3em;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transform: skewy(-4deg);
+}
+
+.header-skew h1 {
+    padding: 1em;
+}
+
+.header-skew-content {
+    transform: skewy(4deg);
+}
+
 
 #one {
     /* position: absolute; */
@@ -161,6 +181,16 @@ p {
     hyphens: auto;
 }
 
+nav a ,
+a {
+    color: var(--blue-white-200);
+    text-shadow: 1px 1px 2px var(--blue-white-300);
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
 .content {
     height: 100vh;
     display: grid;
@@ -172,10 +202,11 @@ p {
 /* nav styles */
 
 header {
-    background: #d4af37;
-    background: linear-gradient(#d4af37 25%, #c5a028 75%, #000);
+    /* background: #d4af37;
+    background: linear-gradient(#d4af37 25%, #c5a028 75%, #000); */
     /* border: 1px solid #b69119;
     box-shadow: inset 0 1px 0 #e3be46; */
+    background-color: rgb(0 0 0 / 0.60);
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -198,9 +229,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1em;
-    /* border: 1px solid red; */
-    height: 100%;
+    margin: 0.5em 1em;
+    padding: 0.5em;
+    border: 1px solid var(--blue-white-300);
+    border-radius: 4px;
+    box-shadow: 0 0 4px 2px var(--blue-white-200);
+    height: 2em;
     display: flex;
     align-items: center;
 }
@@ -209,11 +243,12 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: #fff;
-    height: 2px;
-    width: 2em;
+    background: var(--blue-white-200);
+    height: 1px;
+    width: 1.70em;
     border-radius: 2px;
     position: relative;
+    
 }
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -246,6 +281,16 @@ nav {
 
 nav ul {
     list-style: none;
+    padding: 0.25em;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+    background: rgb(0 0 0 / 0.6);
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid var(--blue-white-200);
+
+    }
 }
 
 nav li {
@@ -253,12 +298,14 @@ nav li {
     margin-left: 1em;
 }
 
+
+
 nav a {
-    color: #fafafa;
-    text-decoration: none;
-    font-size: 1.2rem;
+
+
+    font-size: 1.5rem;
     /* text-transform: uppercase; */
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 400;
     opacity: 0;
     font-family: 'Overlock', cursive , Arial, Helvetica, sans-serif;
@@ -267,7 +314,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000;
+    color: var(--blue-white-100);
 }
 /* the ~ looks for preceeding sibling , not perse immediately after */
 .nav-toggle:checked ~ nav {
@@ -314,12 +361,13 @@ nav a:hover {
     nav ul {
         display: flex;
         justify-content: flex-end;
+        
     }
 
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
-    }
+        }
 
     nav a {
         opacity: 1;
@@ -332,7 +380,7 @@ nav a:hover {
         height: 2px;
         background: black;
         position: absolute;
-        bottom: -0.65em;
+        bottom: -0.75em;
         left: 0;
         right: 0;
         transform: scale(0, 1);
