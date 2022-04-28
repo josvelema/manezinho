@@ -81,8 +81,6 @@ main {
     width: 100%;
 }
 
-
-
 .fbg {
     background-attachment: fixed;
     background-position: 50% top;
@@ -98,11 +96,13 @@ main {
     place-content: center; */
     /* margin-top: 10vw; */
     /* padding: 3em; */
-    z-index: -1;
+    /* z-index: -1; */
+
+
 }
 
 .header-skew {
-    padding: 3em;
+    padding: 0.25em;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,9 @@ main {
 }
 
 .header-skew h1 {
-    padding: 1em;
+    padding: 0.3em;
+font-size: 3rem;
+text-shadow: 1px 1px 1px #fff,-1px 1px 1px #fff,1px -1px 2px #fff;
 }
 
 .header-skew-content {
@@ -119,12 +121,16 @@ main {
 }
 
 
-#one {
+
+#one
+{
     /* position: absolute; */
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 3vw));
     margin-bottom: -10vw;
     background-color: #000;
 }
+
+#one:b
 
 #three {
     /* position: absolute; */
@@ -151,8 +157,8 @@ main {
             hsl(42, 50%, 24%) 100%
         );
     height: 110vh;
-
 }
+
 
 #three {
     background-color: SkyBlue;
@@ -181,11 +187,11 @@ p {
     hyphens: auto;
 }
 
-nav a ,
+nav a,
 a {
     color: var(--blue-white-200);
     text-shadow: 1px 1px 2px var(--blue-white-300);
-    text-decoration:underline;
+    text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -206,10 +212,10 @@ header {
     background: linear-gradient(#d4af37 25%, #c5a028 75%, #000); */
     /* border: 1px solid #b69119;
     box-shadow: inset 0 1px 0 #e3be46; */
-    background-color: rgb(0 0 0 / 0.60);
+    background-color: rgb(0 0 0 / 0.6);
     text-align: center;
     position: fixed;
-    z-index: 999;
+    z-index: 120;
     width: 100%;
     height: 3em;
     padding: 4px;
@@ -245,10 +251,9 @@ header {
     display: block;
     background: var(--blue-white-200);
     height: 1px;
-    width: 1.70em;
+    width: 1.7em;
     border-radius: 2px;
     position: relative;
-    
 }
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -268,7 +273,7 @@ nav {
     /* instead of display: block were using transform! */
     background: var(--background);
     width: 100%;
-   
+
     position: absolute;
     text-align: left;
     top: 100%;
@@ -286,10 +291,9 @@ nav ul {
 
 @media screen and (max-width: 800px) {
     nav ul {
-    background: rgb(0 0 0 / 0.6);
-    backdrop-filter: blur(2px);
-    border-bottom: 1px solid var(--blue-white-200);
-
+        background: rgb(0 0 0 / 0.6);
+        backdrop-filter: blur(2px);
+        border-bottom: 1px solid var(--blue-white-200);
     }
 }
 
@@ -298,17 +302,13 @@ nav li {
     margin-left: 1em;
 }
 
-
-
 nav a {
-
-
     font-size: 1.5rem;
     /* text-transform: uppercase; */
     letter-spacing: 3px;
     font-weight: 400;
     opacity: 0;
-    font-family: 'Overlock', cursive , Arial, Helvetica, sans-serif;
+    font-family: "Overlock", cursive, Arial, Helvetica, sans-serif;
 
     transition: opacity 150ms ease-in-out;
 }
@@ -361,13 +361,12 @@ nav a:hover {
     nav ul {
         display: flex;
         justify-content: flex-end;
-        
     }
 
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
-        }
+    }
 
     nav a {
         opacity: 1;
