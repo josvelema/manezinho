@@ -1,150 +1,317 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Art Restaurant Manezinho
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="/" class="brand">Manezinho</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="#">Food</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Music</a>
+                    <a href="#">Art</a>
+                </div>
+            </div>
+        </header>
 
-    <header>
-      <a href="#" class="brand">Travel</a>
-      <div class="menu-btn"></div>
-      <div class="navigation">
-        <div class="navigation-items">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Explore</a>
-          <a href="#">Gallery</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-    </header>
+        <section class="home">
+            <video
+                class="video-slide lazy active"
+                poster="assets/svg/manezinhologo.svg"
+                preload="none"
+                autoplay
+                muted
+                loop
+            >
+                <source data-src="assets/mp4/main.mp4" type="video/mp4" />
+            </video>
+            <video
+                class="video-slide lazy"
+                poster="assets/svg/manezinhologo.svg"
+                preload="none"
+                autoplay
+                muted
+                loop
+            >
+                <source data-src="assets/mp4/food.mp4" type="video/mp4" />
+            </video>
+            <video
+                class="video-slide lazy"
+                poster="assets/svg/manezinhologo.svg"
+                preload="none"
+                autoplay
+                muted
+                loop
+            >
+                <source data-src="assets/mp4/drinks.mp4" type="video/mp4" />
+            </video>
+            <video
+                class="video-slide lazy"
+                poster="assets/svg/manezinhologo.svg"
+                preload="none"
+                autoplay
+                muted
+                loop
+            >
+                <source data-src="assets/mp4/music.mp4" type="video/mp4" />
+            </video>
+            <video
+                class="video-slide lazy"
+                poster="assets/svg/manezinhologo.svg"
+                preload="none"
+                autoplay
+                muted
+                loop
+            >
+                <source data-src="assets/mp4/art.mp4" type="video/mp4" />
+            </video>
+            <div class="content active">
+                <h1>Manezinho<br /></h1>
+                <h2><span>Art Restaurant</span></h2>
 
-    <section class="home">
-      <video class="video-slide lazy active" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
-        <source data-src="assets/mp4/main.mp4" type="video/mp4">
-      </video>
-      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
-        <source data-src="assets/mp4/food.mp4" type="video/mp4">
-      </video>
-      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
-        <source data-src="assets/mp4/drinks.mp4" type="video/mp4">
-      </video>
-      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
-        <source data-src="assets/mp4/music.mp4" type="video/mp4">
-      </video>
-      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
-        <source data-src="assets/mp4/art.mp4" type="video/mp4">
-      </video>
-      <div class="content active">
-        <h1>Wonderful.<br><span>Island</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="content">
-        <h1>Camping.<br><span>Enjoy</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="content">
-        <h1>Adventures.<br><span>Off Road</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="content">
-        <h1>Road Trip.<br><span>Together</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="content">
-        <h1>Feel Nature.<br><span>Relax</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-      <div class="slider-navigation">
-        <div class="nav-btn active"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-      </div>
-    </section>
+                <p>
+                    In 2020 Rini and Pieter Adriaans bought Manezinho, a
+                    restaurant on a very beautiful spot at the coast of
+                    Urzelina. It used to be famous on the islands at the
+                    beginning of the century but had been closed for a couple of
+                    years. After almost a year of renovation the place opened
+                    its doors again as Grand Café Manezinho in October 2021. The
+                    name was kept but the formula is different: a place where
+                    people can relax, see art and listen to live music. In
+                    Manezinho there is a permanent exposition of works by
+                    Pieter.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Food<br /></h1>
+                <h2><span>Fresh and delicous</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nam ducimus facere ex porro placeat! Velit numquam vitae
+                    quasi eius voluptate culpa porro eum tempora nobis, fugit
+                    maxime blanditiis consectetur sit.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Drinks<br /></h1>
+                <h2><span>Cold beers , tasty wine and lush cocktails</span></h2>
 
-    <script type="text/javascript">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Live Music<br /></h1>
+                <h2><span>Resident and guest artists</span></h2>
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-      
-        if ("IntersectionObserver" in window) {
-          var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(video) {
-              if (video.isIntersecting) {
-                for (var source in video.target.children) {
-                  var videoSource = video.target.children[source];
-                  if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-                    videoSource.src = videoSource.dataset.src;
-                  }
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Art<br /></h1>
+                <h2><span>permanent exposition</span></h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="media-icons">
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-facebook"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                        ></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-instagram"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <desc>
+                            Download more icon variants from
+                            https://tabler-icons.io/i/brand-instagram
+                        </desc>
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-tripadvisor"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <desc>
+                            Download more icon variants from
+                            https://tabler-icons.io/i/brand-tripadvisor
+                        </desc>
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <circle cx="6.5" cy="13.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="13.5" r="1.5"></circle>
+                        <path
+                            d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z"
+                        ></path>
+                        <path
+                            d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z"
+                        ></path>
+                        <path d="M10.5 15.5l1.5 2l1.5 -2"></path>
+                        <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="slider-navigation">
+                <div class="nav-btn active">About</div>
+                <div class="nav-btn">Food</div>
+                <div class="nav-btn">Drinks</div>
+                <div class="nav-btn">Music</div>
+                <div class="nav-btn">Art</div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                var lazyVideos = [].slice.call(
+                    document.querySelectorAll("video.lazy")
+                );
+
+                if ("IntersectionObserver" in window) {
+                    var lazyVideoObserver = new IntersectionObserver(function (
+                        entries,
+                        observer
+                    ) {
+                        entries.forEach(function (video) {
+                            if (video.isIntersecting) {
+                                for (var source in video.target.children) {
+                                    var videoSource =
+                                        video.target.children[source];
+                                    if (
+                                        typeof videoSource.tagName ===
+                                            "string" &&
+                                        videoSource.tagName === "SOURCE"
+                                    ) {
+                                        videoSource.src =
+                                            videoSource.dataset.src;
+                                    }
+                                }
+
+                                video.target.load();
+                                video.target.classList.remove("lazy");
+                                lazyVideoObserver.unobserve(video.target);
+                            }
+                        });
+                    });
+
+                    lazyVideos.forEach(function (lazyVideo) {
+                        lazyVideoObserver.observe(lazyVideo);
+                    });
                 }
-      
-                video.target.load();
-                video.target.classList.remove("lazy");
-                lazyVideoObserver.unobserve(video.target);
-              }
             });
-          });
-      
-          lazyVideos.forEach(function(lazyVideo) {
-            lazyVideoObserver.observe(lazyVideo);
-          });
-        }
-      });
-    //Javacript for responsive navigation menu
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
+            //Javacript for responsive navigation menu
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
 
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("active");
-      navigation.classList.toggle("active");
-    });
+            menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            });
 
-    //Javacript for video slider navigation
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".video-slide");
-    const contents = document.querySelectorAll(".content");
+            //Javacript for video slider navigation
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
 
-    var sliderNav = function(manual){
-      btns.forEach((btn) => {
-        btn.classList.remove("active");
-      });
+            var sliderNav = function (manual) {
+                btns.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
 
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
 
-      contents.forEach((content) => {
-        content.classList.remove("active");
-      });
+                contents.forEach((content) => {
+                    content.classList.remove("active");
+                });
 
-      btns[manual].classList.add("active");
-      slides[manual].classList.add("active");
-      contents[manual].classList.add("active");
-    }
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            };
 
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        sliderNav(i);
-      });
-    });
-    </script>
-
-  </body>
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                });
+            });
+        </script>
+    </body>
 </html>
-      
