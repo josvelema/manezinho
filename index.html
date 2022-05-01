@@ -24,11 +24,21 @@
     </header>
 
     <section class="home">
-      <video class="video-slide active" src="assets/mp4/main.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="assets/mp4/food.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="assets/mp4/drinks.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="assets/mp4/music.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="assets/mp4/art.mp4" autoplay muted loop></video>
+      <video class="video-slide lazy active" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
+        <source data-src="assets/mp4/main.mp4" type="video/mp4">
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
+        <source data-src="assets/mp4/food.mp4" type="video/mp4">
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
+        <source data-src="assets/mp4/drinks.mp4" type="video/mp4">
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
+        <source data-src="assets/mp4/music.mp4" type="video/mp4">
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop>
+        <source data-src="assets/mp4/art.mp4" type="video/mp4">
+      </video>
       <div class="content active">
         <h1>Wonderful.<br><span>Island</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -69,6 +79,33 @@
     </section>
 
     <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+      
+        if ("IntersectionObserver" in window) {
+          var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+      
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+      
+          lazyVideos.forEach(function(lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      });
     //Javacript for responsive navigation menu
     const menuBtn = document.querySelector(".menu-btn");
     const navigation = document.querySelector(".navigation");
