@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Art Restaurant Manezinho
-        </title>
+        <title>Art Restaurant Manezinho</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -15,19 +13,130 @@
     <body>
         <header>
             <a href="/" class="brand">Manezinho</a>
-            <div class="menu-btn"></div>
+            <div class="menu-hours">
+                <span id="open-status">
+                    <small class="openorclosed">We are</small>
+                </span>
+                <span class="menu-hours-txt">Opening hours</span>
+                <div class="menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-clock"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="#167fac"
+                        fill="#fafafa"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <desc>
+                            Download more icon variants from
+                            https://tabler-icons.io/i/clock
+                        </desc>
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <polyline points="12 7 12 12 15 15"></polyline>
+                    </svg>
+                </div>
+            </div>
+
             <div class="navigation">
                 <div class="navigation-items">
-                    <a href="#">Home</a>
-                    <a href="#">Food</a>
-                    <a href="#">Drinks</a>
-                    <a href="#">Music</a>
-                    <a href="#">Art</a>
+                    <section class="openinghours">
+                        <div class="openinghourscontent section">
+                            <div class="header">
+                                <h2>Opening hours</h2>
+                            </div>
+                            <table class="opening-hours-table">
+                                <tr
+                                    id="Monday"
+                                    itemprop="openingHours"
+                                    title="Open Monday at 9am to 6pm"
+                                >
+                                    <td>Monday</td>
+                                    <td>Closed</td>
+                                </tr>
+                                <tr
+                                    id="Tuesday"
+                                    itemprop="openingHours"
+                                    title="Open Tuesday at 9am to 6pm"
+                                >
+                                    <td>Tuesday</td>
+                                    <td>Closed</td>
+                                </tr>
+
+                                <tr
+                                    id="Wednesday"
+                                    itemprop="openingHours"
+                                    title="Open Wednesday at 9am to 6pm"
+                                >
+                                    <td>Wednesday</td>
+                                    <td class="opens">09:00</td>
+                                    <td>-</td>
+                                    <td class="closes">18:00</td>
+                                </tr>
+                                <tr
+                                    id="Thursday"
+                                    itemprop="openingHours"
+                                    title="Open Thursday at 9am to 8pm"
+                                >
+                                    <td>Thursday</td>
+                                    <td class="opens">09:00</td>
+                                    <td>-</td>
+                                    <td class="closes">20:00</td>
+                                </tr>
+                                <tr
+                                    id="Friday"
+                                    itemprop="openingHours"
+                                    title="Open Friday at 9am to 6pm"
+                                >
+                                    <td>Friday</td>
+                                    <td class="opens">09:00</td>
+                                    <td>-</td>
+                                    <td class="closes">18:00</td>
+                                </tr>
+                                <tr
+                                    id="Saturday"
+                                    itemprop="openingHours"
+                                    title="Open Saturday at 10am to 6pm"
+                                >
+                                    <td>Saturday</td>
+                                    <td class="opens">10:00</td>
+                                    <td>-</td>
+                                    <td class="closes">18:00</td>
+                                </tr>
+                                <tr
+                                    id="Sunday"
+                                    itemprop="openingHours"
+                                    title="Open Sunday at 11am to 4pm"
+                                >
+                                    <td>Sunday</td>
+                                    <td class="opens">11:00</td>
+                                    <td>-</td>
+                                    <td class="closes">16:00</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
                 </div>
             </div>
         </header>
 
         <section class="home">
+            <div class="slider-navigation">
+                <div class="nav-btn active">About</div>
+                <div class="nav-btn">Food</div>
+                <div class="nav-btn">Drinks</div>
+                <div class="nav-btn">Music</div>
+                <div class="nav-btn">Art</div>
+            </div>
+
             <video
                 class="video-slide lazy active"
                 poster="assets/svg/manezinhologo.svg"
@@ -94,6 +203,7 @@
                     Manezinho there is a permanent exposition of works by
                     Pieter.
                 </p>
+
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="content">
@@ -228,30 +338,25 @@
                     </svg>
                 </a>
             </div>
-            <div class="slider-navigation">
-                <div class="nav-btn active">About</div>
-                <div class="nav-btn">Food</div>
-                <div class="nav-btn">Drinks</div>
-                <div class="nav-btn">Music</div>
-                <div class="nav-btn">Art</div>
-            </div>
         </section>
+
+        <footer></footer>
 
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function () {
-                var lazyVideos = [].slice.call(
+                let lazyVideos = [].slice.call(
                     document.querySelectorAll("video.lazy")
                 );
 
                 if ("IntersectionObserver" in window) {
-                    var lazyVideoObserver = new IntersectionObserver(function (
+                    let lazyVideoObserver = new IntersectionObserver(function (
                         entries,
                         observer
                     ) {
                         entries.forEach(function (video) {
                             if (video.isIntersecting) {
-                                for (var source in video.target.children) {
-                                    var videoSource =
+                                for (let source in video.target.children) {
+                                    let videoSource =
                                         video.target.children[source];
                                     if (
                                         typeof videoSource.tagName ===
@@ -289,7 +394,7 @@
             const slides = document.querySelectorAll(".video-slide");
             const contents = document.querySelectorAll(".content");
 
-            var sliderNav = function (manual) {
+            let sliderNav = function (manual) {
                 btns.forEach((btn) => {
                     btn.classList.remove("active");
                 });
@@ -312,6 +417,71 @@
                     sliderNav(i);
                 });
             });
+
+            let currentDate = new Date();
+            let weekday = [];
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            if (currentDate.getDay() == "Monday" || "Tuesday") {
+                document
+                    .querySelector(".openorclosed")
+                    .classList.toggle("closed");
+            } else {
+                let currentDay = weekday[currentDate.getDay()];
+
+                let currentTimeHours = currentDate.getHours();
+                currentTimeHours =
+                    currentTimeHours < 10
+                        ? "0" + currentTimeHours
+                        : currentTimeHours;
+                let currentTimeMinutes = currentDate.getMinutes();
+                let timeNow = currentTimeHours + "" + currentTimeMinutes;
+
+                let currentDayID = document.getElementById(currentDay);
+                //gets todays weekday and turns it into id
+                // $(currentDayID).toggleClass("today");
+                currentDayID.classList.toggle("today");
+                //this works at hightlighting today
+
+                // let openTimeSplit = currentDayID.children('.opens').innerText.split(":");
+                let openTimeSplit =
+                    currentDayID.children[1].innerText.split(":");
+
+                let openTimeHours = openTimeSplit[0];
+                openTimeHours =
+                    openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+
+                let openTimeMinutes = openTimeSplit[1];
+                let openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+                //let closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+                let closeTimeSplit =
+                    currentDayID.children[3].innerText.split(":");
+
+                let closeTimeHours = closeTimeSplit[0];
+                closeTimeHours =
+                    closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+
+                let closeTimeMinutes = closeTimeSplit[1];
+                let closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+
+                if (timeNow >= openTimex && timeNow <= closeTimex) {
+                    //$(".openorclosed").toggleClass("open");
+                    document
+                        .querySelector(".openorclosed")
+                        .classList.toggle("open");
+                } else {
+                    document
+                        .querySelector(".openorclosed")
+                        .classList.toggle("closed");
+                }
+            }
         </script>
     </body>
 </html>
