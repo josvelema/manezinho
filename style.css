@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600&display=swap');
+
 
 :root {
     --gold-white-100: hsl(44, 88%, 90%);
@@ -33,10 +36,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    
 }
 html {
     font-size: 67, 5%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
 }
 
 header {
@@ -159,7 +167,7 @@ header .navigation.active .navigation-items {
 }
 
 section {
-    padding: 100px 200px;
+  padding: 1em 1.5em;
 }
 
 .home {
@@ -202,20 +210,22 @@ section {
 }
 
 .home .content h1 {
+  font-family: 'Libre Baskerville', serif;
     font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 40px;
+    line-height: 1.55em;
+    
 }
 .home .content h2 {
+  font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 40px;
+    line-height: 1.55em;
+    
 }
 
 /* .home .content h1 span{
@@ -232,6 +242,7 @@ section {
     box-shadow: 0 1px 5px 2px rgba(55, 55, 55, 0.35);
     background-color: rgba(1, 1, 1, 0.4);
     font-size: 1rem;
+    line-height: 1.3;
     -ms-word-break: break-all;
     word-break: break-all;
     word-break: break-word;
@@ -343,7 +354,7 @@ section {
 }
 
 .openinghours {
-    font-family: Lucida Console;
+    
     border-radius: 4px;
     margin: 10px;
     box-shadow: 0 0 10px black;
@@ -426,10 +437,16 @@ section {
 
 @media (max-width: 560px) {
     .home .content h1 {
-        font-size: 3em;
+        font-size: 2.2em;
         line-height: 60px;
     }
     .menu-hours-txt {
       
       display: none;
+}
+.home .content h2 {
+  
+  font-size: 1.5rem;
+    line-height: 1.35em;
+}
 }
