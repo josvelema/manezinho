@@ -15,16 +15,37 @@
         />
 
         <meta property="og:title" content="Art Restaurant Manezinho" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="pt_PT" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.artrestaurantmanezinho.com" />
-        <meta property="og:image" content="http://www.artrestaurantmanezinho.com/assets/img/manezinhooutside1024.JPG" />
-        <meta property="og:description" content="Art restaurant Manezinho is a place dedicated to good food, art and music.">
+        <meta
+            property="og:url"
+            content="http://www.artrestaurantmanezinho.com"
+        />
+        <meta
+            property="og:image"
+            content="http://www.artrestaurantmanezinho.com/assets/img/manezinhooutside1024.JPG"
+        />
+        <meta
+            property="og:image:alt"
+            content="Outside bird view of Manezinho art Restaurant"
+        />
+        <meta
+            property="og:description"
+            content="Art restaurant Manezinho is a place dedicated to good food, art and music."
+        />
+        <meta
+            property="og:video"
+            content="http://www.artrestaurantmanezinho.com/assets/mp4/main.mp4"
+        />
+        <meta name="robots" content="index, follow" />
         <title>Art Restaurant Manezinho</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         />
+        <link rel="canonical" href="http://www.artrestaurantmanezinho.com" />
     </head>
     <body>
         <header>
@@ -145,13 +166,13 @@
         </header>
 
         <section class="home">
-            <div class="slider-navigation">
+            <nav class="slider-navigation">
                 <div class="nav-btn active">About</div>
                 <div class="nav-btn">Food</div>
                 <div class="nav-btn">Drinks</div>
                 <div class="nav-btn">Music</div>
                 <div class="nav-btn">Art</div>
-            </div>
+            </nav>
 
             <video
                 class="video-slide lazy active"
@@ -208,7 +229,7 @@
             >
                 <source data-src="assets/mp4/art.mp4" type="video/mp4" />
             </video>
-            <div class="content active">
+            <article class="content active">
                 <h1>Manezinho<br /></h1>
                 <h2><span>Art Restaurant</span></h2>
 
@@ -226,8 +247,8 @@
                 </p>
 
                 <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="content">
+            </article>
+            <article class="content">
                 <h1>Food<br /></h1>
                 <h2><span>Fresh and delicous</span></h2>
                 <p>
@@ -237,8 +258,8 @@
                     have a preview on this site.
                 </p>
                 <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-            <div class="content">
+            </article>
+            <article class="content">
                 <h1>Drinks<br /></h1>
                 <h2><span>Cold beers , tasty wine and lush cocktails</span></h2>
 
@@ -248,8 +269,8 @@
                     cocktails!
                 </p>
                 <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-            <div class="content">
+            </article>
+            <article class="content">
                 <h1>Live Music<br /></h1>
                 <h2><span>Resident and guest artists</span></h2>
 
@@ -261,8 +282,8 @@
                     on the event-page!
                 </p>
                 <a href="events.html" class="btn">Events</a>
-            </div>
-            <div class="content">
+            </article>
+            <article class="content">
                 <h1>Art<br /></h1>
                 <h2><span>Expositions</span></h2>
 
@@ -276,8 +297,8 @@
                     events / expositions.
                 </p>
                 <a href="events.html" class="btn">Events</a>
-            </div>
-            <div class="media-icons">
+            </article>
+            <aside class="media-icons">
                 <a
                     href="https://www.facebook.com/Art-Restaurant-Manezinho-100617402655398"
                     target="_blank"
@@ -368,40 +389,38 @@
                         <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
                     </svg>
                 </a>
-            </div>
+            </aside>
         </section>
 
         <footer></footer>
 
         <script type="application/ld+json">
             {
-            "@context": "http://schema.org",
-            "@type": "Restaurant",
-            "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Sao Jorge, Azores",
-            "addressRegion": "Urzelina",
-            "streetAddress": "Canada do Açougue, 9800"
-            },
-            "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
-            "name": "Art restaurant Manezinho",
-            "telephone": "+351295414096"
+                "@context": "http://schema.org",
+                "@type": "Restaurant",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Sao Jorge, Azores",
+                    "addressRegion": "Urzelina",
+                    "streetAddress": "Canada do Açougue, 9800"
+                },
+                "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
+                "name": "Art restaurant Manezinho",
+                "telephone": "+351295414096"
             }
         </script>
 
         <script type="application/ld+json">
             {
-            "@context": "http://schema.org",
-            "@type": "Restaurant",
-            "name": "Art restaurant Manezinho",
-            "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
-            "openingHours": "We,Th,Fr,Sa,Su 18:00-02:00",
-            "telephone": "+351295414096"
+                "@context": "http://schema.org",
+                "@type": "Restaurant",
+                "name": "Art restaurant Manezinho",
+                "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
+                "openingHours": "We,Th,Fr,Sa,Su 18:00-02:00",
+                "telephone": "+351295414096"
             }
-            </script>
+        </script>
 
         <script type="text/javascript" src="assets/js/joscript.js"></script>
-
-
     </body>
 </html>
