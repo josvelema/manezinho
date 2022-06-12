@@ -97,8 +97,6 @@ main {
     /* margin-top: 10vw; */
     /* padding: 3em; */
     /* z-index: -1; */
-
-
 }
 
 .header-skew {
@@ -112,25 +110,20 @@ main {
 
 .header-skew h1 {
     padding: 0.3em;
-font-size: 3rem;
-text-shadow: 1px 1px 1px #fff,-1px 1px 1px #fff,1px -1px 2px #fff;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 2px #fff;
 }
 
 .header-skew-content {
     transform: skewy(4deg);
 }
 
-
-
-#one
-{
+#one {
     /* position: absolute; */
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 3vw));
     margin-bottom: -10vw;
     background-color: #000;
 }
-
-
 
 #three {
     /* position: absolute; */
@@ -158,7 +151,6 @@ text-shadow: 1px 1px 1px #fff,-1px 1px 1px #fff,1px -1px 2px #fff;
         );
     height: 110vh;
 }
-
 
 #three {
     background-color: SkyBlue;
@@ -391,3 +383,4 @@ nav a:hover {
         transform: scale(1, 1);
     }
 }
+
