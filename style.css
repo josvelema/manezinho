@@ -1,7 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600&display=swap");
 
 :root {
     --gold-white-100: hsl(44, 88%, 90%);
@@ -36,15 +35,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 html {
     font-size: 67, 5%;
 }
 
 body {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-weight: 300;
+}
+
+main {
+    width: 100vw;
+    height: 100%;
 }
 
 header {
@@ -167,7 +170,7 @@ header .navigation.active .navigation-items {
 } */
 
 section {
-  padding: 1em 1.5em;
+    padding: 1em 1.5em;
 }
 
 .home {
@@ -190,7 +193,7 @@ section {
         hsla(46, 65%, 32%, 0.3) 0%,
         hsla(46, 66%, 23%, 0.3) 100%
     ); */
-background: #0006;
+    background: #0006;
     width: 100%;
     height: 100%;
     top: 0;
@@ -210,22 +213,20 @@ background: #0006;
 }
 
 .home .content h1 {
-  font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 1.55em;
-    
 }
 .home .content h2 {
-  font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 2rem;
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 5px;
     line-height: 1.55em;
-    
 }
 
 /* .home .content h1 span{
@@ -354,7 +355,6 @@ background: #0006;
 }
 
 .openinghours {
-    
     border-radius: 4px;
     margin: 10px;
     box-shadow: 0 0 10px black;
@@ -391,8 +391,6 @@ background: #0006;
     margin: 0 1.5em;
     color: #fafafa;
     text-align: center;
-    
-   
 }
 .openorclosed:after {
     content: " open during these hours:";
@@ -407,30 +405,35 @@ background: #0006;
 .closed:after {
     content: " Closed";
     color: hsl(10, 90%, 50%);
-    text-shadow: 1px 1px 1px hsla(4, 12%, 64%,75%);
+    text-shadow: 1px 1px 1px hsla(4, 12%, 64%, 75%);
 }
 .opening-hours-table tr td {
     padding: 5px;
 }
 
+/* .modal:before {
+    content: '';
+    position: relative;
+    inset: 0;
+    width: 100vw;
+    height: 100%;
+    
 
+} */
 
 .modal {
     /* box-shadow: var(--shadow-2), 0 0 0 100vw rgba(0, 0, 0, 0.5); */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    inset: 0;
     background: #fff;
     color: #222;
     border: 0;
     border-radius: 0.25rem;
-}
-
-.modal::-webkit-backdrop {
-    background: rgba(222, 0, 0, 0.5);
-    opacity: 0;
-}
-
-.modal::backdrop {
-    background: rgba(222, 0, 0, 0.5);
-    opacity: 0;
+    z-index: 1200;
 }
 
 .modal[open] {
@@ -496,15 +499,6 @@ background: #0006;
     }
 }
 /* extra styling */
-.modal {
-    max-width: 50ch;
-}
-.modal > * {
-    margin: 0 0 0.5rem 0;
-}
-
-
-
 
 @media (max-width: 1040px) {
     header {
@@ -534,12 +528,10 @@ background: #0006;
         line-height: 60px;
     }
     .menu-hours-txt {
-      
-      display: none;
-}
-.home .content h2 {
-  
-  font-size: 1.5rem;
-    line-height: 1.35em;
-}
+        display: none;
+    }
+    .home .content h2 {
+        font-size: 1.5rem;
+        line-height: 1.35em;
+    }
 }

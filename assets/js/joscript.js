@@ -125,12 +125,17 @@ if (currentDate.getDay() == "Monday" || "Tuesday") {
     }
 }
 
-const modal = document.querySelector("#modal");
+const modal = document.querySelector(".modal");
 const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
+const modalBg = document.querySelector(".modal-background");
+
 
 openModal.addEventListener("click", () => {
-    modal.showModal();
+    modal.style.display = "flex";
+    modalBg.style.display = "block";
+    
+    
 });
 
 closeModal.addEventListener("click", () => {
@@ -140,7 +145,8 @@ closeModal.addEventListener("click", () => {
       "animationend",
       () => {
         modal.removeAttribute("closing");
-        modal.close();
+    modal.style.display = "none";
+        
       },
       { once: true }
     );
