@@ -212,7 +212,8 @@ section {
     display: block;
 }
 
-.home .content h1 {
+.home .content h1,
+.events .content h1 {
     font-family: "Libre Baskerville", serif;
     font-size: 2.5rem;
     font-weight: 600;
@@ -220,7 +221,9 @@ section {
     letter-spacing: 5px;
     line-height: 1.55em;
 }
-.home .content h2 {
+.home .content h2,
+.events .content h2
+ {
     font-family: "Libre Baskerville", serif;
     font-size: 2rem;
     font-weight: 300;
@@ -539,4 +542,12 @@ section {
         font-size: 1.5rem;
         line-height: 1.35em;
     }
+}
+
+
+.eventsBackground {
+    background-image: url(assets/img/manezinhooutside1024.JPG);
+    background-repeat: none;
+    background-size: cover;
+    background-position: top center;
 }
