@@ -81,9 +81,15 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
-if (currentDate.getDay() == "Monday" || "Tuesday") {
-    document.querySelector(".openorclosed").classList.toggle("closed");
-} else {
+    if (currentDate.getDay() == 1 ) {
+        document.querySelector(".openorclosed").classList.toggle("closed");
+    } else if  (currentDate.getDay() == 2 ) {
+            document.querySelector(".openorclosed").classList.toggle("closed");
+    } else {
+        document.querySelector(".openorclosed").classList.toggle("closed");
+
+        document.querySelector(".openorclosed").classList.toggle("open");
+
     let currentDay = weekday[currentDate.getDay()];
 
     let currentTimeHours = currentDate.getHours();
