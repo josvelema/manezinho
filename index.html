@@ -52,9 +52,9 @@
             <a href="/" class="brand">Manezinho</a>
             <div class="menu-hours">
                 <span id="open-status">
-                    <small class="openorclosed"></small>
+                    <small class="openorclosed">We are</small>
                 </span>
-                <span class="menu-hours-txt">Opening hours</span>
+                <span class="menu-hours-txt"><a href="#" class="btn open-button">Opening hours</a></span>
                 <!-- <div class="menu-btn button open-button">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -81,94 +81,94 @@
                         <polyline points="12 7 12 12 15 15"></polyline>
                     </svg>
                 </div> -->
-                <button class="button open-button">open modal</button>
+                
             </div>
 
             <!-- <nav class="navigation"> -->
                 
             </nav>
         </header>
-
-        <main>
-            <div class="modal">
-                <section class="openinghours">
-                    <div class="openinghourscontent section">
-                        <div class="header">
-                            <h2>Opening hours</h2>
-                        </div>
-                        <table class="opening-hours-table">
-                            <tr
-                                id="Monday"
-                                itemprop="openingHours"
-                                title="Closed on Monday"
-                            >
-                                <td>Monday</td>
-                                <td>Closed</td>
-                            </tr>
-                            <tr
-                                id="Tuesday"
-                                itemprop="openingHours"
-                                title="Closed on Tuesday"
-                            >
-                                <td>Tuesday</td>
-                                <td>Closed</td>
-                            </tr>
-                            <tr
-                                id="Wednesday"
-                                itemprop="openingHours"
-                                title="Open Wednesday at 1800 to 0200"
-                            >
-                                <td>Wednesday</td>
-                                <td class="opens">18:00</td>
-                                <td>-</td>
-                                <td class="closes">02:00</td>
-                            </tr>
-                            <tr
-                                id="Thursday"
-                                itemprop="openingHours"
-                                title="Open Thursday at 1800 to 0200"
-                            >
-                                <td>Thursday</td>
-                                <td class="opens">18:00</td>
-                                <td>-</td>
-                                <td class="closes">02:00</td>
-                            </tr>
-                            <tr
-                                id="Friday"
-                                itemprop="openingHours"
-                                title="Open Friday at 18:00 to 02:00"
-                            >
-                                <td>Friday</td>
-                                <td class="opens">18:00</td>
-                                <td>-</td>
-                                <td class="closes">02:00</td>
-                            </tr>
-                            <tr
-                                id="Saturday"
-                                itemprop="openingHours"
-                                title="Open Saturday at 1800 to 0200"
-                            >
-                                <td>Saturday</td>
-                                <td class="opens">18:00</td>
-                                <td>-</td>
-                                <td class="closes">02:00</td>
-                            </tr>
-                            <tr
-                                id="Sunday"
-                                itemprop="openingHours"
-                                title="Open Sunday at 1800 to 0200"
-                            >
-                                <td>Sunday</td>
-                                <td class="opens">18:00</td>
-                                <td>-</td>
-                                <td class="closes">02:00</td>
-                            </tr>
-                        </table>
+<label for="modal" class="modal-background"></label>
+        <div class="modal">
+            <section class="openinghours">
+                <div class="openinghourscontent section">
+                    <div class="header">
+                        <h2>Opening hours</h2>
                     </div>
-            
-                </section>
-                <button class="button close-button">close</button>
-            </div>
+                    <table class="opening-hours-table">
+                        <tr
+                            id="Monday"
+                            itemprop="openingHours"
+                            title="Closed on Monday"
+                        >
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr
+                            id="Tuesday"
+                            itemprop="openingHours"
+                            title="Closed on Tuesday"
+                        >
+                            <td>Tuesday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr
+                            id="Wednesday"
+                            itemprop="openingHours"
+                            title="Open Wednesday at 1800 to 0200"
+                        >
+                            <td>Wednesday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Thursday"
+                            itemprop="openingHours"
+                            title="Open Thursday at 1800 to 0200"
+                        >
+                            <td>Thursday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Friday"
+                            itemprop="openingHours"
+                            title="Open Friday at 17:00 to 02:00"
+                        >
+                            <td>Friday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Saturday"
+                            itemprop="openingHours"
+                            title="Open Saturday at 1800 to 0200"
+                        >
+                            <td>Saturday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Sunday"
+                            itemprop="openingHours"
+                            title="Open Sunday at 1800 to 0200"
+                        >
+                            <td>Sunday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                    </table>
+                </div>
+        
+            </section>
+            <a href="#" class="btn close-button">close</a>
+        </div>
+        <main>
             <section class="home">
             
                 <nav class="slider-navigation">
@@ -178,6 +178,7 @@
                     <div class="nav-btn">Music</div>
                     <div class="nav-btn">Art</div>
                 </nav>
+
                 <video
                     class="video-slide lazy active"
                     poster="assets/svg/manezinhologo.svg"
@@ -236,7 +237,10 @@
                 <article class="content active">
                     <h1>Manezinho<br /></h1>
                     <h2><span>Art Restaurant</span></h2>
-                    <p>
+                    <span class="cta-event">
+                        <a href="events.html">Sat. 18 & 19 June , Concerts by JaMeSon</a>
+                    </span>
+                    <p class="main-about">
                         In 2020 Rini and Pieter Adriaans bought Manezinho, a
                         restaurant on a very beautiful spot at the coast of
                         Urzelina. It used to be famous on the islands at the
@@ -248,8 +252,14 @@
                         Manezinho there is a permanent exposition of works by
                         Pieter.
                     </p>
-                    <a href="#" class="btn">Read More</a>
                 </article>
+
+                <div class="main-buttons">
+                    <button class="btn read-main">About us</button>
+                    <button class="btn event-btn" onclick="location.href = 'events.html'">Events</button>
+                </div>
+               
+
                 <article class="content">
                     <h1>Food<br /></h1>
                     <h2><span>Fresh and delicous</span></h2>
@@ -421,11 +431,25 @@
                 "@type": "Restaurant",
                 "name": "Art restaurant Manezinho",
                 "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
-                "openingHours": "We,Th,Fr,Sa,Su 18:00-02:00",
+                "openingHours": "We,Th,Fr,Sa,Su 17:00-02:00",
                 "telephone": "+351295414096"
             }
         </script>
 
         <script type="text/javascript" src="assets/js/joscript.js"></script>
+        <script>
+            
+readMore.addEventListener('click' , () => {
+    // if(aboutUs.style.display == "none") {
+        aboutUs.style.display = "block";
+    // readMore.innerText = "Hide";
+    scrollHere.scrollTop = scrollHere.scrollHeight;
+    // } else {
+        // aboutUs.style.display = "none";
+    // readMore.innerText = "About Us";
+    // }
+
+})
+        </script>
     </body>
 </html>

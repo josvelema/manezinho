@@ -135,6 +135,11 @@ const modal = document.querySelector(".modal");
 const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
 const modalBg = document.querySelector(".modal-background");
+const aboutUs = document.querySelector(".main-about");
+const readMore = document.querySelector(".read-main");
+const scrollHere = document.querySelector("#scrollHere")
+
+
 
 
 openModal.addEventListener("click", () => {
@@ -152,6 +157,8 @@ closeModal.addEventListener("click", () => {
       () => {
         modal.removeAttribute("closing");
     modal.style.display = "none";
+    modalBg.style.display = "none";
+
         
       },
       { once: true }

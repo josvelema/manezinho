@@ -52,9 +52,9 @@
             <a href="/" class="brand">Manezinho</a>
             <div class="menu-hours">
                 <span id="open-status">
-                    <small class="openorclosed"></small>
+                    <small class="openorclosed">We are</small>
                 </span>
-                <span class="menu-hours-txt">Opening hours</span>
+                <span class="menu-hours-txt"><a href="#" class="btn open-button">Opening hours</a></span>
                 <!-- <div class="menu-btn button open-button">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -81,13 +81,93 @@
                         <polyline points="12 7 12 12 15 15"></polyline>
                     </svg>
                 </div> -->
-                <button class="button open-button">open modal</button>
+                
             </div>
 
             <!-- <nav class="navigation"> -->
                 
             </nav>
         </header>
+<label for="modal" class="modal-background"></label>
+        <div class="modal">
+            <section class="openinghours">
+                <div class="openinghourscontent section">
+                    <div class="header">
+                        <h2>Opening hours</h2>
+                    </div>
+                    <table class="opening-hours-table">
+                        <tr
+                            id="Monday"
+                            itemprop="openingHours"
+                            title="Closed on Monday"
+                        >
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr
+                            id="Tuesday"
+                            itemprop="openingHours"
+                            title="Closed on Tuesday"
+                        >
+                            <td>Tuesday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr
+                            id="Wednesday"
+                            itemprop="openingHours"
+                            title="Open Wednesday at 1800 to 0200"
+                        >
+                            <td>Wednesday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Thursday"
+                            itemprop="openingHours"
+                            title="Open Thursday at 1800 to 0200"
+                        >
+                            <td>Thursday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Friday"
+                            itemprop="openingHours"
+                            title="Open Friday at 17:00 to 02:00"
+                        >
+                            <td>Friday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Saturday"
+                            itemprop="openingHours"
+                            title="Open Saturday at 1800 to 0200"
+                        >
+                            <td>Saturday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                        <tr
+                            id="Sunday"
+                            itemprop="openingHours"
+                            title="Open Sunday at 1800 to 0200"
+                        >
+                            <td>Sunday</td>
+                            <td class="opens">17:00</td>
+                            <td>-</td>
+                            <td class="closes">02:00</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <a href="#" class="btn close-button">close</a>
+            </section>
+        </div>
 
         <main class="">
             <div class="modal">
@@ -183,10 +263,10 @@
 
               <article class="event">
                 <div class="event-header">
-                  <h3>Guy with guitar singing awfull songs all night long !</h3>
+                  <h3>Azores fringe festival & Art Restaurant Manezinho present Trio JaMeSon</h3>
                   <div class="event-header-datetime">
-                    <span>18-06-2022</span>
-                    <span>20:00 - 02:00</span>
+                    <span>18-06-2022 / 19-06-2022</span>
+                    <span>22:30 / 15:00</span>
                 </div>
                 </div>
                 <div class="event-image">
@@ -194,16 +274,19 @@
                 </div>
                 <div class="event-content">
                   <p class="content-english">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint autem accusamus quo?
+                    This weekend in Manezinho Saturday & Sunday: Trio JaMeSon
+
 
                   </p>
                   <p class="content-portoguese">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint autem accusamus quo?
+                    Sara Miguel: voz <br>
+                    Marcos Fernandez: Guitarra <br>
+                    Jorge 'Canarinho' Silva: Viola da Terra
 
                   </p>
                   
                   <div class="event-content-url">
-                    <a href="#">http://www.example.com</a>
+                    <a href="http://www.mirateca.com/fringe/default.aspx">Azores Fringe Festival</a>
                 </div>
                 </div>
               </article>
