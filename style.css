@@ -580,6 +580,10 @@ section {
 }
 /* extra styling */
 
+section.home.eventsBackground {
+    padding: 1.75em 0.2em;
+}
+
 .eventsBackground {
   background-image: url(assets/img/manezinhooutside1024.JPG);
   background-repeat: no-repeat;
@@ -587,6 +591,7 @@ section {
   background-position: top center;
   background-attachment: fixed;
 }
+
 
 .event {
   border: 1px solid var(--gold-basic-100);
@@ -751,5 +756,6 @@ section {
   }
   .event-header-datetime {
     font-size: 0.8rem;
+    flex-direction: column;
   }
 }
