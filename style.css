@@ -277,7 +277,7 @@ section {
 .home .content p {
   width: 50ch;
   padding: 0.25em 0.5em;
-  margin-bottom: 1.5em;
+  margin: 0.5em auto;
   border-bottom: 1px solid #5556;
   border-radius: 3px;
   box-shadow: 0 1px 5px 2px rgba(55, 55, 55, 0.35);
@@ -757,5 +757,11 @@ section.home.eventsBackground {
   .event-header-datetime {
     font-size: 0.8rem;
     flex-direction: column;
+  }
+  .home .content h1 {
+    font-size: 1.9rem;
+  }
+  .home .content h2 {
+    font-size: 1.2rem;
   }
 }
