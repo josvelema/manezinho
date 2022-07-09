@@ -1,0 +1,14 @@
+cms/
+_new_database.sql
+.htaccess
+author_posts.php
+category.php
+contact.php
+forgot.php
+indextest.php
+post.php
+reset.php
+search.php
+admin/comments.php
+admin/post_comments.php
+admin/includes/view_all_comments.php
