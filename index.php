@@ -1,0 +1,358 @@
+<?php
+include "includes/db.php";
+session_start();
+include "admin/functions.php";
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Art restaurant Manezinho is a place dedicated to good food, art and music. Since 2021 the artist Pieter Adriaans and Rini van Kerchove own the restaurant and they are determined to create a unique place where people can listen to live music." />
+  <meta name="author" content="Art Restaurant Manezinho" />
+  <meta name="keywords" content="restaurant , art , Manezinho , Azores , Sao Jorge , live music , music , cocktails, artisanal, local, food , Urzelina , Adriaans" />
+
+  <meta property="og:title" content="Art Restaurant Manezinho" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_PT" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.artrestaurantmanezinho.com" />
+  <meta property="og:image" content="http://www.artrestaurantmanezinho.com/assets/img/manezinhooutside1024.JPG" />
+  <meta property="og:image:alt" content="Outside bird view of Manezinho art Restaurant" />
+  <meta property="og:description" content="Art restaurant Manezinho is a place dedicated to good food, art and music." />
+  <meta property="og:video" content="http://www.artrestaurantmanezinho.com/assets/mp4/main.mp4" />
+  <meta name="robots" content="index, follow" />
+  <title>Art Restaurant Manezinho</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="canonical" href="http://www.artrestaurantmanezinho.com" />
+</head>
+
+<body>
+  <header>
+    <a href="/" class="brand">Manezinho</a>
+    <div class="menu-hours">
+      <span id="open-status">
+        <small class="openorclosed">We are</small>
+      </span>
+      <span class="menu-hours-txt"><a href="#" class="btn open-button">Opening hours</a></span>
+      <!-- <div class="menu-btn button open-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-clock"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="#167fac"
+                        fill="#fafafa"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <desc>
+                            Download more icon variants from
+                            https://tabler-icons.io/i/clock
+                        </desc>
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <polyline points="12 7 12 12 15 15"></polyline>
+                    </svg>
+                </div> -->
+
+    </div>
+
+    <!-- <nav class="navigation"> -->
+
+    </nav>
+  </header>
+  <label for="modal" class="modal-background"></label>
+  <div class="modal">
+    <section class="openinghours">
+      <div class="openinghourscontent section">
+        <div class="header">
+          <h2>Opening hours</h2>
+        </div>
+        <table class="opening-hours-table">
+          <tr id="Monday" itemprop="openingHours" title="Closed on Monday">
+            <td>Monday</td>
+            <td>Closed</td>
+          </tr>
+          <tr id="Tuesday" itemprop="openingHours" title="Closed on Tuesday">
+            <td>Tuesday</td>
+            <td>Closed</td>
+          </tr>
+          <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 1800 to 0200">
+            <td>Wednesday</td>
+            <td class="opens">17:00</td>
+            <td>-</td>
+            <td class="closes">02:00</td>
+          </tr>
+          <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 1800 to 0200">
+            <td>Thursday</td>
+            <td class="opens">17:00</td>
+            <td>-</td>
+            <td class="closes">02:00</td>
+          </tr>
+          <tr id="Friday" itemprop="openingHours" title="Open Friday at 17:00 to 02:00">
+            <td>Friday</td>
+            <td class="opens">17:00</td>
+            <td>-</td>
+            <td class="closes">02:00</td>
+          </tr>
+          <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 1800 to 0200">
+            <td>Saturday</td>
+            <td class="opens">17:00</td>
+            <td>-</td>
+            <td class="closes">02:00</td>
+          </tr>
+          <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 1800 to 0200">
+            <td>Sunday</td>
+            <td class="opens">17:00</td>
+            <td>-</td>
+            <td class="closes">02:00</td>
+          </tr>
+        </table>
+      </div>
+
+      <a href="#" class="btn close-button">close</a>
+    </section>
+  </div>
+  <main>
+    <section class="home">
+
+      <nav class="slider-navigation">
+        <div class="nav-btn active">About</div>
+        <div class="nav-btn">Food</div>
+        <div class="nav-btn">Drinks</div>
+        <div class="nav-btn">Music</div>
+        <div class="nav-btn">Art</div>
+      </nav>
+
+      <video class="video-slide lazy active" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
+        <source data-src="assets/mp4/main.mp4" type="video/mp4" />
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
+        <source data-src="assets/mp4/food.mp4" type="video/mp4" />
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
+        <source data-src="assets/mp4/drinks.mp4" type="video/mp4" />
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
+        <source data-src="assets/mp4/music.mp4" type="video/mp4" />
+      </video>
+      <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
+        <source data-src="assets/mp4/art.mp4" type="video/mp4" />
+      </video>
+      <article class="content active">
+        <h1>Manezinho<br /></h1>
+        <h2><span>Art Restaurant</span></h2>
+
+
+        <?php
+
+        $query = "SELECT * FROM posts WHERE post_event_date >= CURRENT_DATE() ORDER BY post_event_date LIMIT 1";
+        $select_all_posts_query = mysqli_query($connection, $query);
+
+        while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
+          $post_id = $row['post_id'];
+          $post_title = $row['post_title'];
+          // $post_author = $row['post_user'];
+          $post_date = $row['post_date'];
+          $post_image = $row['post_image'];
+          // $post_content = substr($row['post_content'], 0, 400);
+          $post_status = $row['post_status'];
+
+          $post_event_date    = $row['post_event_date'];
+          $post_event_time    = $row['post_event_time'];
+          $post_content       = $row['post_content'];
+          $post_content_p     = $row['post_content_p'];
+          $post_url           = $row['post_url'];
+
+
+
+        ?>
+
+          <div class="cta-event">
+
+            <p>Upcoming Event on
+            <?php
+            $datum = strtotime($post_event_date);
+            echo date("l d \\of F Y", $datum) . " <br> Starts at " . $post_event_time . "</p><hr>"; 
+            ?>
+           
+            <h3>
+              <?php echo $post_title ?>
+            </h3>
+            <a href="events.php">More info</a>
+           
+          </div>
+        <?php
+        }
+        ?>
+
+
+        <p class="main-about">
+          In 2020 Rini and Pieter Adriaans bought Manezinho, a
+          restaurant on a very beautiful spot at the coast of
+          Urzelina. It used to be famous on the islands at the
+          beginning of the century but had been closed for a couple of
+          years. After almost a year of renovation the place opened
+          its doors again as Grand Café Manezinho in October 2021. The
+          name was kept but the formula is different: a place where
+          people can relax, see art and listen to live music. In
+          Manezinho there is a permanent exposition of works by
+          Pieter.
+        </p>
+      </article>
+
+      <div class="main-buttons">
+        <button class="btn read-main">About us</button>
+        <button class="btn event-btn" onclick="location.href = 'events.html'">Events</button>
+      </div>
+
+
+      <article class="content">
+        <h1>Food<br /></h1>
+        <h2><span>Fresh and delicous</span></h2>
+        <p>
+          Try our signature burger , Shrimp in batter or the new
+          T-bone Steak! And for dessert we highly recommend the
+          cheesecake! We recently updated our menu and soon you can
+          have a preview on this site.
+        </p>
+        <!-- <a href="#" class="btn">Read More</a> -->
+      </article>
+      <article class="content">
+        <h1>Drinks<br /></h1>
+        <h2><span>Cold beers , tasty wine and lush cocktails</span></h2>
+        <p>
+          We have all the drinks you got possibly want ! Beer from the
+          tap and bottle , exclusive liquor and ofcourse our signature
+          cocktails!
+        </p>
+        <!-- <a href="#" class="btn">Read More</a> -->
+      </article>
+      <article class="content">
+        <h1>Live Music<br /></h1>
+        <h2><span>Resident and guest artists</span></h2>
+        <p>
+          Besides enjoying a nice dinner and drinks , you're likely to
+          see and hear music played by our artists-in-residence as
+          well as guest players and even open stage nights where
+          everybody can join in the fun! Check out the upcoming events
+          on the event-page!
+        </p>
+        <a href="events.html" class="btn">Events</a>
+      </article>
+      <article class="content">
+        <h1>Art<br /></h1>
+        <h2><span>Expositions</span></h2>
+        <p>
+          Upon visiting Manezinho , you will see a lot of art made by
+          <a href="http://www.pieter-adriaans.com" target="_blank">Pieter Adriaans</a>
+          but also Manezinho acts as a cospace for expositions of
+          works of other people. Check the event page for upcoming
+          events / expositions.
+        </p>
+        <a href="events.html" class="btn">Events</a>
+      </article>
+      <aside class="media-icons">
+        <a href="https://www.facebook.com/Art-Restaurant-Manezinho-100617402655398" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <desc>
+              Download more icon variants from
+              https://tabler-icons.io/i/brand-instagram
+            </desc>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+            <circle cx="12" cy="12" r="3"></circle>
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+          </svg>
+        </a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g11798114-d15697299-Reviews-Art_Restaurant_Manezinho-Urzelina_Sao_Jorge_Azores.html?m=19905" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tripadvisor" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <desc>
+              Download more icon variants from
+              https://tabler-icons.io/i/brand-tripadvisor
+            </desc>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="6.5" cy="13.5" r="1.5"></circle>
+            <circle cx="17.5" cy="13.5" r="1.5"></circle>
+            <path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z"></path>
+            <path d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z"></path>
+            <path d="M10.5 15.5l1.5 2l1.5 -2"></path>
+            <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
+          </svg>
+        </a>
+      </aside>
+
+
+    </section>
+
+
+  </main>
+
+
+  <footer></footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sao Jorge, Azores",
+        "addressRegion": "Urzelina",
+        "streetAddress": "Canada do Açougue, 9800"
+      },
+      "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
+      "name": "Art restaurant Manezinho",
+      "telephone": "+351295414096"
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "name": "Art restaurant Manezinho",
+      "description": "Art restaurant Manezinho is a place dedicated to good food, art and music.",
+      "openingHours": "We,Th,Fr,Sa,Su 17:00-02:00",
+      "telephone": "+351295414096"
+    }
+  </script>
+
+  <script type="text/javascript" src="assets/js/joscript.js"></script>
+  <script>
+    readMore.addEventListener('click', () => {
+      // if(aboutUs.style.display == "none") {
+      aboutUs.style.display = "block";
+      // readMore.innerText = "Hide";
+      scrollHere.scrollTop = scrollHere.scrollHeight;
+      // } else {
+      // aboutUs.style.display = "none";
+      // readMore.innerText = "About Us";
+      // }
+
+    })
+  </script>
+</body>
+
+</html>

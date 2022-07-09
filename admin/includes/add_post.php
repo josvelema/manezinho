@@ -125,7 +125,7 @@ if (isset($_POST['create_post'])) {
 
 
     <div class="form-group">
-        <label for="status">Status: (published by default)</label>
+        <label for="status">Status post: (published by default)</label>
 
         <select name="post_status" id="status">
             <option value="draft">Post Status</option>

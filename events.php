@@ -1,6 +1,6 @@
 <?php
 include "includes/db.php";
-session_start();
+
 include "admin/functions.php";
 include "includes/eventbefore.php";
 
@@ -51,7 +51,7 @@ if ($count < 1) {
 
 
 
-  $query = "SELECT * FROM posts LIMIT $page_1, $per_page";
+  $query = "SELECT * FROM posts  ORDER BY post_event_date DESC LIMIT $page_1, $per_page";
   $select_all_posts_query = mysqli_query($connection, $query);
 
   while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
@@ -81,8 +81,15 @@ if ($count < 1) {
                   <div class="event-header-datetime">
                     <span><?php 
                     $datum = strtotime($post_event_date);
+                    $datum_vandaag = strtotime(date("Y-m-d"));
+                    if ($datum - $datum_vandaag == 0) {
+                      echo "Today!";
+                    } 
+                    else {
+
                     echo date("l d F Y", $datum);
                     // echo $post_event_date ;
+                    }
                     ?>
                     </span>
                     <span><?php echo $post_event_time ;?></span>
