@@ -47,7 +47,7 @@ if(isset($_SESSION['username'])) {
                            
                            
                            
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -81,9 +81,7 @@ if(isset($_SESSION['username'])) {
                         <a href="./categories.php"><i class="fa fa-fw fa-wrench"></i> Categories</a>
                     </li>
                    
-                    <li class="">
-                        <a href="comments.php"><i class="fa fa-fw fa-file"></i> Comments</a>
-                    </li>
+
                     
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>

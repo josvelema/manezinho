@@ -20,3 +20,22 @@ background-repeat: no-repeat;
 background-position: center;
 
 }
+
+
+th{
+  background-color: lavenderblush;
+}
+
+tr:nth-child(even) {
+  background-color: antiquewhite;
+}
+
+.form-table-wrap {
+  background-color: #fafafd;
+  width: 100%;
+  overflow: auto;
+}
+
+caption {
+  font-size: 2rem;
+}
