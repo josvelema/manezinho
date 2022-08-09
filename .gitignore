@@ -13,3 +13,4 @@ registration.php
 admin/comments.php
 admin/post_comments.php
 admin/includes/view_all_comments.php
+includes/db.php
