@@ -228,7 +228,7 @@
             <article class="events content active ">
                 <h1>Upcoming Events</h1>
                 
-                 <p>
+                 <p id="events-cta-p">
                    If you are an an artist and you would like to perform, contact us!
                    <br>
                    info@artrestaurantmanezinho.com
