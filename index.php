@@ -218,7 +218,7 @@ include "admin/functions.php";
 
       <div class="main-buttons">
         <button class="btn read-main">About us</button>
-        <button class="btn event-btn" onclick="location.href = 'events.html'">Events</button>
+        <button class="btn event-btn" onclick="location.href = 'events.php'">Events</button>
       </div>
 
 
