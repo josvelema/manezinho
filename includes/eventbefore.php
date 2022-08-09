@@ -11,16 +11,16 @@
         <meta name="author" content="Art Restaurant Manezinho" />
         <meta
             name="keywords"
-            content="restaurant , art , Manezinho , Azores , Sao Jorge , live music , music , cocktails, artisanal, local, food , Urzelina , Adriaans"
+            content="restaurant , Manezinho , grand cafe , events , live music , music , cocktails, artisanal, local, food , Urzelina , Adriaans"
         />
 
-        <meta property="og:title" content="Art Restaurant Manezinho" />
+        <meta property="og:title" content="Art Restaurant Manezinho - Events" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="pt_PT" />
         <meta property="og:type" content="website" />
         <meta
             property="og:url"
-            content="http://www.artrestaurantmanezinho.com"
+            content="http://www.artrestaurantmanezinho.com/events.php"
         />
         <meta
             property="og:image"
@@ -32,7 +32,7 @@
         />
         <meta
             property="og:description"
-            content="Art restaurant Manezinho is a place dedicated to good food, art and music."
+            content="Art restaurant Manezinho frequently invites artists to come and play music"
         />
         <meta
             property="og:video"
@@ -45,7 +45,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         />
-        <link rel="canonical" href="http://www.artrestaurantmanezinho.com" />
+        <link rel="canonical" href="http://www.artrestaurantmanezinho.com/event.php" />
     </head>
     <body>
         <header>
@@ -226,8 +226,8 @@
             </div>
             <section class="home eventsBackground">
             <article class="events content active ">
-                <h1>Events</h1>
-                <h2>Live Music</h2>
+                <h1>Upcoming Events</h1>
+                
                  <p>
                    If you are an an artist and you would like to perform, contact us!
                    <br>

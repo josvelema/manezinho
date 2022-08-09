@@ -77,7 +77,7 @@ if ($count < 1) {
 
               <article class="event">
                 <div class="event-header">
-                  <h3><?php echo $post_title ?></h3>
+                  <h2><?php echo $post_title ?></h2>
                   <div class="event-header-datetime">
                     <span><?php 
                     $datum = strtotime($post_event_date);
