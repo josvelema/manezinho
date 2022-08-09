@@ -42,7 +42,7 @@ if (isset($_POST['create_post'])) {
     $the_post_id = mysqli_insert_id($connection);
 
 
-    echo "<p class='bg-success'>Post Created. <a href='../post.php?p_id={$the_post_id}'>View Post </a> or <a href='posts.php'>Edit More Posts</a></p>";
+    echo "<p class='bg-success'>Post Created. <a href='../events.php>View events </a> or <a href='posts.php'>Edit More Posts</a></p>";
 }
 
 
@@ -54,7 +54,7 @@ if (isset($_POST['create_post'])) {
 
 
     <div class="form-group">
-        <label for="title">Post Title</label>
+        <label for="title">Event Post Title</label>
         <input type="text" class="form-control" name="title">
     </div>
 
@@ -139,7 +139,7 @@ if (isset($_POST['create_post'])) {
 
 
     <div class="form-group">
-        <label for="post_image">Post Image</label>
+        <label for="post_image">Event Image</label>
         <input type="file" name="image">
     </div>
 
@@ -158,13 +158,13 @@ if (isset($_POST['create_post'])) {
 
 
     <div class="form-group">
-        <label for="post_content">Post Content English</label>
+        <label for="post_content">Event Content English</label>
         <textarea class="form-control " name="post_content" class="body" cols="30" rows="6"></textarea>
     </div>
 
 
     <div class="form-group">
-        <label for="post_content_p">Post Content Portuguese</label>
+        <label for="post_content_p">Event Content Portuguese</label>
         <textarea class="form-control " name="post_content_p" class="body" cols="30" rows="6"></textarea>
     </div>
 

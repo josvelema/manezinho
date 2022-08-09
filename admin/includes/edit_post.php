@@ -80,7 +80,7 @@ if (isset($_POST['update_post'])) {
 
   confirmQuery($update_post);
 
-  echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id={$the_post_id}'>View Post </a> or <a href='posts.php'>Edit More Posts</a></p>";
+  echo "<p class='bg-success'>Post Updated. <a href='../events.php'>View events </a> or <a href='posts.php'>Edit More Posts</a></p>";
 }
 
 ?>
@@ -90,7 +90,7 @@ if (isset($_POST['update_post'])) {
 
 
   <div class="form-group">
-    <label for="title">Post Title</label>
+    <label for="title">Event Post Title</label>
     <input value="<?php echo htmlspecialchars(stripslashes($post_title)); ?>" type="text" class="form-control" name="post_title">
   </div>
 
@@ -166,7 +166,7 @@ if (isset($_POST['update_post'])) {
       </div> -->
 
   <div class="form-group">
-  <label for="status">Status post: (published by default)</label>
+    <label for="status">Status post: (published by default)</label>
     <select name="post_status" id="">
 
       <option value='<?php echo $post_status ?>'><?php echo $post_status; ?></option>
@@ -175,10 +175,9 @@ if (isset($_POST['update_post'])) {
 
       if ($post_status == 'published') {
 
-//todo make archive option
+        //todo make archive option
         echo "<option value='draft'>Draft</option>";
         echo "<option value='archived'>archived</option>";
-
       } else {
 
 
@@ -196,38 +195,40 @@ if (isset($_POST['update_post'])) {
 
 
 
-  
-  
+
+
   <div class="form-group">
-    
+    <label for="post_image">Event Image</label>
+
     <img width="100" src="../images/<?php echo $post_image; ?>" alt="">
     <input type="file" name="image">
   </div>
-  
+
   <div class="form-group">
-        <label for="event_date">Date of event</label>
-        <input type="date" name="post_event_date" id="event_date" value="<?php echo $post_event_date ;?>">
 
-        <label for="event_time">Time of event</label>
-        <input type="time" name="post_event_time" id="event_date" pattern="[0-9]{2}:[0-9]{2}" value="<?php echo $post_event_time ;?>">
-    </div>
-  
-    <div class="form-group">
-        <label for="event_url">URL for reference (i.e. artist page)</label>
-        <input type="text" class="form-control" name="post_url" id="event_url" value="<?php echo $post_url ; ?>">
-    </div>
+    <label for="event_date">Date of event</label>
+    <input type="date" name="post_event_date" id="event_date" value="<?php echo $post_event_date; ?>">
 
+    <label for="event_time">Time of event</label>
+    <input type="time" name="post_event_time" id="event_date" pattern="[0-9]{2}:[0-9]{2}" value="<?php echo $post_event_time; ?>">
+  </div>
 
-    <div class="form-group">
-        <label for="post_content">Post Content English</label>
-        <textarea class="form-control " name="post_content" class="body" cols="30" rows="6"><?php echo trim($post_content) ;?></textarea>
-    </div>
+  <div class="form-group">
+    <label for="event_url">URL for reference (i.e. artist page)</label>
+    <input type="text" class="form-control" name="post_url" id="event_url" value="<?php echo $post_url; ?>">
+  </div>
 
 
-    <div class="form-group">
-        <label for="post_content_p">Post Content Portuguese</label>
-        <textarea class="form-control " name="post_content_p" class="body" cols="30" rows="6"><?php echo trim($post_content_p) ;?></textarea>
-    </div>
+  <div class="form-group">
+    <label for="post_content">Post Content English</label>
+    <textarea class="form-control " name="post_content" class="body" cols="30" rows="6"><?php echo trim($post_content); ?></textarea>
+  </div>
+
+
+  <div class="form-group">
+    <label for="post_content_p">Post Content Portuguese</label>
+    <textarea class="form-control " name="post_content_p" class="body" cols="30" rows="6"><?php echo trim($post_content_p); ?></textarea>
+  </div>
 
 
 

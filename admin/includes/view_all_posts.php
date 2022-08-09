@@ -104,10 +104,15 @@ if (isset($_POST['checkBoxArray'])) {
         <table class="table table-bordered table-hover">
 
 
+            <div class="col-xs-12" style="margin-bottom: 0.5em;"> 
+                <a class="btn btn-primary" href="posts.php?source=add_post">Add New Event</a>
+
+            </div>
+
             <div id="bulkOptionContainer" class="col-xs-4">
 
-                <select class="form-control" name="bulk_options" id="">
-                    <option value="">Select Options</option>
+                <select class="form-control" name="bulk_options" id="bulk">
+                    <option value="">Select Bulk operation</option>
                     <option value="published">Publish</option>
                     <option value="draft">Draft</option>
                     <option value="delete">Delete</option>
@@ -116,14 +121,12 @@ if (isset($_POST['checkBoxArray'])) {
 
             </div>
 
-
             <div class="col-xs-4">
 
                 <input type="submit" name="submit" class="btn btn-success" value="Apply">
-                <a class="btn btn-primary" href="posts.php?source=add_post">Add New</a>
+
 
             </div>
-
 
 
             <thead>
@@ -143,7 +146,7 @@ if (isset($_POST['checkBoxArray'])) {
 
                     <th>Date of Event</th>
                     <th>Time of Event</th>
-                    <th>View Post</th>
+
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -240,7 +243,7 @@ if (isset($_POST['checkBoxArray'])) {
                     echo "<td>$post_event_date </td>";
                     echo "<td>$post_event_time </td>";
 
-                    echo "<td><a class='btn btn-primary' href='../post.php?p_id={$post_id}'>View Post</a></td>";
+
                     echo "<td><a class='btn btn-info' href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
 
 
