@@ -5,7 +5,7 @@ include "../admin/functions.php";
 
 
 
-checkIfUserIsLoggedInAndRedirect('/admin');
+checkIfUserIsLoggedInAndRedirect('/manezinho/admin');
 
 
 if (ifItIsMethod('post')) {
@@ -16,7 +16,7 @@ if (ifItIsMethod('post')) {
 	} else {
 
 
-		redirect('/login');
+		redirect('/manezinho/login.php');
 	}
 }
 

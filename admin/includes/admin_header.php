@@ -18,7 +18,7 @@ if(isset($_SESSION['user_role'])) {
 
 } else {
 
-header("location: ../login");
+header("location: ../index.html");
 
 
 }

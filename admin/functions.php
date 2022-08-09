@@ -403,7 +403,7 @@ function register_user($username, $email, $password){
 
 
 
-             redirect("/admin");
+             redirect("/manezinho/admin");
 
 
          } else {
