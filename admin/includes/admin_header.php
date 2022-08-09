@@ -1,19 +1,31 @@
-<?php ob_start(); 
- session_start(); 
-require_once "../includes/db.php";
-include "functions.php";
+<?php ob_start(); ?>
+<?php include "../includes/db.php"; ?>
+<?php include "functions.php"; ?>
 
 
 
-session_start(); 
+<?php session_start(); ?>
+
+
+<?php 
 
 
 
-if(!isset($_SESSION['user_role'])) {
 
-    header("Location: ../login");
+if(isset($_SESSION['user_role'])) {
+
+
+
+} else {
+
+header("location: ../login");
+
 
 }
+
+
+
+
  ?>
 
 
