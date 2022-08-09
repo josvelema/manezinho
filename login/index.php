@@ -16,7 +16,7 @@ if (ifItIsMethod('post')) {
 	} else {
 
 
-		redirect('/manezinho/login.php');
+		redirect('/login');
 	}
 }
 
