@@ -72,8 +72,15 @@ if (isset($_POST['update_post'])) {
   $query .= "post_author = '{$post_user}', ";
   $query .= "post_status = '{$post_status}', ";
   $query .= "post_tags   = '{$post_tags}', ";
-  $query .= "post_content= '{$post_content}', ";
-  $query .= "post_image  = '{$post_image}' ";
+  $query .= "post_content = '{$post_content}', ";
+  $query .= "post_content_p = '{$post_content_p}', ";
+  $query .= "post_event_date= '{$post_event_date}', ";
+  $query .= "post_event_time= '{$post_event_time}', ";
+  $query .= "post_url= '{$post_url}', ";
+ 
+
+  $query .= "post_image  = '{$post_image} ' ";
+
   $query .= "WHERE post_id = {$the_post_id} ";
 
   $update_post = mysqli_query($connection, $query);
