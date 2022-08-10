@@ -714,6 +714,13 @@ section.home.foodBackground {
     background-attachment: fixed;
 }
 
+.drinksBackground {
+    background-image: url(assets/img/food/CF0A9938.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
 
 
 .band {
@@ -722,7 +729,7 @@ section.home.foodBackground {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 , 1fr);
+    /* grid-template-rows: repeat(4 , 1fr); */
     grid-template-rows: auto;
     grid-gap: 0.6em;
     z-index: 888;
