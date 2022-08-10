@@ -232,13 +232,12 @@ section {
     margin: 0 auto;
     color: hsl(54deg 77% 94%);
     text-shadow: 1px 1px 1px #fff6;
-    
 }
 
 .cta-event h3 {
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: clamp(1rem, 1.3rem , 1.5rem);
+    font-size: clamp(1rem, 1.3rem, 1.5rem);
 }
 
 .cta-event hr {
@@ -246,7 +245,6 @@ section {
     border-bottom: 1px dotted #fff6;
     margin: 0.5em;
 }
-
 
 .main-about {
     display: none;
@@ -589,7 +587,8 @@ section {
 }
 /* extra styling */
 
-section.home.eventsBackground {
+section.home.eventsBackground,
+section.home.foodBackground {
     padding: 1.75em 0.2em;
 }
 
@@ -705,6 +704,122 @@ section.home.eventsBackground {
     text-shadow: 1px 1px 1px var(--blue-white-300);
 }
 
+/* food page styling */
+
+.foodBackground {
+    background-image: url(assets/img/food/CF0A9530.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 , 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.6em;
+    z-index: 888;
+}
+@media (min-width: 30em) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 60em) {
+    .band {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.card {
+    background: linear-gradient(to bottom right, hsl(18, 22%, 41%) 80%, hsl(18, 32%, 51%));
+    text-decoration: none;
+    color: #e0e0e0;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px,
+     rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+    border-radius: 2px;
+    border: 1px solid #01456C;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.2s ease-in;
+    padding: 0.35em;
+    /* margin: 0.35em; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 66, 0.2); */
+}
+.card:hover {
+    top: -2px;
+    /* box-shadow: 0 4px 5px rgba(0, 0, 66, 0.35); */
+}
+.card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #f0f0f0;
+}
+.card p {
+    flex: 1;
+    line-height: 1.4;
+    font-size: 1.15rem;
+    /* Smol Responsive Padding FTW! */
+    padding: clamp(0.55rem, 2%, 1rem);
+    /* Provide a max-width and prevent overflow */
+    width: min(50ch, 90%);
+    /* Help prevent overflow of long words/names/URLs */
+    word-break: break-word;
+    /* Optional, not supported for all languages */
+    hyphens: auto;
+}
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #d0d0d0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+}
+.card .thumb {
+    padding-bottom: 1em;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card .thumb img {
+    object-fit: contain;
+    width: 100%;
+    border: 2px inset hsl(202, 88%, 15%);
+    border-left: 1px solid hsl(202deg 98% 21%);
+    box-shadow: hsl(202deg 98% 21%) 0px -2px 1px , #fff6 0px 1px 7px ;
+}
+
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    .item-1 h2 {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 1040px) {
     header {
         padding: 12px 20px;
@@ -780,4 +895,3 @@ section.home.eventsBackground {
         width: 100%;
     }
 }
-
