@@ -130,6 +130,7 @@ include "admin/functions.php";
   </div>
   <main>
     <section class="home">
+      
 
       <nav class="slider-navigation">
         <div class="nav-btn active">About</div>
