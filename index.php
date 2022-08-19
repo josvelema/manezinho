@@ -154,6 +154,8 @@ include "admin/functions.php";
       <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
         <source data-src="assets/mp4/art.mp4" type="video/mp4" />
       </video>
+
+      <div class="cta-menu">Have a look at our new menu! <a href="assets/doc/MenuManezinho.pdf" target="_blank"><img src="assets/svg/file-text.svg" alt="Menu PDF download" class="cta-menu-icon"></a></div>
       <article class="content active">
         <h1>Manezinho<br /></h1>
         <h2><span>Art Restaurant</span></h2>
