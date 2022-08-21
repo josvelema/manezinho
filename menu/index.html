@@ -109,7 +109,7 @@
               <li>Sumo Natural</li>
             </ul>
             <ul class="menu-ul-price">
-              <li>1.20€ 2.50€</li>
+              <li><i class="menu-size-icon">p</i> 1.20€ &nbsp; <i class="menu-size-icon">g</i> 2.50€</li>
               <li>1.50€</li>
               <li>3.00€</li>
             </ul>
@@ -134,7 +134,11 @@
               <li>1.50€</li>
             </ul>
           </fieldset>
-          <!-- GrandePequeno -->
+          <p class="menu-legend-p">
+            <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
+             
+            <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
+          </p>
         </article>
       </section>
 
@@ -715,5 +719,22 @@
         </article>
       </section>
     </main>
+    <script>
+      window.onscroll = function() {
+        var e = document.getElementById("scrolltop");
+          if (!e) {
+            e = document.createElement("a");
+              e.id = "scrolltop";
+              e.href = "#";
+              e.title = "Back to top"
+              document.body.appendChild(e);
+        }
+        e.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+          e.onclick = (ev) => {
+            ev.preventDefault();
+              document.documentElement.scrollTop = 0;
+          };
+      };
+    </script>
   </body>
 </html>
