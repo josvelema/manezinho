@@ -101,9 +101,33 @@ a:focus {
 
 .menu-nav {
   display: flex;
+  /* flex-direction: column;
+  align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0.25em;
+}
+
+header p {
+  margin:0.25em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.menu-home-btn {
+  width: 26px;
+  background-color: hsl(43, 98%, 50%);
+  padding: 4px;
+  border-radius: 100vw;
+  transition: all 200ms ease-in-out ;
+}
+.menu-home-btn:hover,
+.menu-home-btn:focus {
+  transform: translateY(-2px);
+  background-color: hsl(66, 88%, 50%);
+
 }
 
 .menu-nav ul {
@@ -133,10 +157,10 @@ a:focus {
   margin-bottom: 2em;
   padding: 0.25em;
   min-height: 300px;
-  /* min-width: 250px; */
-  max-width: clamp(96vw, 98%, 95vw);
+  
+  
   /* border: 1px solid #fff1; */
-  margin: 0 auto;
+  
 }
 
 .menu-section h2 {
@@ -149,10 +173,28 @@ a:focus {
 }
 
 .menu-section article {
-  width: 320px;
+  width: 400px;
   padding: 0.25em;
   backdrop-filter: blur(1px);
 }
+
+@media (max-width: 30em) {
+  .menu-section article {
+    width: 100%;
+    
+  }
+}
+
+@media (max-width: 340px) {
+  
+    * {
+      font-size: 98%;
+    }
+    
+  }
+
+
+
 
 .menu-section article ul {
   list-style: none;
@@ -263,6 +305,10 @@ i.menu-size-icon:before {
 .menu-legend-p span {
   text-align: center;
 
+}
+
+footer .menu-nav {
+  margin-bottom: 1em;
 }
 
 #scrolltop {

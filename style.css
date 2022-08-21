@@ -601,6 +601,11 @@ section {
     align-items: center;
 }
 
+.cta-menu a {
+    color: black;
+    text-shadow: none;
+}
+
 .cta-menu-icon {
     width: 24px;
     height: 24px;
