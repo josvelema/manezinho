@@ -268,7 +268,7 @@ section:last-of-type {
   margin-bottom: 10em;
 }
 
-i.menu-size-icon {
+.menu-size-icon {
   color: #efefef;
   font-family: "din400" , monospace;
   font-style: normal;
@@ -276,19 +276,10 @@ i.menu-size-icon {
   text-transform: uppercase;
   font-weight: 300;
   padding: 2px 4px;
-  position: relative;
-  
-}
-
-i.menu-size-icon:before {
-  content: "";
+  /* position: relative; */
   border: 1px solid #efefef;
-  
-  /* width: 8px; */
-  /* height: 8px; */
-  inset: 0;
-  position: absolute;
   border-radius: 100vw;
+  
 }
 
 .menu-legend-p {
