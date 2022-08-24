@@ -33,11 +33,18 @@ include "admin/functions.php";
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="canonical" href="http://www.artrestaurantmanezinho.com" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
 </head>
 
 <body>
   <header>
-    <a href="/" class="brand">Manezinho</a>
+    <a href="/" class="brand">
+      <img src="assets/svg/ManezinhologoBgS.svg" alt="Manezinho logo" title="Manezinho homepage" id="brand-logo">
+  
+  </a>
     <div class="menu-hours">
       <span id="open-status">
         <small class="openorclosed">We are</small>
@@ -158,8 +165,11 @@ include "admin/functions.php";
       <div class="cta-menu"><a href="/menu" title="Food and drinks menu">Have a look at our new menu!</a></div>
       <!-- <a href="assets/doc/MenuManezinho.pdf" target="_blank"><img src="assets/svg/file-text.svg" alt="Menu PDF download" class="cta-menu-icon"></a> -->
       <article class="content active">
-        <h1>Manezinho<br /></h1>
-        <h2><span>Art Restaurant</span></h2>
+      <div class="main-header">
+        <span>Art Restaurant</span>
+          <h1>Manezinho</h1>
+          <h2 id="h2-uniq">An unique Azorean experience</h2>
+      </div>
 
 
         <?php
@@ -309,11 +319,13 @@ include "admin/functions.php";
 
     </section>
 
-
+    
   </main>
 
 
-  <footer></footer>
+  <footer>
+    hallotjes
+  </footer>
 
   <script type="application/ld+json">
     {

@@ -2,6 +2,32 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600&display=swap");
 
+@font-face {
+    font-family: Antonio;
+    src: url(assets/fonts/Antonio-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: Sword;
+    src: url(assets/fonts/Blacksword.otf);
+  }
+  
+  @font-face {
+    font-family: DIN400;
+    src: url(assets/fonts/otf/D-DIN-PRO-400-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: Limosine;
+    src: url(assets/fonts/Champagne\ &\ Limousines\ Italic.ttf);
+  }
+  
+  @font-face {
+    font-family: Limosine-reg;
+    src: url(assets/fonts/Champagne\ &\ Limousines.ttf);
+  }
+  
+
 :root {
     --gold-white-100: hsl(44, 88%, 90%);
     --gold-white-200: hsl(44, 88%, 80%);
@@ -58,9 +84,12 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding: 15px 200px;
     transition: 0.5s ease-in-out;
+    background: linear-gradient(335deg , rgba(254, 248, 231, 0.50) 32%, rgba(246, 190, 35, 0.85));
+  backdrop-filter: blur(4px);
+
 }
 
 a {
@@ -79,6 +108,15 @@ header .brand {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    width: 200px;
+  
+    padding: 4px 6px 3px 6px;
+
+    border-radius: 4px;
+}
+
+#brand-logo {
+    width: 100%;
 }
 
 header .navigation {
@@ -152,9 +190,16 @@ header .navigation.active .navigation-items {
     /* box-shadow: 0 5px 25px rgb(1 1 1 / 20%); */
 }
 
+footer {
+    text-align: center;
+    min-height: 3rem;
+    background-color: #000;
+    background: url(assets/svg/qrmanezinhoNoLogo4.svg);
+}
+
 .menu-hours {
     display: flex;
-    height: 45px;
+    height: 10vh;
 }
 
 .menu-btn {
@@ -185,7 +230,7 @@ section {
 .home {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -270,16 +315,17 @@ section {
 
 .home .content h1,
 .events .content h1 {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Limosine-reg",Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 1.55em;
+    text-shadow: 0 0 3px #fcf0cf;
 }
 .home .content h2,
 .events .content h2 {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Limosine",Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     font-weight: 300;
     text-transform: capitalize;
@@ -292,6 +338,34 @@ section {
   font-size: 1.2em;
   font-weight: 600;
 } */
+
+.main-header {
+    text-align: center;
+}
+
+.main-header span {
+    font-weight: 600;
+    font-family: "Limosine-reg",Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 0 0 1px #cfccff;
+    font-size: 1.15rem;
+}
+
+#h2-uniq {
+    display: flex;
+    width: 66%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#h2-uniq::before,
+#h2-uniq::after {
+    content: "";
+    margin: .1em;
+    height: 1px;
+    background-color: #fff;
+    flex: 1;
+}
 
 .home .content p:not(.cta-event) {
     width: 50ch;
@@ -733,7 +807,7 @@ section.home.eventsBackground {
 
 @media (max-width: 1040px) {
     header {
-        padding: 12px 20px;
+        padding: 24px 20px;
     }
 
     section {
@@ -776,9 +850,15 @@ section.home.eventsBackground {
     header .brand {
         color: #fafafa;
         font-size: 0.75rem;
+        width: 150px
     }
 }
 @media (max-width: 377px) {
+
+header .brand {
+    width: 100px;
+}
+
     .slider-navigation .nav-btn:first-of-type {
         display: none;
     }
