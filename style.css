@@ -294,7 +294,7 @@ section {
 } */
 
 .home .content p:not(.cta-event) {
-    width: 50ch;
+    width: min(50ch,90%);
     padding: 0.25em 0.5em;
     margin: 0.5em auto;
     border-bottom: 1px solid #5556;
