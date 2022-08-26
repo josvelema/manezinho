@@ -8,6 +8,11 @@
   }
   
   @font-face {
+    font-family: Sora;
+    src: url(assets/fonts/fonts/variable/Sora[wght].ttf);
+  }
+
+  @font-face {
     font-family: Sword;
     src: url(assets/fonts/Blacksword.otf);
   }
@@ -37,23 +42,25 @@
     --gold-basic-200: hsl(40, 65%, 53%);
     --gold-basic-300: hsl(37, 58%, 38%);
 
-    --gold-shade-100: hsl(40, 57%, 30%);
-    --gold-shade-200: hsl(40, 58%, 15%);
-    --gold-shade-300: hsla(40, 66%, 7%, 0.5);
+     --gold-brown : hsla(48, 80%, 50%, 0.65);
+     --gold-shade-100: hsla(42, 80%, 30% , 0.80);
+     --gold-shade-300: hsla(48, 86%, 15%, 0.5);
+
+    /* --gold-shade-200: hsla(44, 78%, 23%, 0. 60); */
 
     --blue-white-100: hsl(212, 80%, 92%);
     --blue-white-200: hsl(220, 70%, 77%);
     --blue-white-300: hsl(225, 60%, 68%);
 
-    --blue-basic-100: hsl(212, 88%, 60%);
-    --blue-basic-200: hsl(212, 88%, 65%);
-    --blue-basic-300: hsl(214, 88%, 70%);
+    --blue-basic-100: hsla(210, 92%, 66% , 0.85);
+    --blue-basic-200: hsla(212, 84%, 47% , 0.85);
+    --blue-basic-300: hsla(218, 78%, 32% , 0.85);
 
-    --blue-green-100: hsl(198, 80%, 38%);
+    --blue-green-100: hsla(198, 80%, 38% , 0.85);
 
-    --blue-shade-100: hsl(224, 57%, 30%);
-    --blue-shade-200: hsl(224, 58%, 15%);
-    --blue-shade-300: hsl(224, 58%, 10%);
+    --blue-shade-100: hsla(227, 77%, 30% , 0.85);
+    --blue-shade-200: hsla(219, 55%, 25% , 0.85);
+    --blue-shade-300: hsla(223, 55%, 15% , 0.85);
 }
 *,
 *::before,
@@ -84,12 +91,13 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     padding: 15px 200px;
+    /* padding: 15px 200px; */
     transition: 0.5s ease-in-out;
     background: linear-gradient(335deg , rgba(254, 248, 231, 0.50) 32%, rgba(246, 190, 35, 0.85));
   backdrop-filter: blur(4px);
-
+  box-shadow: 0px -3px 3px 6px rgba(252, 240, 207 , 0.66);
 }
 
 a {
@@ -100,6 +108,8 @@ a {
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
+
+
 
 header .brand {
     color: #fafafa;
@@ -199,7 +209,7 @@ footer {
 
 .menu-hours {
     display: flex;
-    height: 10vh;
+    /*? height: 10vh; */
 }
 
 .menu-btn {
@@ -230,9 +240,9 @@ section {
 .home {
     position: relative;
     width: 100%;
-    min-height: 90vh;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     background-color: hsla(40, 65%, 23%, 0.1);
 }
@@ -263,34 +273,70 @@ section {
     display: none;
 }
 .cta-event {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 0.5em;
-    border: 1px solid #fff6;
-    border-radius: 3px;
+    
+ 
     font-size: 1rem;
     text-align: center;
-    width: fit-content;
+    /* width: fit-content; */
     margin: 0 auto;
+    width: min(50ch, 90%);
 }
 
 .cta-event p {
+    font-family: "DIN400";
     margin: 0 auto;
     color: hsl(54deg 77% 94%);
-    text-shadow: 1px 1px 1px #fff6;
+    text-shadow: 1px 1px 1px #222;
+    letter-spacing: 1px;
     
 }
 
-.cta-event h3 {
+.cta-event .cta-event-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5em;
+    font-family: "Sora";
     font-weight: 500;
     letter-spacing: 1px;
+    text-transform: capitalize;
     font-size: clamp(1rem, 1.3rem , 1.5rem);
+    /* border: 1px solid #fff6; */
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 0px 1px var(--blue-white-300),
+    0px 4px 9px -4px var(--gold-brown);
+
+
+
 }
 
-.cta-event hr {
+.cta-event .cta-event-title a {
+    width: 90%;
+
+    margin: 0.25em auto;
+    
+    color: var(--gold-basic-100);
+    background-color: var(--blue-shade-300);
+    border: 1px solid var(--blue-basic-300);
+    transition: all 150ms ease-out 50ms;
+    border-radius: 50vw;
+}
+
+
+.cta-event .cta-event-title a:hover,
+.cta-event .cta-event-title a:focus {
+    color: var(--gold-white-200);
+    background-color: var(--blue-shade-200);
+    border: 1px solid var(--blue-basic-200);
+    text-decoration: none;
+}
+/* .cta-event hr {
     border: 0;
     border-bottom: 1px dotted #fff6;
     margin: 0.5em;
-}
+} */
 
 
 .main-about {
@@ -298,9 +344,9 @@ section {
     margin: 1em;
 }
 
-.main-buttons {
+/* .main-buttons {
     display: flex;
-}
+} */
 
 .read-main,
 .event-btn {
@@ -313,7 +359,7 @@ section {
     display: block;
 }
 
-.home .content h1,
+.home h1,
 .events .content h1 {
     font-family: "Limosine-reg",Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
@@ -323,7 +369,7 @@ section {
     line-height: 1.55em;
     text-shadow: 0 0 3px #fcf0cf;
 }
-.home .content h2,
+.home h2,
 .events .content h2 {
     font-family: "Limosine",Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
@@ -341,6 +387,8 @@ section {
 
 .main-header {
     text-align: center;
+    z-index: 999;
+    color: #f0f0f0;
 }
 
 .main-header span {
@@ -367,14 +415,101 @@ section {
     flex: 1;
 }
 
+.cta-about {
+    /* border: 1px solid #fcf0cf; */
+    /* backdrop-filter: blur(4px); */
+    width: min(50ch , 90%);
+    margin: 1em auto 0 auto;
+    z-index: 889;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px #121212;
+
+      
+}
+
+
+
+#cta-about-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: linear-gradient(356deg, var(--gold-shade-300) 11%, rgba(246, 190, 35, 0.65));
+    box-shadow: inset 0px 0px 0px 1px rgb(252 240 207 / 54%), 0px 2px 2px 2px #fd36;
+    border-radius: 4px;
+    padding: 0.75em 0;
+}
+
+#cta-about-p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #fcf0cf;
+    border-radius: 2px;
+    opacity: 0.7;
+     filter: drop-shadow(0px 3px 0px #fff6);
+    }
+  
+.cta-about .cta-about-btn {
+    width: 42px;
+    height: 48px;
+    margin: 0.5em auto;
+    background: transparent;
+    padding: 6px 4px;
+    
+}
+
+.cta-about .cta-about-btn::before {
+    
+}
+
+.cta-about .cta-about-btn img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #fcf0cf;
+    border-radius: 22px;
+    transform-origin: top;
+    
+    -webkit-animation: btn-motivator 1s linear 1s infinite alternate;
+    animation: btn-motivator 1s linear 1s infinite alternate;
+}
+
+@keyframes btn-motivator {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(6px);
+
+    }
+}
+
+@-webkit-keyframes btn-motivator {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(6px);
+
+    }
+}
+
+
 .home .content p:not(.cta-event) {
-    width: 50ch;
+    width: min(50ch , 90%);
     padding: 0.25em 0.5em;
     margin: 0.5em auto;
     border-bottom: 1px solid #5556;
     border-radius: 3px;
-    box-shadow: 0 1px 5px 2px rgba(55, 55, 55, 0.35);
-    background-color: rgba(1, 1, 1, 0.4);
+    /* box-shadow: 0 1px 5px 2px rgba(55, 55, 55, 0.35);
+    background-color: rgba(1, 1, 1, 0.4); */
+    /* background: linear-gradient(356deg, var(--gold-shade-300) 11%, rgba(246, 190, 35, 0.65));
+    box-shadow: inset 0px 0px 2px 2px rgb(252 240 207 / 54%), 0px 0px 2px 2px #fd36; */
+
+    background: linear-gradient(356deg, var(--gold-shade-300) 11%, rgba(246, 190, 35, 0.65));
+    box-shadow: inset 0px 0px 0px 1px rgb(252 240 207 / 54%), 0px 2px 2px 2px #fd36;
     font-size: 1rem;
     line-height: 1.3;
     -ms-word-break: break-all;
@@ -384,6 +519,7 @@ section {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    text-shadow: 1px 0 1px #0007;
 }
 
 .btn {
@@ -454,6 +590,7 @@ section {
     align-items: center;
 
     margin-bottom: 12px;
+    margin-top: 7em;
 }
 
 .slider-navigation .nav-btn {
@@ -807,7 +944,7 @@ section.home.eventsBackground {
 
 @media (max-width: 1040px) {
     header {
-        padding: 24px 20px;
+        padding: 0.5em 1em;;
     }
 
     section {
@@ -820,6 +957,10 @@ section.home.eventsBackground {
         display: none;
     }
 
+    .slider-navigation {
+        margin-top: 1em;
+    }
+
     .slider-navigation .nav-btn {
         text-align: center;
         font-size: 0.8rem;
@@ -828,7 +969,7 @@ section.home.eventsBackground {
 }
 
 @media (max-width: 560px) {
-    .home .content h1 {
+    .home h1 {
         font-size: 2.2em;
         line-height: 60px;
     }
@@ -840,7 +981,7 @@ section.home.eventsBackground {
         padding: 0.25em;
         margin: 0.5em;
     }
-    .home .content h2 {
+    .home h2 {
         font-size: 1.5rem;
         line-height: 1.35em;
     }
@@ -875,10 +1016,10 @@ header .brand {
         font-size: 0.8rem;
         flex-direction: column;
     }
-    .home .content h1 {
+    .home h1 {
         font-size: 1.9rem;
     }
-    .home .content h2 {
+    .home h2 {
         font-size: 1.2rem;
     }
 

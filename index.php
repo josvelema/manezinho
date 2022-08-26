@@ -40,49 +40,7 @@ include "admin/functions.php";
 </head>
 
 <body>
-  <header>
-    <a href="/" class="brand">
-      <img src="assets/svg/ManezinhologoBgS.svg" alt="Manezinho logo" title="Manezinho homepage" id="brand-logo">
-  
-  </a>
-    <div class="menu-hours">
-      <span id="open-status">
-        <small class="openorclosed">We are</small>
-      </span>
-      <span class="menu-hours-txt"><a href="#" class="btn open-button">Opening hours</a></span>
-      <!-- <div class="menu-btn button open-button">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-clock"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="#167fac"
-                        fill="#fafafa"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
-                        <desc>
-                            Download more icon variants from
-                            https://tabler-icons.io/i/clock
-                        </desc>
-                        <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                        ></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <polyline points="12 7 12 12 15 15"></polyline>
-                    </svg>
-                </div> -->
 
-    </div>
-
-    <!-- <nav class="navigation"> -->
-
-    </nav>
-  </header>
   <label for="modal" class="modal-background"></label>
   <div class="modal">
     <section class="openinghours">
@@ -135,7 +93,26 @@ include "admin/functions.php";
       <a href="#" class="btn close-button">close</a>
     </section>
   </div>
+  
+  <header>
+        <a href="/" class="brand">
+          <img src="assets/svg/ManezinhologoBgS.svg" alt="Manezinho logo" title="Manezinho homepage" id="brand-logo">
+      
+       </a>
+        <div class="menu-hours">
+          <span id="open-status">
+            <small class="openorclosed">We are</small>
+          </span>
+          <span class="menu-hours-txt"><a href="#" class="btn open-button">Opening hours</a></span>
+  
+  
+        </div>
+  
+        
+</header>
+
   <main>
+
     <section class="home">
 
       <nav class="slider-navigation">
@@ -145,7 +122,7 @@ include "admin/functions.php";
         <div class="nav-btn">Music</div>
         <div class="nav-btn">Art</div>
       </nav>
-
+      
       <video class="video-slide lazy active" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
         <source data-src="assets/mp4/main.mp4" type="video/mp4" />
       </video>
@@ -161,15 +138,18 @@ include "admin/functions.php";
       <video class="video-slide lazy" poster="assets/svg/manezinhologo.svg" preload="none" autoplay muted loop playsinline>
         <source data-src="assets/mp4/art.mp4" type="video/mp4" />
       </video>
-
-      <div class="cta-menu"><a href="/menu" title="Food and drinks menu">Have a look at our new menu!</a></div>
+      
+      <!-- <div class="cta-menu"><a href="/menu" title="Food and drinks menu">Have a look at our new menu!</a></div> -->
       <!-- <a href="assets/doc/MenuManezinho.pdf" target="_blank"><img src="assets/svg/file-text.svg" alt="Menu PDF download" class="cta-menu-icon"></a> -->
-      <article class="content active">
       <div class="main-header">
-        <span>Art Restaurant</span>
+          <span>Art Restaurant</span>
           <h1>Manezinho</h1>
           <h2 id="h2-uniq">An unique Azorean experience</h2>
       </div>
+
+        
+      <article class="content active">
+        
 
 
         <?php
@@ -201,21 +181,23 @@ include "admin/functions.php";
             <p>Upcoming Event on
             <?php
             $datum = strtotime($post_event_date);
-            echo date("l d \\of F Y", $datum) . " <br> Starts at " . $post_event_time . "</p><hr>"; 
+            echo date("l d \\of F Y", $datum) . " <br> Starts at " . $post_event_time . "</p>"; 
             ?>
            
-            <h3>
-              <?php echo $post_title ?>
-            </h3>
-            <a href="events.php">More info</a>
-           
+            <div class="cta-event-title">
+              <span><?php echo $post_title ?></span>
+              <a href="events.php">More info</a>
+            </div>
           </div>
+           
         <?php
         }
         ?>
 
 
-        <p class="main-about">
+
+
+      <p class="main-about">
           In 2020 Rini and Pieter Adriaans bought Manezinho, a
           restaurant on a very beautiful spot at the coast of
           Urzelina. It used to be famous on the islands at the
@@ -227,105 +209,116 @@ include "admin/functions.php";
           Manezinho there is a permanent exposition of works by
           Pieter.
         </p>
-      </article>
+        <aside class="media-icons">
+          <a href="https://www.facebook.com/Art-Restaurant-Manezinho-100617402655398" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <desc>
+                Download more icon variants from
+                https://tabler-icons.io/i/brand-instagram
+              </desc>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+            </svg>
+          </a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g11798114-d15697299-Reviews-Art_Restaurant_Manezinho-Urzelina_Sao_Jorge_Azores.html?m=19905" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tripadvisor" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <desc>
+                Download more icon variants from
+                https://tabler-icons.io/i/brand-tripadvisor
+              </desc>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="6.5" cy="13.5" r="1.5"></circle>
+              <circle cx="17.5" cy="13.5" r="1.5"></circle>
+              <path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z"></path>
+              <path d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z"></path>
+              <path d="M10.5 15.5l1.5 2l1.5 -2"></path>
+              <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
+            </svg>
+          </a>
+        </aside>
 
-      <div class="main-buttons">
-        <button class="btn read-main">About us</button>
-        <button class="btn event-btn" onclick="location.href = 'events.php'">Events</button>
-      </div>
+      </article>
+      
+      
+            <article class="content">
+              <h1>Food<br /></h1>
+              <h2><span>Fresh and delicous</span></h2>
+              <p>
+                Try our signature burger , Shrimp in batter or the new
+                T-bone Steak! And for dessert we highly recommend the
+                cheesecake! We recently updated our menu and soon you can
+                have a preview on this site.
+              </p>
+              <!-- <a href="#" class="btn">Read More</a> -->
+            </article>
+            <article class="content">
+              <h1>Drinks<br /></h1>
+              <h2><span>Cold beers , tasty wine and lush cocktails</span></h2>
+              <p>
+                We have all the drinks you got possibly want ! Beer from the
+                tap and bottle , exclusive liquor and ofcourse our signature
+                cocktails!
+              </p>
+              <!-- <a href="#" class="btn">Read More</a> -->
+            </article>
+            <article class="content">
+              <h1>Live Music<br /></h1>
+              <h2><span>Resident and guest artists</span></h2>
+                  <p>
+                Besides enjoying a nice dinner and drinks , you're likely to
+                see and hear music played by our artists-in-residence as
+                well as guest players and even open stage nights where
+                everybody can join in the fun! Check out the upcoming events
+                on the event-page!
+              </p>
+              <a href="events.html" class="btn">Events</a>
+            </article>
+            <article class="content">
+              <h1>Art<br /></h1>
+              <h2><span>Expositions</span></h2>
+              <p>
+                Upon visiting Manezinho , you will see a lot of art made by
+                <a href="http://www.pieter-adriaans.com" target="_blank">Pieter Adriaans</a>
+                but also Manezinho acts as a cospace for expositions of
+                works of other people. Check the event page for upcoming
+                events / expositions.
+              </p>
+              <a href="events.html" class="btn">Events</a>
+            </article>
+      
+              <div class="cta-about">
+                <p id="cta-about-p">Find out more about Manezinho!</p>
+                <div class="cta-about-btn">
+                  <img src="assets/img/ManezinhoLogoletterJ.png" alt="About button" title="About Manezinho">
+                </div>
+              </div>
 
 
-      <article class="content">
-        <h1>Food<br /></h1>
-        <h2><span>Fresh and delicous</span></h2>
-        <p>
-          Try our signature burger , Shrimp in batter or the new
-          T-bone Steak! And for dessert we highly recommend the
-          cheesecake! We recently updated our menu and soon you can
-          have a preview on this site.
-        </p>
-        <!-- <a href="#" class="btn">Read More</a> -->
-      </article>
-      <article class="content">
-        <h1>Drinks<br /></h1>
-        <h2><span>Cold beers , tasty wine and lush cocktails</span></h2>
-        <p>
-          We have all the drinks you got possibly want ! Beer from the
-          tap and bottle , exclusive liquor and ofcourse our signature
-          cocktails!
-        </p>
-        <!-- <a href="#" class="btn">Read More</a> -->
-      </article>
-      <article class="content">
-        <h1>Live Music<br /></h1>
-        <h2><span>Resident and guest artists</span></h2>
-        <p>
-          Besides enjoying a nice dinner and drinks , you're likely to
-          see and hear music played by our artists-in-residence as
-          well as guest players and even open stage nights where
-          everybody can join in the fun! Check out the upcoming events
-          on the event-page!
-        </p>
-        <a href="events.html" class="btn">Events</a>
-      </article>
-      <article class="content">
-        <h1>Art<br /></h1>
-        <h2><span>Expositions</span></h2>
-        <p>
-          Upon visiting Manezinho , you will see a lot of art made by
-          <a href="http://www.pieter-adriaans.com" target="_blank">Pieter Adriaans</a>
-          but also Manezinho acts as a cospace for expositions of
-          works of other people. Check the event page for upcoming
-          events / expositions.
-        </p>
-        <a href="events.html" class="btn">Events</a>
-      </article>
-      <aside class="media-icons">
-        <a href="https://www.facebook.com/Art-Restaurant-Manezinho-100617402655398" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-          </svg>
-        </a>
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <desc>
-              Download more icon variants from
-              https://tabler-icons.io/i/brand-instagram
-            </desc>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-            <circle cx="12" cy="12" r="3"></circle>
-            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-          </svg>
-        </a>
-        <a href="https://www.tripadvisor.com/Restaurant_Review-g11798114-d15697299-Reviews-Art_Restaurant_Manezinho-Urzelina_Sao_Jorge_Azores.html?m=19905" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tripadvisor" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <desc>
-              Download more icon variants from
-              https://tabler-icons.io/i/brand-tripadvisor
-            </desc>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <circle cx="6.5" cy="13.5" r="1.5"></circle>
-            <circle cx="17.5" cy="13.5" r="1.5"></circle>
-            <path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z"></path>
-            <path d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z"></path>
-            <path d="M10.5 15.5l1.5 2l1.5 -2"></path>
-            <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
-          </svg>
-        </a>
-      </aside>
 
 
+      <!-- <footer> -->
+      <!-- <div class="main-buttons">
+            <button class="btn read-main">About us</button>
+            <button class="btn event-btn" onclick="location.href = 'events.php'">Events</button>
+          </div>
+      </footer> -->
     </section>
+    <section class="home about">
+      <h1>jos</h1>
+    </section class>
 
     
   </main>
 
 
-  <footer>
-    hallotjes
-  </footer>
 
   <script type="application/ld+json">
     {
