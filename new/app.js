@@ -30,9 +30,9 @@ navBtn.addEventListener('click' , () => {
 // INTERSECTION OBSERVERS
 const navObserver = new IntersectionObserver((watchEntry) => {
   !watchEntry[0].isIntersecting ? nav.classList.add('active') : nav.classList.remove('active');
-}, {threshold: 0.85});
+}, {threshold: 0.25});
 
-navObserver.observe(document.querySelector('header'));
+// navObserver.observe(document.querySelector('header'));
 
 const fadeUpObserver = new IntersectionObserver((elsToWatch) => {
   elsToWatch.forEach((el) => {
@@ -48,3 +48,20 @@ document.querySelectorAll('.fade-up').forEach((item) => {
 });
 
 
+//! panels
+const panels = document.querySelectorAll('.panel');
+
+function toggleOpen() {
+ 
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  console.log(e.propertyName);
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
+}
+
+panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));

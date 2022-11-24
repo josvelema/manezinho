@@ -43,6 +43,9 @@ html {
 body {
     font-family: "Libre Franklin", sans-serif;
     font-weight: 300;
+    background-color: #000;
+    /* background-image: url('assets/svg/manezinhologo.svg');
+    background-size: cover; */
 }
 
 main {
@@ -61,6 +64,11 @@ header {
     align-items: center;
     padding: 15px 200px;
     transition: 0.5s ease-in-out;
+}
+
+.main-header {
+    color red;
+    text-align: center;
 }
 
 a {
@@ -228,7 +236,15 @@ section {
     margin: 0 auto;
 }
 
-.cta-event p {
+.cta-event img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 3px;
+
+}
+
+.cta-event p.nav-btn:not(:last-child) {
     margin: 0 auto;
     color: hsl(54deg 77% 94%);
     text-shadow: 1px 1px 1px #fff6;
