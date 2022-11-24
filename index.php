@@ -188,7 +188,7 @@ include "admin/functions.php";
             <h3>
               <?php echo $post_title ?>
             </h3>
-            <img src="images\glas.jpg" alt="<?= $post_title ?>">
+            <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
             <div><a href="events.php">More info</a></div>
            
           </div>
