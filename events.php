@@ -99,12 +99,12 @@ if ($count < 1) {
                   <img src="images/<?php echo $post_image; ?>" alt="<?php echo $post_title ?>">
                 </div>
                 <div class="event-content">
-                  <pre class="content-english">
+                  <pre>
                   <?php echo $post_content ?>
 
 
                   </pre>
-                  <pre class="content-portoguese">
+                  <pre>
                   <?php echo $post_content_p ?>
 
                   </pre>

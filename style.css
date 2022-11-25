@@ -198,6 +198,7 @@ section {
     justify-content: center;
     flex-direction: column;
     background-color: hsla(40, 65%, 23%, 0.1);
+    padding-top: 2rem;
 }
 
 .home:before {
@@ -226,7 +227,7 @@ section {
     display: none;
 }
 .cta-event {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--gold-basic-200);
     padding: 0.5em;
     border: 1px solid #fff6;
     border-radius: 3px;
@@ -234,6 +235,7 @@ section {
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+    color: #000;
 }
 
 .cta-event img {
@@ -246,7 +248,7 @@ section {
 
 .cta-event p.nav-btn:not(:last-child) {
     margin: 0 auto;
-    color: hsl(54deg 77% 94%);
+    /* color: hsl(54deg 77% 94%); */
     text-shadow: 1px 1px 1px #fff6;
 }
 
@@ -307,14 +309,15 @@ section {
   font-weight: 600;
 } */
 
-.home .content p:not(.cta-event) {
-    width: min(50ch,90%);
+.home .content p:not(.cta-event)
+ {
+    /* width: min(50ch,90%); */
     padding: 0.25em 0.5em;
     margin: 0.5em auto;
     border-bottom: 1px solid #5556;
     border-radius: 3px;
     box-shadow: 0 1px 5px 2px rgba(55, 55, 55, 0.35);
-    background-color: rgba(1, 1, 1, 0.4);
+    /* background-color: rgba(1, 1, 1, 0.4); */
     font-size: 1rem;
     line-height: 1.3;
     -ms-word-break: break-all;
@@ -324,6 +327,7 @@ section {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    
 }
 
 .btn {
@@ -660,22 +664,7 @@ section.home.foodBackground {
 
 .event,
 .openinghours {
-    background: radial-gradient(
-            ellipse farthest-corner at right bottom,
-            hsl(49, 69%, 51%) 1%,
-            hsl(40, 68%, 49%) 8%,
-            hsl(41, 60%, 39%) 20%,
-            hsl(42, 49%, 36%) 60%,
-            transparent 80%
-        ),
-        radial-gradient(
-            ellipse farthest-corner at left top,
-            hsl(60, 22%, 60%) 0%,
-            hsl(60, 70%, 64%) 2%,
-            hsl(44, 54%, 61%) 10%,
-            hsl(42, 50%, 24%) 42.5%,
-            hsl(42, 50%, 24%) 100%
-        );
+background-color: var(--gold-basic-100);
     box-shadow: 1px 2px 6px 6px var(--gold-shade-300);
 }
 
@@ -698,6 +687,7 @@ section.home.foodBackground {
 
 .event-header h2,
 .event-content p,
+.event-content pre,
 .cta-event a {
     line-height: 1.4;
     -ms-word-break: break-all;
@@ -712,7 +702,17 @@ section.home.foodBackground {
     margin: 0.3em 0.2em 0.5em 0.2em;
     /* margin-bottom: 0.5em; */
     border-bottom: 1px solid #0005;
+
 }
+
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
 
 .event-header-datetime {
     display: flex;
@@ -916,7 +916,7 @@ section.home.foodBackground {
         line-height: 1.35em;
     }
     .event {
-        width: 30ch;
+        width: 100%;
     }
     header .brand {
         color: #fafafa;
