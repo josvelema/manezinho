@@ -1,0 +1,85 @@
+/* Define the grid container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 16px;
+  background-color: black;
+}
+
+/* Define the style for the cards */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/* Define the style for the image container */
+.card__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gold);
+}
+
+/* Define the style for the text container */
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--blue);
+}
+
+/* Define the style for the title */
+.card__title {
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+/* Define the style for the date and time */
+.card__date-time {
+  font-size: 16px;
+  color: var(--white-tint-1);
+  margin-bottom: 16px;
+}
+
+/* Define the style for the text */
+.card__text {
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+/* Define the style for the button */
+.card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-blue);
+  color: var(--white);
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+/* Define the style for the button when hovered over */
+.card__button:hover {
+  background-color: var(--blue-dark);
+}
+
+/* Define the style for the button when it is focused */
+.card__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--blue-shade-1);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

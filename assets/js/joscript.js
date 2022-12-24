@@ -90,6 +90,10 @@ document.querySelectorAll(".fade-up").forEach((item) => {
   console.log(item);
   fadeUpObserver.observe(item);
 });
+document.querySelectorAll(".fade-up-delay").forEach((item) => {
+  console.log(item);
+  fadeUpObserver.observe(item);
+});
 
 
 
@@ -154,13 +158,116 @@ if (currentDate.getDay() == 1 || currentDate.getDay() == 2) {
     document.querySelector(".openorclosed").classList.toggle("closed");
   }
 }
+// const OPENING_HOURS_URL = 'assets/js/openhours.json';
+// const HTML_ELEMENT_ID = 'openofniet';
+
+// async function updateOpeningHours() {
+//   const response = await fetch(OPENING_HOURS_URL);
+//   const { regular, exceptions } = await response.json();
+
+//   const now = new Date();
+//   const day = now.getDay();
+//   const time = now.getHours() * 100 + now.getMinutes();
+
+ 
+//   let status, open, close;
+//   for (const exception of exceptions) {
+//     if (exception.date === now.toISOString().split('T')[0]) {
+//       status = exception.status;
+//       open = exception.open;
+//       close = exception.close;
+//       break;
+//     }
+//   }
+//   if (status === undefined) {
+//     status = regular[day].status;
+//     open = regular[day].open;
+//     close = regular[day].close;
+//   }
+
+//   let message;
+//   if (status === 'open') {
+//     if (close < open) { // shop is open in the night
+//       if (time < open && time >= close) {
+//         const hoursUntilOpen = Math.ceil((open - time) / 100);
+//         message = `Opens in ${hoursUntilOpen} ${hoursUntilOpen > 1 ? 'hours' : 'hour'}`;
+//       } else {
+//         const hoursUntilClose = Math.floor(((2400 - time) + close) / 100);
+//         message = `Closes in ${hoursUntilClose} ${hoursUntilClose > 1 ? 'hours' : 'hour'}`;
+//       }
+//     } else { // shop is open during the day
+//       if (time < open) {
+//         const hoursUntilOpen = Math.ceil((open - time) / 100);
+//         message = `Opens in ${hoursUntilOpen} ${hoursUntilOpen > 1 ? 'hours' : 'hour'}`;
+//       } else if (time < close) {
+//         const hoursUntilClose = Math.floor((close - time) / 100);
+//         message = `Closes in ${hoursUntilClose} ${hoursUntilClose > 1 ? 'hours' : 'hour'}`;
+//       } else {
+//         message = 'Closed';
+//       }
+//     }
+//   } else {
+//     message = 'Closed';
+//   }
+
+//   document.getElementById(HTML_ELEMENT_ID).innerHTML = message;
+// }
+
+// updateOpeningHours();
+// setInterval(updateOpeningHours, 60 * 60 * 1000); // update every hour
+
+
+// async function checkClosedDays() {
+//    const response = await fetch(OPENING_HOURS_URL);
+//   const { regular, exceptions } = await response.json();
+//   const now = new Date();
+//   const twoWeeksFromNow = new Date(now.getTime() + 14 * 24 * 60 * 60 * 1000);
+
+//   const closedDays = [];
+//   for (const exception of exceptions) {
+//     if (exception.status === 'closed' && exception.date >= now.toISOString().split('T')[0] && exception.date <= twoWeeksFromNow.toISOString().split('T')[0]) {
+//       closedDays.push(exception.date);
+//     }
+//   }
+
+//   if (closedDays.length > 0) {
+//     let message = 'The following days will be closed in the coming 2 weeks: ';
+//     let consecutiveClosedDays = 1;
+//     for (let i = 1; i < closedDays.length; i++) {
+//       const currentDay = new Date(closedDays[i]);
+//       const previousDay = new Date(closedDays[i - 1]);
+//       if (currentDay.getTime() - previousDay.getTime() === 24 * 60 * 60 * 1000) {
+//         consecutiveClosedDays++;
+//       } else {
+//         if (consecutiveClosedDays > 1) {
+//           message += `${closedDays[i - consecutiveClosedDays]}-${closedDays[i - 1]}, `;
+//         } else {
+//           message += `${closedDays[i - 1]}, `;
+//         }
+//         consecutiveClosedDays = 1;
+//       }
+//     }
+//     if (consecutiveClosedDays > 1) {
+//       message += `${closedDays[closedDays.length - consecutiveClosedDays]}-${closedDays[closedDays.length - 1]}`;
+//     } else {
+//       message += closedDays[closedDays.length - 1];
+//     }
+//     console.log(message);
+//   } else {
+//     console.log('There are no days closed in the coming 2 weeks.');
+//   }
+// }
+
+// checkClosedDays();
+
+
 
 const modal = document.querySelector(".modal");
 const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
 const modalBg = document.querySelector(".modal-background");
 const aboutUs = document.querySelector(".main-about");
-const readMore = document.querySelector(".read-main");
+// const readMore = document.querySelector(".read-main");
 const scrollHere = document.querySelector("#scrollHere");
 
 openModal.addEventListener("click", () => {

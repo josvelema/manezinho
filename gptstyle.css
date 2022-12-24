@@ -1,0 +1,42 @@
+:root {
+  --gold: hsl(42, 100%, 50%);
+  --gold-tint-1: hsl(42, 88%, 60%);
+  --gold-tint-2: hsl(41, 100%, 40%);
+  --gold-shade-1: hsla(42, 78%, 30%, 0.6);
+  --gold-shade-2: hsla(42, 38%, 20%, 0.3);
+  --gold-dark: hsl(43, 100%, 6%);
+
+  --blue: hsl(233, 83%, 50%);
+  --blue-dark: hsl(225, 89%, 33%);
+  --blue-shade-1: hsl(225, 69%, 30%);
+  --blue-shade-2: hsl(225, 60%, 18%);
+  --blue-shade-3: hsl(225, 50%, 10%);
+
+  --bkg-gray: hsl(225, 33%, 9%);
+
+  --white: hsl(212, 80%, 92%);
+  --white-tint-1: hsl(220, 70%, 77%);
+  --white-tint-2: hsl(225, 60%, 68%);
+
+  --blue-green: hsl(178, 90%, 28%);
+  --secondary-blue: hsl(224, 77%, 60%);
+}
+
+:root {
+  --border-radius: 6px;
+  --opacity-1: 1;
+  --opacity-87: 0.87;
+
+
+--box-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+--box-shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+--box-shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+--box-shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+--box-shadow-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+--text-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+--text-shadow-2: 0 2px 4px rgba(0, 0, 0, 0.4);
+--text-shadow-3: 0 3px 6px rgba(0, 0, 0, 0.5);
+--text-shadow-4: 0 4px 8px rgba(0, 0, 0, 0.6);
+--text-shadow-5: 0 5px 10px rgba(0, 0, 0, 0.7);
+}

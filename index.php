@@ -17,7 +17,8 @@ include "includes/nav.html";
 
       <span>Art Restaurant</span>
       <h1 class="rise">Manezinho</h1>
-      <h2 class="rise subheading">An <em>unique</em> Azorean Experience</h2>
+      <h2 class="rise subheading">Live Music Art Lounge</h2>
+      <p id="openofniet"></p>
     </header>
 
 
@@ -45,7 +46,7 @@ include "includes/nav.html";
   </section>
 
   <section>
-    <div class="rj-card-container">
+    <div class="grid">
       <article class="rj-card rj-card-first">
 
         <div class="event-img">
@@ -60,7 +61,6 @@ include "includes/nav.html";
             Besides our resident artists, we regularly have guest playing on our stage. Sometime we also have jamsessions , where anyone can join in the fun. You can find more information about the events on the
             <a href="events.php">Event page</a>.
           </p>
-          <!-- <a href="events.php" class="btn btn--accent">More info</a> -->
         </div>
 
       </article>
@@ -88,21 +88,21 @@ include "includes/nav.html";
 
       ?>
 
-        <article class="rj-card fade-up">
+        <article class="card fade-up">
 
-          <div class="event-img">
+          <div class="card__image-container">
             <img src="images/manezinhoKerst.jpg" alt="<?= $post_title ?>">
           </div>
-          <div class="title-date">
-            <h3>
+          <div class="card__text-container">
+            <h3 class="card__title">
               <?= $post_title ?>
             </h3>
-            <p>
+            <p class="card__date-time">
               <?= date("l d \\of F Y",  strtotime($post_event_date)) .
                 " <br> Starts at " . $post_event_time
               ?>
             </p>
-            <a href="events.php" class="btn btn--accent">More info</a>
+            <a href="events.php" class="card__button">More info</a>
           </div>
 
         </article>
