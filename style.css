@@ -103,6 +103,7 @@
 }
 html {
   font-size: 69.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -120,6 +121,13 @@ a {
 	text-underline-offset: 4px;
 	text-decoration-thickness: 1px;
   color: var(--gold)
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 6.5em;
+  margin: -6.5em 0 0;
 }
 
 main {
@@ -1303,6 +1311,25 @@ letter-spacing: 1px;
   
 }
 
+.quicklinks {
+  
+}
+
+
+.quicklinks ul {
+  list-style: none;
+  display: flex;
+  padding: 1em 1.66em;
+  background-color: var(--gold-shade-2);
+  border-radius: 6px;
+  border: 1px solid var(--gold);
+}
+
+.quick-link {
+  font-size: 1.4rem;
+  margin-inline: 0.33em;
+}
+
 .impressions header {
   
   width: 90%;
@@ -1329,7 +1356,7 @@ letter-spacing: 1px;
 
 .impressions-card {
 	background-image: linear-gradient( 123deg, var(--blue-shade-2), var(--blue-shade-3), var(--bkg-gray) );
-	border: 1px solid var(--gold-tint-1);
+	border: 1px solid var(--gold);
 	border-radius: 6px;
 	box-shadow: 0 0 3px 1px var(--gold-shade-1),0 0 4px 2px var(--gold-shade-2), 0 0 6px 3px var(--blue-shade-3);
 	
@@ -1399,7 +1426,7 @@ letter-spacing: 1px;
   min-height: 350px;
   max-height: 450px;
   border: 3px inset var(--blue-shade-2);
-  border-left: 1px solid var(--blue-shade-1);
+  /* border-left: 1px solid var(--blue-shade-1); */
 
   border-radius: 6px;
   
