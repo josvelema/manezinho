@@ -42,27 +42,8 @@ if ($count < 1) {
         <h2>Events</h2>
       </header>
     </section>
-    <section class="events">
+    <section class="impressions-grid event-grid">
 
-      <div class="rj-card-container">
-        <article class="rj-card rj-card-first">
-
-          <div class="event-img">
-            <img src="assets/svg/manezinhologo.svg" alt="Manezinho Logo">
-            <span>Live music</span>
-          </div>
-          <div class="title-date">
-            <h3>
-              Events
-            </h3>
-            <p>
-              If you're an artist and you would like to play on our stage, send us an e
-              <a href="mailto:pieter@pieter-adriaans.com">Contact us</a>.
-            </p>
-            <!-- <a href="events.php" class="btn btn--accent">More info</a> -->
-          </div>
-
-        </article>
         <?php
 
 
@@ -93,35 +74,56 @@ if ($count < 1) {
 
 
 
-          <article class="events rj-card">
-            <div class="title-date">
-              <h3><?= $post_title ?></h3>
-              <div class="event-header-datetime">
-                <p><?= ($datum - $datum_vandaag == 0) ? "Today!" : date("l d F Y", $datum) ?>
-                </p>
-                <p><?= $post_event_time ?></p>
+          <article class="item-2">
+            <div class="impressions-card">
+              <div class="title-date">
+                <h3><?= $post_title ?></h3>
+                <!-- <div class="event-header-datetime"> -->
+                  <p><time datetime="2022-12-25T12:00:00">
+  
+                      <?= ($datum - $datum_vandaag == 0) ? "Today!" : date("l d F Y", $datum) ?>
+                    </time>
+                  </p>
+                  <p><?= $post_event_time ?></p>
+                <!-- </div> -->
               </div>
-            </div>
-            <div class="event-img">
-              <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
-            </div>
-            <div class="title-date">
-              <pre>
-                  <?= $post_content ?>
-
-
-                  </pre>
-              <pre>
-                  <?= $post_content_p ?>
-
-                  </pre>
-
-              <div>
-                <a href="<?= $post_url ?>"><?= $post_url; ?></a>
+              <div class="thumb">
+                <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
+              </div>
+              <div class="impressions-card__content">
+                <div class="post-content-wrapper <?= (strlen($post_content) > 300) ? "card-scrollbar" : "" ?> ">
+                  <pre>
+                      <?= $post_content ?>
+                      </pre>
+                  <pre>
+                      <?= $post_content_p ?>
+                      </pre>
+                </div>
+                <!-- <hr> -->
+                  <p><a href="<?= $post_url ?>"><?= $post_url; ?></a></p>
+                
               </div>
             </div>
           </article>
-        
+
+          <!-- <article class="item-1">
+      <div class="impressions-card">
+        <div class="thumb">
+            <img src="assets/img/food/CF0A9431.JPG" alt="Signature Hamburger">
+        </div>
+       <div class="impressions-card__content">
+          <h3>Hamburgers</h3>
+          <p>
+              One dish not to miss is our signature manezinho hamburger.
+              Ground beef from the islands gives it that real taste you want it to be.
+              If beef isn't to your liking , we also burgers made from crispy chicken and from fish.
+              For children (1 to 12 years) we have a smaller version available.
+              Served with homemade fries , sauces and salad.
+          </p>
+          <span><small>7.00 - 12.00 euro</small></span>
+        </div>
+      </div>
+         -->
 
 
 

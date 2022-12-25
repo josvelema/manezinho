@@ -17,14 +17,14 @@ while ($row = mysqli_fetch_assoc($select_posts_by_id)) {
   $post_status        = $row['post_status'];
   $post_image         = $row['post_image'];
   $post_content       = $row['post_content'];
+  $post_content_p       = $row['post_content_p'];
   $post_tags          = $row['post_tags'];
   $post_comment_count = $row['post_comment_count'];
   $post_date          = $row['post_date'];
 
   $post_event_date    = $row['post_event_date'];
   $post_event_time    = $row['post_event_time'];
-  $post_content       = substr($row['post_content'], 0, 200) . '...';
-  $post_content_p     = substr($row['post_content_p'], 0, 200) . '...';
+
   $post_url           = $row['post_url'];
 }
 
@@ -165,12 +165,6 @@ if (isset($_POST['update_post'])) {
   </div>
 
 
-
-  <!--   <div class="form-group">
-         <label for="title">Post Author</label>
-          <input value="<? php // echo $post_user; 
-                        ?>" type="text" class="form-control" name="post_user">
-      </div> -->
 
   <div class="form-group">
     <label for="status">Status post: (published by default)</label>
