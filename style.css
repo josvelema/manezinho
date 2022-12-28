@@ -423,15 +423,26 @@ ul.nav-links.activated a {
 .btn:focus-visible {
   outline: 1px solid var(--gold);
   outline-offset: 0.2em;
-  border-radius: 50vw;
+  /* border-radius: 50vw; */
 }
 
 .btn--accent {
-	background-color: var(--blue-dark);
+  background-color: var(--blue-dark);
 	color: var(--white);
 	/* padding: 0.3rem 2rem; */
 }
+.btn--dark {
+	background-color: var(--blue-shade-3);
+	color: var(--gold);
+  margin: unset;
+	/* padding: 0.3rem 2rem; */
+}
 
+.btn--dark:hover,
+.btn--dark:focus,
+.btn--dark:focus-visible {
+background-color: var(--blue-shade-1);
+}
 
 .btn--menu {
   color: var(--gold);
@@ -460,12 +471,19 @@ li[role="none"], .nav-link {
   transform: translate3d(0, 0, 0);
 }
 
-
 .nav-link[aria-current="page"] {
-  text-decoration: underline dotted var(--white-tint-22) 0.15rem;
-  text-underline-offset: 0.35rem;
-  text-decoration-thickness: 1px;
+  color: var(--gold-tint-2);
+  padding: 0.5em 2em;
+  text-align: center;
+  text-decoration: none;
+ 
+  border: 1px solid var(--gold);
+  border-left: none;
+  border-right: none;
+}
 
+nav.active .nav-link[aria-current="page"] {
+  border: unset;
 }
 
 @media (min-width: 768px) {
