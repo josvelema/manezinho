@@ -50,7 +50,7 @@ if (isset($_POST['update_post'])) {
 
 
 
-  move_uploaded_file($post_image_temp, "../images/$post_image");
+  move_uploaded_file($post_image_temp, "images/$post_image");
 
   if (empty($post_image)) {
 
@@ -87,7 +87,7 @@ if (isset($_POST['update_post'])) {
 
   confirmQuery($update_post);
 
-  echo "<p class='bg-success'>Post Updated. <a href='../events.php'>View events </a> or <a href='posts.php'>Edit More Posts</a></p>";
+  echo "<p class='bg-success'>Post Updated. <a href='../events'>View events on website </a> or <a href='posts.php'>Go back to view all events</a></p>";
 }
 
 ?>

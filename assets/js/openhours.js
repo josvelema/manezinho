@@ -200,7 +200,7 @@ const getClosedDates = () => {
 };
 
 console.log(window.location.href);
-if(window.location.href == "http://localhost/manezinho/") {
+if(window.location.href == "/") {
 (getClosedDates == "") ? console.log("No upcoming holidays") : datesClosed.innerHTML = getClosedDates();
 const currentDayHours = getHoursForDay(currentDay);
 const nextDayHours = getHoursForDay(nextDay);

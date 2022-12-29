@@ -24,7 +24,7 @@ if (isset($_POST['create_post'])) {
 
 
 
-    move_uploaded_file($post_image_temp, "../images/$post_image");
+    move_uploaded_file($post_image_temp, "images/$post_image");
 
 
     $query = "INSERT INTO posts(post_cat_id, post_title, post_author, 
@@ -42,7 +42,7 @@ if (isset($_POST['create_post'])) {
     $the_post_id = mysqli_insert_id($connection);
 
 
-    echo "<p class='bg-success'>Post Created. <a href='../events.php'>View events </a> or <a href='posts.php'>Add More Posts</a></p>";
+    echo "<p class='bg-success'>Post Created. <a href='/events'>View events on website </a> or <a href='posts.php'>View all events in admin panel</a></p>";
 }
 
 

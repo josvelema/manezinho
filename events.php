@@ -5,7 +5,7 @@ include "admin/functions.php";
 include "includes/header.html";
 include "includes/nav.html";
 
-$per_page = 5;
+$per_page = 10;
 
 
 (isset($_GET['page'])) ? $page = $_GET['page'] :  $page = "";
