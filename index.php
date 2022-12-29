@@ -18,7 +18,7 @@ include "includes/nav.html";
       <span>Art Restaurant</span>
       <h1 class="rise">Manezinho</h1>
       <h2 class="rise subheading">Live Music Art Lounge</h2>
-      <p id="datesClosed" class="rise subheading"></p>
+      <!-- <p id="datesClosed" class="rise subheading"></p> -->
       
     </header>
 
@@ -95,7 +95,7 @@ include "includes/nav.html";
         <article class="card fade-up">
 
           <div class="card__image-container">
-            <img src="images/<?= $post_image" alt="<?= $post_title ?>">
+            <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
           </div>
           <div class="card__text-container">
             <h3 class="card__title">
