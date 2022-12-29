@@ -13,7 +13,7 @@ registration.php
 admin/comments.php
 admin/post_comments.php
 admin/includes/view_all_comments.php
-includes/db.
+includes/db.php
 assets/js/openhours.json
 assets\js\oldscrript.js
 assets\js\gpttries.js
