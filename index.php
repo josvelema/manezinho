@@ -18,7 +18,7 @@ include "includes/nav.html";
       <span>Art Restaurant</span>
       <h1 class="rise">Manezinho</h1>
       <h2 class="rise subheading">Live Music Art Lounge</h2>
-      <p id="datesClosed"></p>
+      <p id="datesClosed" class="rise subheading"></p>
       
     </header>
 
@@ -142,7 +142,6 @@ include "includes/nav.html";
 
 </main>
 
-<script src="assets/js/openhours.js"></script>
 
 <?php
 include "includes/footer.html";

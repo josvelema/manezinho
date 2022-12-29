@@ -55,6 +55,12 @@ document.querySelectorAll(".fade-up").forEach((item) => {
 });
 
 
+document.querySelectorAll(".fade-up-delay").forEach((item) => {
+  console.log(item);
+  fadeUpObserver.observe(item);
+});
+
+
 
 
 
