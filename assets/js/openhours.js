@@ -1,10 +1,29 @@
 const currentDate = new Date();
+
+// const currentTime = new Date();
+// const currentTime = new Intl.DateTimeFormat("en-US", {timeZone: "UTC-0100"}).format(new Date());
+// const currentTimestamp = new Date().getTime();
+// const currentTime = new Intl.DateTimeFormat("en-US", {timeZone: "UTC-0100"}).format(new Date(currentTimestamp));
+// const currentTimestamp = new Date().getTime();
+// const currentTime = new Date();
+// currentTime.setTime(currentTimestamp);
+// currentTime.setTimezoneOffset(-60);
+
+
+// const currentHour = currentTime.getHours();
+// const currentMinute = currentTime.getMinutes();
+const datesClosed = document.querySelector("#datesClosed");
+
+const currentHour = currentDate.getHours();
+const currentMinute = currentDate.getMinutes();
+const currentSecond = currentDate.getSeconds();
+const currentMillisecond = currentDate.getMilliseconds();
 const currentTime = new Date();
+currentTime.setUTCHours(currentHour, currentMinute, currentSecond, currentMillisecond);
+currentTime.setUTCHours(currentTime.getUTCHours() - 1);
 const currentDay = currentTime.getDay();
 const nextDay = currentDay + 1
-const currentHour = currentTime.getHours();
-const currentMinute = currentTime.getMinutes();
-const datesClosed = document.querySelector("#datesClosed");
+
 let neonAreWeOpen = document.querySelector(".neon-top");
 let neonSign = document.querySelector(".neon h3");
 let neonOpensIn = document.querySelector(".neon-down")
@@ -53,7 +72,8 @@ const holidays = [
   {date: new Date("December 30, 2022"), hours: "Closed"},
   {date: new Date("December 31, 2022"), hours: "Closed"},
   {date: new Date("January 1, 2023"), hours: "Closed"},
-  {date: new Date("January 2, 2023"), hours: "Closed"}
+  {date: new Date("January 2, 2023"), hours: "Closed"},
+  {date: new Date("January 3, 2023"), hours: "Closed"}
 ];
 
 // const getHoursForDay = (day) => {
@@ -202,9 +222,9 @@ const getClosedDates = () => {
 console.log(window.location.href);
 currentLocation = window.location.href;
 
-// if(currentLocation.substr(currentLocation.length - 4 == "com/") || currentLocation.length -4 == ".com") {
-// (getClosedDates == "") ? console.log("No upcoming holidays") : datesClosed.innerHTML = getClosedDates();
-// }
+if(currentLocation.substr(currentLocation.length - 4 == "com/") || currentLocation.length -4 == ".com") {
+(getClosedDates == "") ? console.log("No upcoming holidays") : datesClosed.innerHTML = getClosedDates();
 const currentDayHours = getHoursForDay(currentDay);
 const nextDayHours = getHoursForDay(nextDay);
 console.log(getOpenStatus(currentDayHours));
+}

@@ -18,7 +18,7 @@ include "includes/nav.html";
       <span>Art Restaurant</span>
       <h1 class="rise">Manezinho</h1>
       <h2 class="rise subheading">Live Music Art Lounge</h2>
-      <!-- <p id="datesClosed" class="rise subheading"></p> -->
+      <p id="datesClosed" class="rise subheading"></p>
       
     </header>
 
@@ -42,7 +42,7 @@ include "includes/nav.html";
           <i class="fa-solid fa-phone"></i>
           +351 968 990 696
         </a>
-        <!-- <a href="#" class="btn btn--accent openorclosed open-button">Opening hours</a> -->
+        <a href="#" class="btn btn--accent openorclosed open-button">Opening hours</a>
 
       </div>
     </div>
