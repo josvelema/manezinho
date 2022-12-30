@@ -65,29 +65,22 @@ document.querySelectorAll(".fade-up-delay").forEach((item) => {
 
 
 
-const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
-const modalBg = document.querySelector(".modal-background");
-const aboutUs = document.querySelector(".main-about");
-// const readMore = document.querySelector(".read-main");
-const scrollHere = document.querySelector("#scrollHere");
 
-openModal.addEventListener("click", () => {
-  modal.style.display = "flex";
-  modalBg.style.display = "block";
-});
 
-closeModal.addEventListener("click", () => {
-  modal.setAttribute("closing", "");
 
-  modal.addEventListener(
-    "animationend",
-    () => {
-      modal.removeAttribute("closing");
-      modal.style.display = "none";
-      modalBg.style.display = "none";
-    },
-    { once: true }
-  );
-});
+
+      window.onscroll = function() {
+        var e = document.getElementById("scrolltop");
+          if (!e) {
+            e = document.createElement("a");
+              e.id = "scrolltop";
+              e.href = "#";
+              e.title = "Back to top"
+              document.body.appendChild(e);
+        }
+        e.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+          e.onclick = (ev) => {
+            ev.preventDefault();
+              document.documentElement.scrollTop = 0;
+          };
+      };

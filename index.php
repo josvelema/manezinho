@@ -38,18 +38,21 @@ include "includes/nav.html";
       <div class="btn-container">
 
         <p>For reservations: </p>
-        <a href="tel:+351 968 990 696" class="btn btn--accent">
+        <a href="tel:+351 968 990 696" class="btn btn--dark">
           <i class="fa-solid fa-phone"></i>
           +351 968 990 696
         </a>
-        <a href="#" class="btn btn--accent openorclosed open-button">Opening hours</a>
+        <a href="#" class="btn btn--dark openorclosed open-button">
+        <i class="fa-regular fa-clock"></i>
+        &nbsp;Opening hours&nbsp;
+        </a>
 
       </div>
     </div>
 
   </section>
 
-  <section>
+  <section class="section-stretch">
     <div class="grid">
       <article class="rj-card rj-card-first">
 
@@ -95,7 +98,7 @@ include "includes/nav.html";
         <article class="card fade-up">
 
           <div class="card__image-container">
-            <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
+            <img src="images/glas.jpg" alt="<?= $post_title ?>">
           </div>
           <div class="card__text-container">
             <h3 class="card__title">
@@ -106,7 +109,7 @@ include "includes/nav.html";
                 " <br> Starts at " . $post_event_time
               ?>
             </p>
-            <a href="events.php" class="card__button">More info</a>
+            <a href="events.php" class="btn btn--dark">More info</a>
           </div>
 
         </article>
@@ -130,10 +133,10 @@ include "includes/nav.html";
     </p>
     </article>
 
-    <div class="main-buttons">
+    <!-- <div class="main-buttons">
       <button class="btn btn--accent read-main">About us</button>
       <button class="btn btn--accent event-btn" onclick="location.href = 'events.php'">Events</button>
-    </div>
+    </div> -->
 
 
 
@@ -141,7 +144,34 @@ include "includes/nav.html";
   </section>
 
 </main>
+<script>
+  const modal = document.querySelector(".modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+const modalBg = document.querySelector(".modal-background");
+const aboutUs = document.querySelector(".main-about");
+// const readMore = document.querySelector(".read-main");
+const scrollHere = document.querySelector("#scrollHere");
 
+openModal.addEventListener("click", () => {
+  modal.style.display = "flex";
+  modalBg.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.setAttribute("closing", "");
+
+  modal.addEventListener(
+    "animationend",
+    () => {
+      modal.removeAttribute("closing");
+      modal.style.display = "none";
+      modalBg.style.display = "none";
+    },
+    { once: true }
+  );
+});
+</script>
 
 <?php
 include "includes/footer.html";

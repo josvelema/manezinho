@@ -3,5 +3,6 @@ RewriteEngine On
 RewriteRule ^admin/?$ admin/index.php [NC,L]
 RewriteRule ^login/?$ login/index.php [NC,L]
 
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]

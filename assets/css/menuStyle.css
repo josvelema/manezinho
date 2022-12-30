@@ -1,26 +1,26 @@
 @font-face {
   font-family: Antonio;
-  src: url(../assets/fonts/Antonio-Light.ttf);
+  src: url(../fonts/Antonio-Light.ttf);
 }
 
 @font-face {
   font-family: Sword;
-  src: url(../assets/fonts/Blacksword.otf);
+  src: url(../fonts/Blacksword.otf);
 }
 
 @font-face {
   font-family: DIN400;
-  src: url(../assets/fonts/otf/D-DIN-PRO-400-Regular.otf);
+  src: url(../fonts/otf/D-DIN-PRO-400-Regular.otf);
 }
 
 @font-face {
   font-family: Limosine;
-  src: url(../assets/fonts/Champagne\ &\ Limousines\ Italic.ttf);
+  src: url(../fonts/Champagne\ &\ Limousines\ Italic.ttf);
 }
 
 @font-face {
   font-family: Limosine-reg;
-  src: url(../assets/fonts/Champagne\ &\ Limousines.ttf);
+  src: url(../fonts/Champagne\ &\ Limousines.ttf);
 }
 
 *,
@@ -31,7 +31,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: hsl(0, 0%, 4%);
   color: #fafafa;
   font-size: 66, 8%;
@@ -52,15 +52,20 @@ a {
 a:hover,
 a:focus {
   color: hsl(43, 98%, 50%);
-}
+} */
 
+
+
+.menu-header {
+  margin-top: calc(4vh + 1vw + 4em);
+}
 
 
 .menu-main {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: url(../assets/svg/manezinhologo.svg);
+  background-image: url(../svg/manezinhologo.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 50vw;
@@ -79,15 +84,16 @@ a:focus {
   opacity: 0.65;
 }
 
-.menu-main header:first-of-type {
+
+/* .menu-main header:first-of-type {
   display: grid;
   place-content: center;
   text-align: center;
   font-family: "Limosine";
   margin-top: 0.5em;
-}
+} */
 
-.menu-main header:first-of-type small {
+/* .menu-main header:first-of-type small {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -97,7 +103,11 @@ a:focus {
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 0.85em;
-}
+} */
+
+/* .menu-header {
+  margin-top: 3em;
+} */
 
 .menu-nav {
   display: flex;
@@ -163,13 +173,16 @@ a:focus {
   
 }
 
-.menu-section h2 {
+.menu-section h3 {
   text-align: center;
   text-transform: capitalize;
   font-family: "Sword", Verdana, Geneva, Tahoma, sans-serif;
   font-size: clamp(1rem, 10vw, 3rem);
   font-weight: 300;
   letter-spacing: 2px;
+  text-shadow: 0 1px 2px var(--gold-tint-1);
+  margin-block: 0.5em;
+	
 }
 
 .menu-section article {
@@ -200,7 +213,7 @@ a:focus {
   list-style: none;
 }
 .menu-section article ul li {
-  line-height: 1.1em;
+  line-height: 1.4em;
 }
 
 .menu-section article .menu-ul-price li {
@@ -302,24 +315,3 @@ footer .menu-nav {
   margin-bottom: 1em;
 }
 
-#scrolltop {
-	position: fixed;
-    bottom: 14px;
-    right: 6px;
-    padding: 16px;
-    background-color: hsl(43, 98%, 50%);
-    background-image: url(../assets/svg/arrow-bar-to-up.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-    border-radius: 5px;
-    display: block;
-    z-index: 9999;
-}
-
-#scrolltop:hover,
-#scrolltop:focus {
-  transform: translateY(-4px);
-  background-color: hsl(66, 88%, 50%);
-
-}
