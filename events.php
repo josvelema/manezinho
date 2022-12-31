@@ -88,7 +88,7 @@ if ($count < 1) {
                 <!-- </div> -->
               </div>
               <div class="thumb">
-                <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
+                <img src="admin/images/<?= $post_image ?>" alt="<?= $post_title ?>">
               </div>
               <div class="impressions-card__content">
                 <div class="post-content-wrapper <?= (strlen($post_content) > 300) ? "card-scrollbar" : "" ?> ">

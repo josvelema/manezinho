@@ -98,7 +98,7 @@ include "includes/nav.html";
         <article class="card fade-up">
 
           <div class="card__image-container">
-            <img src="images/<?= $post_image ?>" alt="<?= $post_title ?>">
+            <img src="admin/images/<?= $post_image ?>" alt="<?= $post_title ?>">
           </div>
           <div class="card__text-container">
             <h3 class="card__title">

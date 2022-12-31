@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^admin/?$ admin/index.php [NC,L]
+# RewriteRule ^admin/?$ admin/index.php [NC,L]
 RewriteRule ^login/?$ login/index.php [NC,L]
 
 
