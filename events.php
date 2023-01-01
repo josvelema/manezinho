@@ -63,8 +63,8 @@ if ($count < 1) {
 
           $post_event_date    = $row['post_event_date'];
           $post_event_time    = $row['post_event_time'];
-          $post_content       = $row['post_content'];
-          $post_content_p     = $row['post_content_p'];
+          $post_content       = trim($row['post_content']);
+          $post_content_p      = trim($row['post_content_p']);
           $post_url           = $row['post_url'];
 
           $datum = strtotime($post_event_date);
