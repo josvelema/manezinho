@@ -80,8 +80,17 @@ a {
 	text-decoration-style: dotted;
 	text-underline-offset: 4px;
 	text-decoration-thickness: 1px;
-  color: var(--gold)
+  color: var(--gold);
+  transition: opacity 160ms ease-in-out;
 }
+
+a:hover,
+a:focus,
+a:focus-visible {
+  opacity: 0.6;
+}
+
+
 
 :target:before {
   content: "";
@@ -1176,8 +1185,8 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-  text-align: left;
   font-family: inherit;
+  text-align: left;
   line-height: 1.5;
 }
 
