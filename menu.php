@@ -4,7 +4,7 @@ session_start();
 include "admin/functions.php";
 include "includes/header.html";
 ?>
-<link rel="stylesheet" href="assets/css/menuStyle.css?v=1803">
+<link rel="stylesheet" href="assets/css/menuStyle.css?v=180323">
 <?php
 include "includes/nav.html"
 ?>
@@ -193,7 +193,7 @@ include "includes/nav.html"
 
 
         <h3>wine</h3>
-        <p>ALENTEJO</p>
+        <p class="menu-subheader">ALENTEJO</p>
 
         <fieldset>
           <legend align="center">TINTO</legend>
@@ -308,7 +308,7 @@ include "includes/nav.html"
           </ul>
         </fieldset> -->
         <h3>wine</h3>
-        <p>DOURO</p>
+        <p class="menu-subheader">DOURO</p>
 
 
         <fieldset>
@@ -383,7 +383,7 @@ include "includes/nav.html"
         <!-- hier  -->
 
         <h3>wine</h3>
-        <p>AÇORES</p>
+        <p class="menu-subheader">AÇORES</p>
 
         <fieldset>
           <legend align="center">DOS AÇORES</legend>
@@ -409,7 +409,7 @@ include "includes/nav.html"
           </ul>
         </fieldset>
 
-        <p>OUTROS</p>
+        <p class="menu-subheader">OUTROS</p>
         <fieldset>
           <legend align="center">Tinto</legend>
           <ul class="menu-ul">
