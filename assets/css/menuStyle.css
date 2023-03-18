@@ -189,6 +189,7 @@ a:focus {
   width: 400px;
   padding: 0.25em;
   backdrop-filter: blur(1px);
+  border-bottom: 2px solid var(--gold);
 }
 
 @media (max-width: 30em) {
@@ -234,6 +235,7 @@ a:focus {
   font-family: "DIN400", monospace, sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-block: 1em;
 }
 
 .menu-section fieldset legend {
@@ -314,4 +316,23 @@ section:last-of-type {
 footer .menu-nav {
   margin-bottom: 1em;
 }
+
+.menu-subheader {
+  text-align: center;
+  font-size: 1.1 rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-block: 0.5em;
+}
+
+.menu-winecollection {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-inline: 0.5em;
+  margin-block: 0.5em;
+}
+
 

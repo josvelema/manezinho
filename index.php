@@ -42,10 +42,10 @@ include "includes/nav.html";
           <i class="fa-solid fa-phone"></i>
           +351 968 990 696
         </a>
-        <a href="#" class="btn btn--dark openorclosed open-button">
+        <button class="btn btn--dark openorclosed open-button">
         <i class="fa-regular fa-clock"></i>
         &nbsp;Opening hours&nbsp;
-        </a>
+        </button>
 
       </div>
     </div>
