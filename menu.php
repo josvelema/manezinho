@@ -4,7 +4,7 @@ session_start();
 include "admin/functions.php";
 include "includes/header.html";
 ?>
-<link rel="stylesheet" href="assets/css/menuStyle.css?v=180323">
+<link rel="stylesheet" href="assets/css/menuStyle.css?v=180323-2">
 <?php
 include "includes/nav.html"
 ?>
@@ -795,7 +795,7 @@ include "includes/nav.html"
         <fieldset>
           <legend align="center">Marisco</legend>
           <ul class="menu-ul menu-ul-secondary">
-            <li>Cataplana Peixe e Marisco <span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> </li>
+            <li>Cataplana Peixe e Marisco</li>
             <li>Cataplana Peixe e Marisco</li>
             <li>Cataplana Especial Manezinho</li>
             <li>Cataplana Especial Manezinho</li>
