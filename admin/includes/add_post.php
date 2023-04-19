@@ -1,4 +1,6 @@
 <?php
+// can you explain why the file uploadings are not working?
+
 
 
 if (isset($_POST['create_post'])) {
@@ -23,8 +25,9 @@ if (isset($_POST['create_post'])) {
     $post_url           = escape($_POST['post_url']);
 
 
+// is the code under this line ok?
 
-    move_uploaded_file($post_image_temp, "images/$post_image");
+    move_uploaded_file($post_image_temp, $_SERVER['DOCUMENT_ROOT'] . '/admin/images/' . $post_image);
 
 
     $query = "INSERT INTO posts(post_cat_id, post_title, post_author, 

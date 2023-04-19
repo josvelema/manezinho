@@ -31,7 +31,7 @@ if (ifItIsMethod('post')) {
 
 <!-- Navigation -->
 
-<?php include "includes/navigation.php"; ?>
+<?php include ""; ?>
 
 
 <!-- Page Content -->

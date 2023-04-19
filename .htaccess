@@ -1,8 +1,14 @@
-RewriteEngine On
+# RewriteEngine On
 
-# RewriteRule ^admin/?$ admin/index.php [NC,L]
-RewriteRule ^login/?$ login/index.php [NC,L]
+# Rewrite URLs for the admin folder
+# RewriteRule ^admin/(.*)$ /admin/$1 [L]
+
+# Rewrite URLs for the login page
+# RewriteRule ^login/?$ /login/index.php [L]
+
+# Rewrite URLs for other pages
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.+)$ /$1.php [L] -->
 
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]

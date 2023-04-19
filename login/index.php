@@ -3,6 +3,7 @@ include "../includes/db.php";
 session_start();
 include "../admin/functions.php";
 
+include "includes/header.html";
 
 
 checkIfUserIsLoggedInAndRedirect('/admin');

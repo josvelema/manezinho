@@ -174,6 +174,7 @@ closeModal.addEventListener("click", () => {
 </script>
 
 <?php
+
 include "includes/footer.html";
 
 
