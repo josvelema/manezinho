@@ -200,32 +200,32 @@ include "includes/nav.html"
           <ul class="menu-ul">
             <li>&nbsp;</li>
             <li>Trinca Bolotas</li>
-            <li>Gr. Trinca Bolotas</li>
-            <li>Chaminé</li>
-            <li>Defesa</li>
-            <li>Quinta do Paral</li>
-            <li>Quinta do Paral Reserva</li>
-            <li>Esporão</li>
-            <li>Tapada de Coelheiros</li>
-            <li>Dona Maria</li>
-            <li>Dona Maria Reserva</li>
-            <li>Parcelas</li>
+<li>Gr. Trinca Bolotas</li>
+<li>Chaminé</li>
+<li>Defesa</li>
+<li>Quinta do Paral</li>
+<li>Quinta do Paral Reserva</li>
+<li>Esporão</li>
+<li>Tapada de Coelheiros</li>
+<li>Dona Maria</li>
+<li>Dona Maria Reserva</li>
+<li>Parcelas</li>
 
           </ul>
           <ul class="menu-ul-price">
             <li><span class="menu-small-text">750ml</span></li>
 
             <li>14.00€</li>
-            <li>16.00€</li>
-            <li>14.00€</li>
-            <li>15.00€</li>
-            <li>15.00€</li>
-            <li>30.00€</li>
-            <li>26.00€</li>
-            <li>40.00€</li>
-            <li>16.00€</li>
-            <li>46.00€</li>
-            <li>58.00€</li>
+<li>16.00€</li>
+<li>14.00€</li>
+<li>15.00€</li>
+<li>15.00€</li>
+<li>30.00€</li>
+<li>26.00€</li>
+<li>40.00€</li>
+<li>16.00€</li>
+<li>46.00€</li>
+<li>58.00€</li>
           </ul>
         </fieldset>
 
@@ -234,19 +234,19 @@ include "includes/nav.html"
           <ul class="menu-ul">
             <li>&nbsp;</li>
             <li>Trinca Bolotas</li>
-            <li>Chaminé</li>
-            <li>Esporão</li>
-            <li>Esporão Reserva</li>
-            <li>Quinta do Paral Reserva</li>
+<li>Chaminé</li>
+<li>Esporão</li>
+<li>Esporão Reserva</li>
+<li>Quinta do Paral Reserva</li>
 
           </ul>
           <ul class="menu-ul-price">
             <li><span class="menu-small-text">750ml</span></li>
             <li>13.00€</li>
-            <li>13.00€</li>
-            <li>16.00€</li>
-            <li>22.00€</li>
-            <li>28.00€</li>
+<li>13.00€</li>
+<li>16.00€</li>
+<li>22.00€</li>
+<li>28.00€</li>
           </ul>
         </fieldset>
 
@@ -318,6 +318,7 @@ include "includes/nav.html"
             <li>Assobio</li>
             <li>Esteva</li>
             <li>Cabeça Toiro</li>
+            <li>Quinta dos Aciprestes</li>
             <li>Papa-Figos</li>
             <li>Vinha Grande</li>
             <li>Duas Quintas</li>
@@ -326,6 +327,7 @@ include "includes/nav.html"
             <li>Castas Escondidas</li>
             <li>Duas Quintas Reserva</li>
             <li>Quinta da Leda</li>
+            <li>Quinta dos Aciprestes Reserva</li>
             <li>Carvalhas Vinhas Velhas</li>
             <li>Carvalhas Tinta Francisca</li>
             <li>Batuta</li>
@@ -337,6 +339,7 @@ include "includes/nav.html"
             <li>13.00€</li>
             <li>13.00€</li>
             <li>13.00€</li>
+            <li>14.00€</li>
             <li>15.00€</li>
             <li>17.00€</li>
             <li>24.00€</li>
@@ -345,6 +348,7 @@ include "includes/nav.html"
             <li>40.00€</li>
             <li>45.00€</li>
             <li>50.00€</li>
+            <li>65.00€</li>
             <li>70.00€</li>
             <li>70.00€</li>
             <li>65.00€</li>
@@ -359,6 +363,7 @@ include "includes/nav.html"
             <li>&nbsp;</li>
             <li>Papa-Figos</li>
             <li>Duas Quintas</li>
+            <li>Graínha</li>
             <li>Carvalhas</li>
             <li>Antónia Adelaide Ferreira</li>
             <li>Mirabilis</li>
@@ -367,6 +372,7 @@ include "includes/nav.html"
             <li><span class="menu-small-text">750ml</span></li>
             <li>15.00€</li>
             <li>22.00€</li>
+            <li>17.00€</li>
             <li>38.00€</li>
             <li>65.00€</li>
             <li>80.00€</li>
@@ -384,7 +390,6 @@ include "includes/nav.html"
           <ul class="menu-ul">
             <li>&nbsp;</li>
             <li>Pedras Brancas</li>
-            <li>Pedras Brancas Reserva</li>
             <li>Frei Gigante</li>
             <li>Terras de Lava Merlot</li>
             <li>Terras de Lava Tinto</li>
@@ -395,12 +400,11 @@ include "includes/nav.html"
           <ul class="menu-ul-price">
             <li><span class="menu-small-text">750ml</span></li>
             <li>26.00€</li>
-            <li>40.00€</li>
             <li>26.00€</li>
             <li>18.00€</li>
-            <li>17.00€</li>
-            <li>17.00€</li>
-            <li>17.00€</li>
+            <li>15.00€</li>
+            <li>15.00€</li>
+            <li>14.00€</li>
             <li>50.00€</li>
           </ul>
         </fieldset>
@@ -417,34 +421,34 @@ include "includes/nav.html"
           </ul>
         </fieldset>
         <fieldset>
-          <legend align="center">Branco / Verde</legend>
-          <ul class="menu-ul">
-            <li>Taboadella Grande Villae Dão</li>
-            <li>Quinta da Lapa</li>
-            <li>Muralhas Monção</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>70.00€</li>
-            <li>14.00€</li>
-            <li>10.00€</li>
+        <legend align="center">Branco / Verde</legend>
+        <ul class="menu-ul">
+          <li>Taboadella Grande Villae Dão</li>
+          <li>Quinta da Lapa</li>
+          <li>Muralhas Monção</li>
+        </ul>
+        <ul class="menu-ul-price">
+          <li>70.00€</li>
+          <li>14.00€</li>
+          <li>10.00€</li>
 
 
-          </ul>
+        </ul>
         </fieldset>
         <fieldset>
-          <legend align="center">Rosé</legend>
-          <ul class="menu-ul">
-            <li>Lambrusco</li>
-            <li>Mateus</li>
-            <li>Caiado</li>
-            <li>Quinta da Lapa</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>8.00€</li>
-            <li>10.00€</li>
-            <li>10.00€</li>
-            <li>12.00€</li>
-          </ul>
+        <legend align="center">Rosé</legend>
+        <ul class="menu-ul">
+          <li>Lambrusco</li>
+          <li>Mateus</li>
+          <li>Caiado</li>
+          <li>Quinta da Lapa</li>
+        </ul>
+        <ul class="menu-ul-price">
+          <li>8.00€</li>
+          <li>10.00€</li>
+          <li>10.00€</li>
+          <li>12.00€</li>
+        </ul>
         </fieldset>
         <!-- <fieldset>
         <legend align="center"></legend>
@@ -497,7 +501,6 @@ include "includes/nav.html"
             <li>La Trappe Blond</li>
             <li>Gulden Draak</li>
             <li>Tripel Karmeliet</li>
-            <li>Diversas</li>
           </ul>
           <ul class="menu-ul-price">
             <li>
@@ -523,7 +526,6 @@ include "includes/nav.html"
             <li>6.00€</li>
             <li>7.00€</li>
             <li>6.00€</li>
-            <li>7.00€</li>
           </ul>
         </fieldset>
         <fieldset>
@@ -546,10 +548,6 @@ include "includes/nav.html"
             <li>Hendrick's</li>
             <li>Monkey 47</li>
             <li>Manezinho</li>
-            <li>Nikka Coffey</li>
-            <li>Azor Gin Reserva</li>
-            <li>Mombasa Club</li>
-            <li>Roku</li>
           </ul>
           <ul class="menu-ul-price">
             <li>12.00€</li>
@@ -569,10 +567,6 @@ include "includes/nav.html"
             <li>10.00€</li>
             <li>18.00€</li>
             <li>10.00€</li>
-            <li>13.00€</li>
-            <li>15.00€</li>
-            <li>14.00€</li>
-            <li>12.00€</li>
           </ul>
         </fieldset>
         <fieldset>
@@ -587,7 +581,6 @@ include "includes/nav.html"
             <li>Lemon Drop</li>
             <li>Cucumbre</li>
             <li>Caramel</li>
-            <li>Expresso Martini</li>
           </ul>
           <ul class="menu-ul-price">
             <li>2.50€</li>
@@ -596,7 +589,6 @@ include "includes/nav.html"
             <li>3.50€</li>
             <li>3.50€</li>
             <li>4.00€</li>
-            <li>3.50€</li>
             <li>3.50€</li>
             <li>3.50€</li>
             <li>3.50€</li>
@@ -734,10 +726,8 @@ include "includes/nav.html"
         <fieldset>
           <legend align="center">Tapas</legend>
           <ul class="menu-ul">
-            <li>Cesto de pão <span class="menu-small-text">(primeiro grátis)</span></li>
             <li>Sopa do Dia</li>
             <li>Tábua de Queijos</li>
-            <li>Tábua de Queijos espacial</li>
             <li>Tábua Regional</li>
             <li>Tábua Mista</li>
             <li>Aros de Cebola</li>
@@ -746,31 +736,26 @@ include "includes/nav.html"
             <li>Palitos de Frango Panados</li>
             <li>Camarão Alhinho</li>
             <li>Camarão à Manezinho</li>
-            <!-- <li>Camarão à Manezinho</li> -->
-            <li>Atum Braseado</li>
-            <li>Ceviche de camarão</li>
+            <li>Camarão à Manezinho</li>
 
 
-
+            <!-- <li>Atum Braseado</li>
+              <li>Torresmos de Atum</li>
+              <li>Camarão Alhinho</li> -->
           </ul>
           <ul class="menu-ul-price">
-            <li>1.50€</li>
             <li>2.00€</li>
             <li>10.00€</li>
-            <li>15.00€</li>
+            <li>10.00€</li>
             <li>12.00€</li>
-            <li>13.00€</li>
             <li>4.00€</li>
             <li><span class="menu-small-text">c/Bacon & Queijo &nbsp;</span>5.00€</li>
             <li><span class="menu-small-text">1 dose &nbsp;</span>3.50€</li>
             <li>5.00€</li>
 
-            <li><span class="menu-small-text">10 uni &nbsp;</span>15.00€</li>
-            <!-- <li><span class="menu-small-text">6 uni &nbsp;</span>10.00€</li> -->
-
+            <li><span class="menu-small-text">10 uni &nbsp;</span>12.00€</li>
+            <li><span class="menu-small-text">6 uni &nbsp;</span>10.00€</li>
             <li><span class="menu-small-text">12 uni &nbsp;</span>20.00€</li>
-            <li>12.00€</li>
-            <li>15.00€</li>
 
           </ul>
         </fieldset>
@@ -785,9 +770,9 @@ include "includes/nav.html"
           </ul>
           <ul class="menu-ul-price">
             <li>5.00€</li>
+            <li>10.00€</li>
             <li>12.00€</li>
-            <li>12.00€</li>
-            <li>12.00€</li>
+            <li>10.00€</li>
           </ul>
         </fieldset>
 
@@ -796,13 +781,13 @@ include "includes/nav.html"
           <ul class="menu-ul menu-ul-secondary">
             <li>Fish and Chips</li>
             <li>Fish and Salada</li>
-            <li>Peixe do Dia <span class="menu-small-text">(preço sob consulta)</span> </li>
+            <li>Peixe do Dia</li>
             <li>Polvo à Manezinho</li>
           </ul>
           <ul class="menu-ul-price menu-ul-secondary">
-            <li>17.00€</li>
-            <li>17.00€</li>
-            <li>17.00€ - 28.00€</li>
+            <li>15.00€</li>
+            <li>15.00€</li>
+            <li>19.00€</li>
             <li>26.00€</li>
           </ul>
         </fieldset>
@@ -811,25 +796,16 @@ include "includes/nav.html"
           <legend align="center">Marisco</legend>
           <ul class="menu-ul menu-ul-secondary">
             <li>Cataplana Peixe e Marisco</li>
-            <!-- <li>Cataplana Peixe e Marisco</li> -->
+            <li>Cataplana Peixe e Marisco</li>
             <li>Cataplana Especial Manezinho</li>
-            <!-- <li>Cataplana Especial Manezinho</li> -->
-            <li>Lapas <span class="menu-small-text">(meia dose)</span> </li>
-            <li>Lapas <span class="menu-small-text">(dose)</span> </li>
-            <li>Amêijoas <span class="menu-small-text">(meia dose)</span> </li>
-            <li>Amêijoas <span class="menu-small-text">(dose)</span> </li>
-            <li>Cavaco</li>
+            <li>Cataplana Especial Manezinho</li>
           </ul>
           <ul class="menu-ul-price menu-ul-secondary">
             <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> 55.00€</li>
-            <!-- <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span> 90.00€</li> -->
+            <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span> 90.00€</li>
             <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> 75.00€</li>
-            <!-- <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span>125.00€</li> -->
-            <li>12.50€</li>
-            <li>15.00€</li>
-            <li>27.50€</li>
-            <li>55.00€</li>
-            <li>60.00€ /kg</li>
+            <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span>125.00€</li>
+
           </ul>
         </fieldset>
         <p class="menu-legend-p">
@@ -841,24 +817,25 @@ include "includes/nav.html"
           <legend align="center">carne</legend>
           <ul class="menu-ul">
             <!-- <li>T-Bone</li> -->
+            <li>T-Bone Importado</li>
             <li>Picanha Importada</li>
             <li>Vazia</li>
             <li>Filet Mignon</li>
+            <li>Coelhinhos de Porco</li>
+            <li>Francesinha</li>
             <li>Bife de Frango Grelhado </li>
             <li>Bife (vazia) à Manezinho <span class="menu-small-text">(com molho de café)</span></li>
-            <!-- <li>T-Bone Importado</li>
-            <li>Coelhinhos de Porco</li>
-            <li>Francesinha</li> -->
-            <li>Selecção de carnes <span class="menu-small-text">(2 pessoas)</span></li>
           </ul>
           <ul class="menu-ul-price">
             <!-- <li>24.00€</li> -->
-            <li>24.00€</li>
-            <li>20.00€</li>
-            <li>28.00€</li>
-            <li>14.00€</li>
+            <li>36.00€</li>
             <li>22.00€</li>
-            <li>60.00€</li>
+            <li>18.00€</li>
+            <li>28.00€</li>
+            <li>16.00€</li>
+            <li>13.00€</li>
+            <li>14.00€</li>
+            <li>20.00€</li>
             <li></li>
 
           </ul>
@@ -866,19 +843,18 @@ include "includes/nav.html"
         <fieldset>
           <legend align="center">Hambúrguer</legend>
           <ul class="menu-ul">
-            <!-- <li>Peixe</li> -->
-            <!-- <li>Frango Crocante</li> -->
-            <li>Burger de atum</li>
+            <li>Peixe</li>
+            <li>Frango Crocante</li>
             <li>Manezinho</li>
-            <li>Manezinho Picante</li>
-            <!-- <li>Manezinho Especial</li> -->
-            <li>Manezinho Simples</li>
+            <li>Manezinho Spicy</li>
+            <li>Manezinho Especial</li>
           </ul>
           <ul class="menu-ul-price">
-            <li>13.00€</li>
+            <li>10.00€</li>
+            <li>12.00€</li>
             <li>12.00€</li>
             <li>13.00€</li>
-            <li>9.00€</li>
+            <li>15.00€</li>
           </ul>
         </fieldset>
         <fieldset>
@@ -932,38 +908,28 @@ include "includes/nav.html"
             <li>Caipirágua <span class="menu-small-text">(sem álcool)</span></li>
             <li>Mojito</li>
             <li>Jack & Coke</li>
+            <li>Bacardi Malibu & Coke</li>
             <li>Pinã Colada</li>
             <li>Tequila Sunrise</li>
             <li>Sex on The Rocks</li>
             <li>Daiquiri</li>
             <li>Long Island Iced Tea</li>
-            <li>Bramble</li>
-            <li>Cosmopolitan</li>
-            <li>Cuba Libre</li>
-            <li>Tom Collins</li>
-            <li>Aperol Spritz</li>
-            <li>Blue Hawaii</li>
             <li>Sour <span class="menu-small-text">(* whisky, rum ou vodka)</span></li>
             <li>Margarita <span class="menu-small-text">(* limão, ananás ou morango)</span></li>
             <li><span class="menu-small-text">* escolher uma das bebidas / sabo</span></li>
           </ul>
           <ul class="menu-ul-price">
             <li>5.00€</li>
-            <li>5.00€</li>
             <li>4.00€</li>
+            <li>5.00€</li>
             <li>6.00€</li>
             <li>4.00€</li>
+            <li>5.00€</li>
             <li>6.00€</li>
             <li>6.00€</li>
             <li>5.00€</li>
             <li>6.00€</li>
             <li>7.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>5.00€</li>
             <li>5.00€</li>
             <li>4.00€</li>
             <li>&nbsp</li>
