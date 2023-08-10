@@ -826,7 +826,7 @@ include "includes/nav.html"
             <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> 75.00€</li>
             <!-- <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span>125.00€</li> -->
             <li>12.50€</li>
-            <li>15.00€</li>
+            <li>25.00€</li>
             <li>27.50€</li>
             <li>55.00€</li>
             <li>60.00€ /kg</li>
