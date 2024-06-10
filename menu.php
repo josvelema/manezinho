@@ -37,80 +37,80 @@ include "includes/nav.html"
 
   <section class="section-stretch" style="margin: 0 auto;">
 
-    <section class="menu-section">
-      <article id="drinks">
-        <h3>drinks</h3>
+      <section class="menu-section">
+        <article id="drinks">
+          <h3>drinks</h3>
 
-        <fieldset>
-          <legend align="center">Quentes</legend>
-          <ul class="menu-ul">
-            <li>Café</li>
-            <li>Café Americano</li>
-            <li>Carioca</li>
-            <li>Carioca Limão</li>
-            <li>Café Pingado</li>
-            <li>Garoto</li>
-            <li>Meia de Leite</li>
-            <li>Leite com Chocolate</li>
-            <li>Galão</li>
-            <li>Chá</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>0.80€</li>
-            <li>1.60€</li>
-            <li>0.70€</li>
-            <li>0.70€</li>
-            <li>0.80€</li>
-            <li>0.80€</li>
-            <li>1.50€</li>
-            <li>2.00€</li>
-            <li>2.00€</li>
-            <li>1.50€</li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend align="center">Quentes</legend>
+            <ul class="menu-ul">
+              <li>Café</li>
+              <li>Café Americano</li>
+              <li>Carioca</li>
+              <li>Carioca Limão</li>
+              <li>Café Pingado</li>
+              <li>Garoto</li>
+              <li>Meia de Leite</li>
+              <li>Leite com Chocolate</li>
+              <li>Galão</li>
+              <li>Chá</li>
+            </ul>
+            <ul class="menu-ul-price">
+              <li>0.80€</li>
+              <li>1.60€</li>
+              <li>0.70€</li>
+              <li>0.70€</li>
+              <li>0.80€</li>
+              <li>0.80€</li>
+              <li>1.50€</li>
+              <li>2.00€</li>
+              <li>2.00€</li>
+              <li>1.50€</li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend align="center">SEM GÁS</legend>
-          <ul class="menu-ul">
-            <li>Água</li>
-            <li>Nestea</li>
-            <li>Sumo Natural</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>
-              <span class="menu-size-icon">p</span> 1.20€ &nbsp; <span class="menu-size-icon">g</span> 2.50€
-            </li>
-            <li>1.50€</li>
-            <li>3.00€</li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend align="center">SEM GÁS</legend>
+            <ul class="menu-ul">
+              <li>Água</li>
+              <li>Nestea</li>
+              <li>Sumo Natural</li>
+            </ul>
+            <ul class="menu-ul-price">
+              <li>
+                <span class="menu-size-icon">p</span> 1.20€ &nbsp; <span class="menu-size-icon">g</span> 2.50€
+              </li>
+              <li>1.50€</li>
+              <li>3.00€</li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend align="center">COM GÁS</legend>
-          <ul class="menu-ul">
-            <li>Água com Gás</li>
-            <li>Água Tónica</li>
-            <li>Fanta</li>
-            <li>Sprite</li>
-            <li>Coca-Cola</li>
-            <li>Coca-Cola Zero</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>1.50€</li>
-            <li>1.50€</li>
-            <li>1.50€</li>
-            <li>1.50€</li>
-            <li>1.50€</li>
-            <li>1.50€</li>
-          </ul>
-        </fieldset>
-        <p class="menu-legend-p">
-          <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
+          <fieldset>
+            <legend align="center">COM GÁS</legend>
+            <ul class="menu-ul">
+              <li>Água com Gás</li>
+              <li>Água Tónica</li>
+              <li>Fanta</li>
+              <li>Sprite</li>
+              <li>Coca-Cola</li>
+              <li>Coca-Cola Zero</li>
+            </ul>
+            <ul class="menu-ul-price">
+              <li>1.50€</li>
+              <li>1.50€</li>
+              <li>1.50€</li>
+              <li>1.50€</li>
+              <li>1.50€</li>
+              <li>1.50€</li>
+            </ul>
+          </fieldset>
+          <p class="menu-legend-p">
+            <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
 
-          <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
-        </p>
-      </article>
-    </section>
+            <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
+          </p>
+        </article>
+      </section>
 
     <section class="menu-section">
       <article id="wine">

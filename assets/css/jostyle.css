@@ -26,8 +26,14 @@
 
   --blue-green: hsl(178, 90%, 28%);
   --secondary-blue: hsl(224, 77%, 60%);
+  --scroll-speed: 1s; /* Adjust as needed */
+  --scroll-easing: ease-in-out; /* Can be any valid CSS easing function */
 }
 
+
+.scroll-wrapper {
+  transition: transform var(--scroll-speed) var(--scroll-easing);
+}
 @font-face {
   font-family: Antonio;
   src: url(../fonts/Antonio-Light.ttf);
@@ -62,17 +68,81 @@
 }
 
 html {
-  font-size: 69.5%;
+  
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
-  background-color: #000;
+  background-color: #030303;
   /* background-image: url('../svg/manezinhologo.svg');
     background-size: cover; */
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+}
+
+body, input, select, textarea {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 100;
+  line-height: 1.75em;
+}
+
+
+strong, b {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+em, i {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    border: 0;
+  }
+
+
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+  margin: 3em 0;
+}
+
+  hr.major {
+    margin: 4em 0;
+  }
+
+blockquote {
+  border-left: solid 4px rgba(255, 255, 255, 0.3);
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 2em;
 }
 
 a {
@@ -100,35 +170,87 @@ a:focus-visible {
 }
 
 main {
-	width: 100vw;
-	height: 100%;
-	display: grid;
-	place-items: center;
-	gap: clamp(1rem, 1rem + 4vw, 3rem);
-	position: relative;
-	color: var(--white);
-	/* top: -10vh; */
+  width: min(100%,1280px);
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  color: var(--white);
+  
+  border: 1px solid #fff;
+  background-color: #0b0b0b;
 }
 
 section {
   min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  justify-items: center;
+  align-items: center;
+  margin-block: 0 1rem;
 }
 
 .section-stretch {
   place-self: stretch;
 }
 
+/* ! change
 section:first-of-type:not(.menu-section) {
   margin-top: calc(5vh + 1vw + 4em);
 }
+ */
+
+ /* section:first-of-type:not(.menu-section) {
+  padding-block: calc(5vh + 1vw + 4em);
+} */
 
 
-.main-header,
-.events-header {
-    padding-block: 1.5rem;
-    text-align: center;
+#banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../../images/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;  position: relative;
+  text-align: center;
+  z-index: 21;
+}
+
+  #banner:before {
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%;
   }
 
+  #banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+   }
+
+
+.main-header, .events-header {
+  padding-block: 2rem 1rem;
+  padding-inline: 2rem;
+  position: relative;
+  text-align: center;
+  margin: auto 0;
+  top: 10rem;
+  background-color: #1d1d1d;
+}
   section.events-header,
   section.about {
     min-height: unset;
@@ -152,6 +274,32 @@ h1 {
   letter-spacing: 0.05em;
 }
 
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: 1.35em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
 .main-header h1 {
 	
 	text-shadow: 0 1px 13px var(--gold-shade-1),0 0 0 var(--gold);
@@ -160,8 +308,8 @@ h1 {
 h2 {
     font-family: "Libre Baskerville",Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(1.75rem, 4vw + 1rem, 3.2rem);
-  font-weight: 300;
-  line-height: 1.1;
+  /* font-weight: 300;
+  line-height: 1.1; */
   color: var(--accent);
 }
 
@@ -171,7 +319,7 @@ h2:first-of-type {
 	letter-spacing: 0.08rem;
 	border-top: 1px solid var(--gold-tint-2);
 	border-bottom: 1px solid var(--gold-tint-2);
-	line-height: 1.5;
+	/* line-height: 1.5; */
 	padding: 0.5em 0.1em;
 }
 h2 em {
@@ -182,8 +330,8 @@ h2 em {
 }
 
 h3 {
-  font-size: clamp(1.2rem, 3vw + 1rem, 2.2rem);
-  line-height: 1.1;
+  /* font-size: clamp(1.2rem, 3vw + 1rem, 2.2rem);
+  line-height: 1.1; */
   color: var(--accent);
 }
 
@@ -287,10 +435,11 @@ address p {
 
 nav {
   position: fixed;
+  top: 0;
   z-index: 999;
   width: 100%;
   background-image: transparent;
-  padding-block: 1em;
+  padding-block: 1rem;
   transition: background-image 800ms cubic-bezier(0.62, 0.34, 0.04, 0.7);
   background: rgba(0,0,0,0.75);
 }
@@ -320,7 +469,9 @@ nav.active .nav-container .nav-wrapper .nav-links a {
 .logo {
   color: var(--white);
   margin-inline: 0.5rem;
-  width: clamp(4.5rem, 18vw, 9rem);
+  height: clamp(3rem,5vmin + 3.5rem, 4rem);
+  /* width: clamp(2rem, 5vmax + 3rem, 4rem); */
+  width: auto;
   display: grid;
   place-items: center;
   transition: all 250ms ease-in-out;
@@ -496,6 +647,44 @@ nav.active .nav-link[aria-current="page"] {
   }
 }
 
+/* hero section  */
+
+.main-hero {
+  background-color: #0b0b0b;
+  border: 1px solid #1d1d1d;
+  background-image: url(../img/large/Manezinho-Bar.jpeg);
+}
+
+.goto-next {
+  border: 0;
+  bottom: 0;
+  display: block;
+  height: 5em;
+  left: 50%;
+  margin: 0 0 0 -5em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10em;
+  white-space: nowrap;
+  width: 10em;
+  z-index: 1;
+}
+
+  .goto-next:before {
+    background-image: url("../svg/arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: 50%;
+    margin: -0.75em 0 0 -1em;
+    position: absolute;
+    top: 50%;
+    width: 2em;
+    z-index: 1;
+  }
 
 #datesClosed {
   margin-top: 1em;
@@ -516,10 +705,10 @@ nav.active .nav-link[aria-current="page"] {
   margin: 1em auto;
   justify-content: space-between;
   align-items: center; 
-  background-image:linear-gradient(to bottom, rgba(0,0,0,0.8) ,rgba(0,0,0,0.2)74%,#000000),linear-gradient(to top, #000000,rgba(0,0,0,0.1)4%),
+  /* background-image:linear-gradient(to bottom, rgba(0,0,0,0.8) ,rgba(0,0,0,0.2)74%,#000000),linear-gradient(to top, #000000,rgba(0,0,0,0.1)4%),
 linear-gradient(to right, #000000,rgba(0,0,0,0.1) 3%,rgba(0,0,0,0.4) ),
 linear-gradient(to left, #000000,rgba(0,0,0,0.1) 3%,rgba(0,0,0,0.4) )
-,url(../img/manezinhoMariaInes.jpg);
+,url(../img/manezinhoMariaInes.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;

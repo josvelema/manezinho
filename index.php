@@ -8,20 +8,21 @@ include "includes/nav.html";
 
 
 
-<main>
+<main class="scroll-wrapper">
 
-  <section>
-
-
+  <section id="banner">
     <header class="main-header">
 
       <span>Art Restaurant</span>
       <h1 class="rise">Manezinho</h1>
       <h2 class="rise subheading">Live Music Art Lounge</h2>
-      <p id="datesClosed" class="rise subheading"></p>
-      
-    </header>
+      <!-- <p id="datesClosed" class="rise subheading"></p> -->
 
+    </header>
+    <a href="#one" class="goto-next scrolly">Next</a>
+  </section>
+
+  <section class="section-stretch main-hero">
 
     <div class="neon">
       <div class="neon-content rise subheading">
@@ -43,8 +44,8 @@ include "includes/nav.html";
           +351 968 990 696
         </a>
         <button class="btn btn--dark openorclosed open-button">
-        <i class="fa-regular fa-clock"></i>
-        &nbsp;Opening hours&nbsp;
+          <i class="fa-regular fa-clock"></i>
+          &nbsp;Opening hours&nbsp;
         </button>
 
       </div>
@@ -52,7 +53,7 @@ include "includes/nav.html";
 
   </section>
 
-  <section class="section-stretch">
+  <section class="section-stretch" id="one">
     <div class="grid">
       <article class="rj-card rj-card-first">
 
@@ -146,31 +147,143 @@ include "includes/nav.html";
 </main>
 <script>
   const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
-const modalBg = document.querySelector(".modal-background");
-const aboutUs = document.querySelector(".main-about");
-// const readMore = document.querySelector(".read-main");
-const scrollHere = document.querySelector("#scrollHere");
+  const openModal = document.querySelector(".open-button");
+  const closeModal = document.querySelector(".close-button");
+  const modalBg = document.querySelector(".modal-background");
+  const aboutUs = document.querySelector(".main-about");
+  // const readMore = document.querySelector(".read-main");
+  const scrollHere = document.querySelector("#scrollHere");
 
-openModal.addEventListener("click", () => {
-  modal.style.display = "flex";
-  modalBg.style.display = "block";
-});
 
-closeModal.addEventListener("click", () => {
-  modal.setAttribute("closing", "");
+  (function() {
+    function getScrollPosition(selector, options) {
+      console.log("in get scrollpos");
+      const targetElement = document.querySelector(selector);
+      if (!targetElement) return null;
 
-  modal.addEventListener(
-    "animationend",
-    () => {
-      modal.removeAttribute("closing");
-      modal.style.display = "none";
-      modalBg.style.display = "none";
-    },
-    { once: true }
-  );
-});
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      let finalScrollPosition;
+
+      switch (options.anchor) {
+        case 'middle':
+          finalScrollPosition = targetPosition - (window.innerHeight - targetElement.offsetHeight) / 2;
+          break;
+        default:
+        case 'top':
+          finalScrollPosition = Math.max(targetPosition, 0);
+      }
+
+      finalScrollPosition -= (typeof options.offset === 'function') ? options.offset() : options.offset;
+      return finalScrollPosition;
+
+    }
+
+    function scrolly(elements, options = {}) {
+      const scrollContainer = document.querySelector('.scroll-container');
+      const scrollWrapper = scrollContainer.querySelector('.scroll-wrapper');
+
+      elements.forEach(element => {
+        element.addEventListener('click', function(event) {
+          event.preventDefault();
+          const href = this.getAttribute('href');
+          const targetElement = document.querySelector(href);
+          if (!targetElement) return;
+
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+          scrollContainer.style.overflow = 'hidden';
+          const transformValue = `translateY(-${targetPosition}px)`;
+          scrollWrapper.style.transform = transformValue;
+
+          scrollWrapper.addEventListener('transitionend', () => {
+            scrollContainer.style.overflow = 'auto';
+          }, {
+            once: true
+          });
+        });
+      });
+    }
+
+    function scrolly(elements, options = {}) {
+      elements.forEach(element => {
+        element.addEventListener('click', function(event) {
+          event.preventDefault();
+          const href = this.getAttribute('href');
+          const targetElement = document.querySelector(href);
+          if (!targetElement) return;
+
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        });
+      });
+    }
+
+    // Usage
+    scrolly('a[href^="#"]', {
+      speed: '500ms',
+      easing: 'linear'
+    });
+
+
+
+    window.scrolly = function(selector, options = {}) {
+      const defaults = {
+        anchor: 'top',
+        easing: 'linear',
+        offset: 0,
+        pollOnce: false,
+        speed: 1000
+      };
+
+
+      const finalOptions = Object.assign({}, defaults, options);
+      const elements = document.querySelectorAll(selector);
+
+      if (finalOptions.pollOnce) {
+        getScrollPosition(window.location.hash, finalOptions);
+      }
+
+      scrolly(elements, finalOptions);
+    };
+
+  })();
+
+
+
+  // Usage
+  scrolly('a[href^="#"]', {
+    speed: '500ms',
+    easing: 'linear'
+  });
+
+
+  // Usage
+  // scrolly('a[href^="#"]', { offset: 0 });
+
+
+  openModal.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalBg.style.display = "block";
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.setAttribute("closing", "");
+
+    modal.addEventListener(
+      "animationend",
+      () => {
+        modal.removeAttribute("closing");
+        modal.style.display = "none";
+        modalBg.style.display = "none";
+      }, {
+        once: true
+      }
+    );
+  });
 </script>
 
 <?php
