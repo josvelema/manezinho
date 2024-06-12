@@ -201,6 +201,8 @@ section {
   position: relative;
 
   margin-block: 0 1rem;
+  background-color: rgba(12, 10  ,11, 0.8);
+
 }
 
 .section-stretch {

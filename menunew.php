@@ -776,6 +776,8 @@ ananás
 (com molho picante)
 
 6 € -->
+  </section>
+  <section id="food">
     <h3>Food</h3>
     <table class="menu-table">
       <thead>
@@ -1372,10 +1374,10 @@ tártaro e batata frita)
       </tbody>
     </table>
 
+    </section>
 
 
-
-
+<section id="bar">
     <h3>Drinks</h3>
     <table class="menu-table">
       <thead>
