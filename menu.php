@@ -4,982 +4,2920 @@ session_start();
 include "admin/functions.php";
 include "includes/header.html";
 ?>
-<link rel="stylesheet" href="assets/css/menuStyle.css?v=180323-2">
+<link rel="stylesheet" href="assets/css/menuStyle24.css?v=24">
 <?php
 include "includes/nav.html"
 ?>
 
 
-<main>
+<main class="menu-main">
+    <header class="menu-header">
+      <h1>Menu</h1>
+      <div class="menu-nav">
+        <ul>
+          <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> -->
+          <li class="menu-nav-item"><a href="#wine">Wine</a></li>
+          <li class="menu-nav-item" style="display: none;"><a href="#bar">Bar</a></li>
+          <li class="menu-nav-item"><a href="#food">Food</a></li>
+          <li class="menu-nav-item" style="display: none;"><a href="#cocktails">Cocktails</a></li>
+        </ul>
+      </div>
+    </header>
+  
+
+  <section id="wine">
+    <h3>Wine</h3>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            <h4>Açores</h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Tinto:</th>
+        </tr>
+        <tr>
+          <td>
+            Terras Lava
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">Branco:</th>
+        </tr>
+        <tr>
+          <td>
+            Terras Lava
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Frei Gigante
+          </td>
+          <td>
+            26.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Pedras Brancas
+          </td>
+          <td>
+            26.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rola Pipa
+          </td>
+          <td>
+            30.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chão de Lava
+          </td>
+          <td>
+            30.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Pedras Brancas Reserva
+          </td>
+          <td>
+            30.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">Rosé:</th>
+        </tr>
+        <tr>
+          <td>
+            Insula<small><em>(Chão de Lava)</em></small>
+          </td>
+          <td>
+            22.00 €
+          </td>
+      </tbody>
+    </table>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            <h4>Alentejo</h4>
+          </th>
+        </tr>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Tinto</th>
+        </tr>
+        <!-- 
+        Oitenta 13.00 €
+Vidigueira 13.00 €
+Trinca Bolotas 14.00 €
+Grande Trinca Bolotas 16.00 €
+
+Encosta das Predizes (Vinhas Velhas -
+reserva)
+
+17.00 €
+Herdade do Paço do Conde (Syrah) 18.00 €
+Convento da Tomina 20.00 €
+Herdade das Servas (sem barrica) 23.00 €
+Esporão 26.00 €
+Tapada de Coelheiros 40.00 €
+Quinta Paral Reserva 45.00 €
+Dona Maria Grande Reserva 46.00 €
+Parcelas 55.00 € -->
+        <tr>
+          <td>
+            Oitenta
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vidigueira
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Trinca Bolotas
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grande Trinca Bolotas
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Encosta das Predizes<small><em>(Vinhas Velhas - reserva)</em></small>
+          </td>
+          <td>
+            17.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Herdade do Paço do Conde<small><em>(Syrah)</em></small>
+          </td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Convento da Tomina
+          </td>
+          <td>
+            20.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Herdade das Servas<small><em>(sem barrica)</em></small>
+          </td>
+          <td>
+            23.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Esporão
+          </td>
+          <td>
+            26.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tapada de Coelheiros
+          </td>
+          <td>
+            40.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Quinta Paral Reserva
+          </td>
+          <td>
+            45.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dona Maria Grande Reserva
+          </td>
+          <td>
+            46.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Parcelas
+          </td>
+          <td>
+            55.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">Branco</th>
+        </tr>
+        <!-- Trinca Bolotas 13.00 €
+Vidigueira 14.00 €
+
+Encosta das Predizes (Private
+selection)
+
+15.00 €
+Esporão 16.00 €
+Noia 16.00 €
+Vidigueira (Antão Vaz) 16.00 €
+Esporão Reserva 22.00 €
+Quinta do Paral Reserva 28.00 € -->
+        <tr>
+          <td>
+            Trinca Bolotas
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vidigueira
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Encosta das Predizes <small><em>(Private selection)</em></small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Esporão
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Noia
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vidigueira<small><em>(Antão Vaz)</em></small>
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Esporão Reserva
+          </td>
+          <td>
+            22.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Quinta do Paral Reserva
+          </td>
+          <td>
+            28.00 €
+          </td>
+        </tr>
+
+      </tbody>
+      </thead>
+    </table>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Dão
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">branco:</th>
+        </tr>
+        <!-- Taboadella 70.00 € -->
+        <tr>
+          <td>
+            Taboadella
+          </td>
+          <td>
+            70.00 €
+          </td>
+
+      </tbody>
+    </table>
+
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Douro
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Tinto:</th>
+        </tr>
+        <!-- Assobio 13.00 €
+Papa-Figos 15.00 €
+Vinha Grande 18.00 €
+Callabriga 22.00 €
+Duas Quintas 24.00 €
+Castas Escondidas 38.00 €
+Duas Quintas Reserva 45.00 €
+Quinta da Lêda 50.00 €
+Batuta 65.00 €
+Carvalhas Tinta Francisca 70.00 €
+Carvalhas Vinhas Velhas 70.00 €
+Antónia Adelaide Ferreira 105.00 €
+Mirabílis 180.00 €
+
+Branco:
+
+Papa-Figos 15.00 €
+Grainha 19.00 €
+Carvalhas 40.00 €
+Antónia Adelaide Ferreira 65.00 €
+Mirabílis 80.00 € -->
+        <tr>
+          <td>
+            Assobio
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Papa-Figos
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vinha Grande
+          </td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Callabriga
+          </td>
+          <td>
+            22.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Duas Quintas
+          </td>
+          <td>
+            24.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Castas Escondidas
+          </td>
+          <td>
+            38.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Duas Quintas Reserva
+          </td>
+          <td>
+            45.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Quinta da Lêda
+          </td>
+          <td>
+            50.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Batuta
+          </td>
+          <td>
+            65.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carvalhas Tinta Francisca
+          </td>
+          <td>
+            70.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carvalhas Vinhas Velhas
+          </td>
+          <td>
+            70.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Antónia Adelaide Ferreira
+          </td>
+          <td>
+            105.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mirabílis
+          </td>
+          <td>
+            180.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">Branco:</th>
+        </tr>
+        <tr>
+          <td>
+            Papa-Figos
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grainha
+          </td>
+          <td>
+            19.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carvalhas
+          </td>
+          <td>
+            40.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Antónia Adelaide Ferreira
+          </td>
+          <td>
+            65.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mirabílis
+          </td>
+          <td>
+            80.00 €
+          </td>
+        </tr>
+
+    </table>
+    <!-- Minho
+
+Branco/Verde:
+
+Muralhas de Monçao 12.00 €
+Torre de Menagem 14.00 €
+
+Rosé:
+
+Mateus 10.00 € -->
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Minho
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Branco/Verde:</th>
+        </tr>
+        <tr>
+          <td>
+            Muralhas de Monçao
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Torre de Menagem
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">Rosé:</th>
+        </tr>
+        <tr>
+          <td>
+            Mateus
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Tejo
+
+Tinto:
+
+Cabeça de Toiro 14.00 € -->
+
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Tejo
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Tinto:</th>
+        </tr>
+        <tr>
+          <td>
+            Cabeça de Toiro
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+    Itália
+
+Vinho Espumante Rosé:
+Lambrusco 8.00 €
+ -->
+
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Itália
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Vinho Espumante Rosé:</th>
+        </tr>
+        <tr>
+          <td>
+            Lambrusco
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Vinho Ao Copo
+
+Tinto 3.00 €
+Branco 3.00 €
+Rosé 3.00 €
+Pressão 3.00 €
+Dos Açores 6.00 € -->
+
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Vinho Ao Copo
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">Tinto</th>
+        </tr>
+        <tr>
+          <td>
+            Tinto
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Branco
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rosé
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Pressão
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dos Açores
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- menu sala  -->
+
+    <!-- Entradas:
+
+
+ Sopa do dia 2.5 €
+
+ Cesto de pão com manteiga
+aromatizada
+
+2 €
+
+ Azeitonas temperadas 1.5 €
+
+ Aros de cebola em tempura 3.5 €
+ Batatas à Manezinho
+(batata frita com bacon e molho de
+queijo)
+
+5 €
+
+ Tábua de queijos de São Jorge
+(queijos de 3, 7, 12 e 24 meses de cura
+com mel da fajã)
+
+15 €
+
+ Tábua de queijos
+(queijos regionais, a acompanhar com
+compota e torradinhas)
+
+10 €
+
+ Tábua mista
+(queijos regionais, presunto, chourição,
+paio, compota e azeitonas temperadas)
+
+13 €
+
+ Camarão alhinho
+(camarão temperado com alho e massa
+malagueta e vinho branco,
+acompanhado de um cesto de pão)
+
+15 €
+
+ Camarão à Manezinho
+(camarão frito em tempura
+acompanhado com batata frita e
+molhos: açafrão, tártaro e ketchup)
+
+20 €
+
+ Chouriço frito com mel e
+alecrim
+
+4 €
+
+ Morcela frita com laranja e
+ananás
+
+8 €
+
+ Palitos de frango panados
+(com molho picante)
+
+6 € -->
+  </section>
+  <section id="food">
+    <h3>Food</h3>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Entradas
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Sopa do dia
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cesto de pão com manteiga
+            aromatizada
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azeitonas temperadas
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Aros de cebola em tempura
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Batatas à Manezinho
+            <small>
+              <em>
+                (batata frita com bacon e molho de
+                queijo)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tábua de queijos de São Jorge
+            <small>
+              <em>
+                (queijos de 3, 7, 12 e 24 meses de cura
+                com mel da fajã)
+              </em>
+            </small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tábua de queijos
+            <small>
+              <em>
+                (queijos regionais, a acompanhar com
+                compota e torradinhas)
+              </em>
+            </small>
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tábua mista
+            <small>
+              <em>
+                (queijos regionais, presunto, chourição,
+                paio, compota e azeitonas temperadas)
+              </em>
+            </small>
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Camarão alhinho
+            <small>
+              <em>
+                (camarão temperado com alho e massa
+                malagueta e vinho branco,
+                acompanhado de um cesto de pão)
+              </em>
+            </small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Camarão à Manezinho
+            <small>
+              <em>
+                (camarão frito em tempura
+                acompanhado com batata frita e
+                molhos: açafrão, tártaro e ketchup)
+              </em>
+            </small>
+          </td>
+          <td>
+            20.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chouriço frito com mel e
+            alecrim
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Morcela frita com laranja e
+            ananás
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Palitos de frango panados
+            <small>
+              <em>
+                (com molho picante)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <!--  Salada simples
+(mistura de alface, cebola roxa e tomate
+cherry)
+
+5.00 €
+
+ Salada de camarão
+(camarão frito, mistura de alface, tomate
+cherry, cebola roxa e vinagrete)
+
+15.00 €
+
+ Salada de frango
+(frango grelhado, mistura de alface,
+tomate cherry, cebola roxa e
+vinagrete)
+
+12.00 €
+
+ Salada vegano
+(mistura de alface, cebola roxa, tomate
+cherry, mistura de legumes da época
+salteados e tofu)
+
+15.00 €
+
+ Salada vegetariana
+(mistura de alface, cebola roxa, tomate
+cherry, mistura de legumes da época
+salteados e batata assada)
+
+12.00 €
+   -->
+        <tr class="tr-divider">
+          <th colspan="2">
+            Saladas:
+          </th>
+        </tr>
+
+        <tr>
+          <td>
+            Salada simples
+            <small>
+              <em>
+                (mistura de alface, cebola roxa e tomate
+                cherry)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Salada de camarão
+            <small>
+              <em>
+                (camarão frito, mistura de alface, tomate
+                cherry, cebola roxa e vinagrete)
+              </em>
+            </small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Salada de frango
+            <small>
+              <em>
+                (frango grelhado, mistura de alface,
+                tomate cherry, cebola roxa e
+                vinagrete)
+              </em>
+            </small>
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Salada vegano
+            <small>
+              <em>
+                (mistura de alface, cebola roxa, tomate
+                cherry, mistura de legumes da época
+                salteados e tofu)
+              </em>
+            </small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Salada vegetariana
+            <small>
+              <em>
+                (mistura de alface, cebola roxa, tomate
+                cherry, mistura de legumes da época
+                salteados e batata assada)
+              </em>
+            </small>
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+
+        <!-- Hambúrguer:
+ Hambúrguer à Manezinho
+(pão, molho Mil Ilhas, dupla de carne de
+vaca, marmelada de cebola, dupla de
+bacon, dupla de queijo cheddar e aros
+de cebola)
+
+15.00 €
+
+ Hambúrguer à Manezinho
+Picante
+(pão, molho Mil Ilhas, molho picante,
+dupla de carne de vaca, marmelada de
+cebola, dupla de bacon, dupla de queijo
+cheddar, jalapenhos e aros de cebola)
+
+16.00 €
+
+ Hambúrguer à Manezinho
+Simples
+(pão, molho Mil Ilhas, carne de vaca,
+marmelada de cebola, bacon, queijo
+cheddar e aros de cebola)
+
+10.00 €
+
+ Hambúrguer de Atum
+(pão, molho tártaro, bife de atum e aros
+de cebola)
+
+16.00 €
+
+*Acompanhadas com Salada, batata frita e molhos (açafrão, tártaro e ketchup) -->
+        <tr class="tr-divider">
+          <th colspan="2">
+            Hambúrguer:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Hambúrguer à Manezinho
+            <small>
+              <em>
+                (pão, molho Mil Ilhas, dupla de carne de
+                vaca, marmelada de cebola, dupla de
+                bacon, dupla de queijo cheddar e aros
+                de cebola)
+              </em>
+            </small>
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hambúrguer à Manezinho
+            Picante
+            <small>
+              <em>
+                (pão, molho Mil Ilhas, molho picante,
+                dupla de carne de vaca, marmelada de
+                cebola, dupla de bacon, dupla de queijo
+                cheddar, jalapenhos e aros de cebola)
+              </em>
+            </small>
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hambúrguer à Manezinho
+            Simples
+            <small>
+              <em>
+                (pão, molho Mil Ilhas, carne de vaca,
+                marmelada de cebola, bacon, queijo
+                cheddar e aros de cebola)
+              </em>
+            </small>
+
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hambúrguer de Atum
+            <small>
+              <em>
+                (pão, molho tártaro, bife de atum e aros
+                de cebola)
+              </em>
+            </small>
+          </td>
+          <td>
+            16.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2" class="footnote">
+            *Acompanhadas com Salada, batata frita e molhos (açafrão, tártaro e ketchup)
+
+          </th>
+        </tr>
+        <!-- Carne:
+ Bife à Manezinho
+(Filet Mignon em cama de espinafres,
+batata doce assada e molho de
+mostarda)
+
+26.50 €
+
+ Vazia
+(com manteiga aromatizada) 20.00 €
+ Picanha importada
+(com manteiga aromatizada) 24.00 €
+ Secretos de porco preto
+
+22.00 €
+
+ Seleção de carnes (2 pessoas)
+(picanha, filet mignon e secretos de
+porco preto
+
+60.00 €
+
+* Acompanhadas de arroz branco, legumes salteados, batata doce e branca assada) -->
+
+        <tr class="tr-divider">
+          <th colspan="2">
+            Carne:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Bife à Manezinho
+            <small>
+              <em>
+                (Filet Mignon em cama de espinafres,
+                batata doce assada e molho de
+                mostarda)
+              </em>
+            </small>
+          </td>
+          <td>
+            26.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vazia
+            <small>
+              <em>
+                (com manteiga aromatizada)
+              </em>
+            </small>
+          </td>
+          <td>
+            20.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Picanha importada
+            <small>
+              <em>
+                (com manteiga aromatizada)
+              </em>
+            </small>
+          </td>
+          <td>
+            24.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Secretos de porco preto
+          </td>
+          <td>
+            22.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Seleção de carnes (2 pessoas)
+            <small>
+              <em>
+                (picanha, filet mignon e secretos de
+                porco preto)
+              </em>
+            </small>
+          </td>
+          <td>
+            60.00 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" class="footnote">
+            * Acompanhadas de arroz branco, legumes salteados, batata doce e branca assada
+          </th>
+        </tr>
+        <!-- Peixe:
+ Peixe:
+
+ Tempura de peixe branco
+(em cama de mistura de salada, molho
+tártaro e batata frita)
+
+18 €
+
+ Peixe grelhado da época
+(inteiro, à posta ou filete)
+
+(preço sob consulta) 17 € a 28 €
+
+ Polvo à Manezinho
+(com batata assada)
+
+26 €
+
+* Acompanhado com arroz de grelos ou salada de batata
+-->
+        <tr class="tr-divider">
+          <th colspan="2">
+            Peixe:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Tempura de peixe branco
+            <small>
+              <em>
+                (em cama de mistura de salada, molho
+                tártaro e batata frita)
+              </em>
+            </small>
+          </td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Peixe grelhado da época
+            <small>
+              <em>
+                (inteiro, à posta ou filete)
+                (preço sob consulta)
+              </em>
+            </small>
+          </td>
+          <td>
+            17 € a 28 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Polvo à Manezinho
+            <small>
+              <em>
+                (com batata assada)
+              </em>
+            </small>
+          </td>
+          <td>
+            26.00 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" class="footnote">
+            * Acompanhado com arroz de grelos ou salada de batata
+          </th>
+        </tr>
+
+        <!-- Sobremesas:
+ À colher 4.00 €
+ Ao garfo 4.00 €
+ Fruta da época 2.50 € a 3.50 €
+ Frutas da época laminada 8 € -->
+        <tr class="tr-divider">
+          <th colspan="2">
+            Sobremesas:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            À colher
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ao garfo
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fruta da época
+          </td>
+          <td>
+            2.50 € a 3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Frutas da época laminada
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+
+  <section id="bar" style="display:none;">
+    <h3>Drinks</h3>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Drinks
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Quentes
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Café
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Café Americano
+          </td>
+          <td>
+            1.60 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carioca
+          </td>
+          <td>
+            0.70 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carioca Limão
+          </td>
+          <td>
+            0.70 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Café Pingado
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Garoto
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Meia de Leite
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Leite com Chocolate
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Galão
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chá
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">
+            SEM GÁS
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Água
+          </td>
+          <td>
+            <span class="menu-size-icon">p</span> 1.20 € &nbsp; <span class="menu-size-icon">g</span> 2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nestea
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sumo Natural
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">
+            COM GÁS
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Água com Gás
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Água Tónica
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fanta
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sprite
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Coca-Cola
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Coca-Cola Zero
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Bar</h3>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Cerceja & Cidra
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            Sagres <span class="menu-small-text">0,33cl </span>
+          </td>
+          <td>
+            1.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Superbock <span class="menu-small-text">0,33cl </span>
+          </td>
+          <td>
+            1.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Super Bock Green
+          </td>
+          <td>
+            1.80 €
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Bandida do Pomar
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sommersby
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            Cerveja Importada
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Heineken <span class="menu-small-text">0,50cl </span>
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Heineken <span class="menu-small-text">0,25cl </span>
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Heineken Zero
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Beck´s
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Budweiser
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Corona
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Stella Artois
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Leffe Blonde
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Leffe Brune
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hoegaarden
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Franziskaner
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            La Chouffe
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chimay Blue
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Delirium Tremens
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Duvel
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kwak
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rochefort 10
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rochefort 8
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            La Trappe Blond
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gulden Draak
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tripel Karmeliet
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Diversas
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            Gins
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Baleia
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nordés
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Beefeater
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Beefeater Pink
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bombay Sapphire Dry
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gordon's Pink
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bombay Sapphire
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bombay Bramble
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sharish Blue
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bulldog
+          </td>
+          <td>
+            9.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanqueray
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanqueray Ten
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nº13
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick's (Diversos)
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick's
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Monkey 47
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Manezinho
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nikka Coffey
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azor Gin Reserva
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mombasa Club
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Roku
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            Martini's
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Branco
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rosso
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fiero
+          </td>
+          <td>
+            3.00 €
+        </tr>
+        <tr>
+          <td>
+            Dry
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dirty
+          </td>
+          <td>
+            3.50 €
+        </tr>
+        <tr>
+          <td>
+            Strawberry
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lemon Drop
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cucumbre
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Caramel
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Expresso Martini
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">Shots</th>
+        </tr>
+        <tr>
+          <td>
+            Mix
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tequila
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patrón Reposado
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patrón Anejo
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patrón Silver
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jägermeister
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fireball
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gold Strike
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="3">Whiskey</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="dark"></th>
+          <th>½ dose</th>
+          <th>1 dose</th>
+        </tr>
+        <tr>
+          <td>
+            Red Label
+          </td>
+          <td>
+            2.50 €
+          </td>
+          <td>
+            4.00 €
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Black Label
+          </td>
+          <td>
+            4.00 €
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jameson
+          </td>
+          <td>
+            3.00 €
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel's
+          </td>
+          <td>
+            3.00 €
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Maçã
+          </td>
+          <td>
+            3.50 €
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Fire
+          </td>
+          <td>
+            3.50 €
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Single Barrel
+          </td>
+          <td>
+            6.00 €
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Glenfiddich
+          </td>
+          <td>
+            5.00 €
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bushmills
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Double Black
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Gold Label Reserva
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Ultimate 18
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nikka
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <th colspan="3">
+            Aguardentes
+          </th>
+        </tr>
+        <tr>
+          <th class="dark">&nbsp;</th>
+          <th>½ dose</th>
+          <th>1 dose</th>
+        </tr>
+        <tr>
+          <td>
+            CRF extra reserva
+          </td>
+          <td>
+            4.50 €
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            CRF
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            4.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Couvoisier
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Remy Martin
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Brandy Croft
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nevada
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Canela
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Limão
+          </td>
+          <td>&nbsp;</td>
+
+          <td>
+            3.00 €
+          </td>
+        </tr>
+
+        <!-- 
+        LICOR/OUTROS
+Vinho do Porto
+Per Se
+Per Se (Tónico)
+Beirão
+Campari
+Baileys
+DramBuie
+Limoncello
+Disaronno
+Amêndoa Amarga
+Angelica
+Grand Marnier
+2.50€
+3.00€
+4.50€
+3.00€
+3.00€
+3.00€
+5.00€
+3.00€
+5.00€
+3.50€
+3.50€
+5.00€ -->
+        <tr>
+          <th colspan="2">
+            Licor/Outros
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Vinho do Porto
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Per Se
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Per Se (Tónico)
+          </td>
+          <td>
+            4.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Beirão
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Campari
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Baileys
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            DramBuie
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Limoncello
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Disaronno
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Amêndoa Amarga
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Angelica
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grand Marnier
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Cocktails</h3>
+    Cocktails
+
+    <!-- Aperol Spritz 
+(Prosecco, Aperol e água com gás)
+5.00€
+Azedinha
+(Cachaça, sumo limão galego, açúcar mascavado e limão galego)
+6.00€
+Blue Lagoon 
+(Vodka, Blue Curaçao, sumo limão e Sprite)
+5.00€
+Caipilão 
+(Vodka melão, Lima, açúcar mascavado)
+5.00€
+Caipirinha 
+(Cachaça, sumo limas, açúcar mascavado e limas)
+5.00€
+Caipiroska 
+(Vodka, sumo limas, açúcar mascavado e limas)
+5.00€
+Caipirágua 
+(água, açúcar mascavado e limas)
+4.00€
+Cuba Libre 
+(Rum, Coca Cola e sumo limão)
+5.00€
+Daiquiri 
+(Rum, *Sumo e açúcar)
+5.00€
+Dry Martini 
+(Gin e Martini Branco)
+5.00€
+Dry Martini com sumo maçã 
+(Gin, Martini Rosso e sumo maçã)
+5.00€
+Expresso Martini
+(Vodka, Kahlua, Café e açucar)
+6.00€
+Irish Coffee
+(Jameson, Café, Açucar e chantily) 
+6.00€
+Jack & Coke 
+(Jack Daniels e Coca Cola)
+5.00€
+Lemon Drop
+(Vodka, Triple Sec, sumo limão e açúcar)
+5.00€
+Long Island Iced Tea 
+(Vodka, Rum, Tequila, Gin, Triple Sec, sumo limão, Coca Cola e açúcar mascavado)
+7.00€
+Margarita 
+(Tequila, *Sumo e açúcar) 
+5.00€
+Mojito 
+(Rum, sumo lima, açúcar, água com gás e hortelã) 
+6.00€
+Moscow Mule 
+(Vodka, Ginger Beer e sumo lima)
+5.00€
+Negroni 
+(Gin, Bitter Campari e Martini Rosso)
+5.00€
+Pina Colada 
+(Rum, batida côco e sumo ananás)
+6.00€
+Sour 
+(Whiskey, vodka ou rum, sumo limão e açúcar)
+5.00€
+Tequila Sunrise 
+(Tequila, sumo laranja e groselha)
+5.00€
+White Lady
+(Gin, Triple Sec, Sumo Limão e açúcar)
+5.00€
+
+* Sumo: Laranja, Lima, Ananás ou Maracujá -->
+
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Cocktails
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            Aperol Spritz
+            <small>
+              <em>
+                (Prosecco, Aperol e água com gás)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azedinha
+            <small>
+              <em>
+                (Cachaça, sumo limão galego, açúcar mascavado e limão galego)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Blue Lagoon
+            <small>
+              <em>
+                (Vodka, Blue Curaçao, sumo limão e Sprite)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Caipilão
+            <small>
+              <em>
+                (Vodka melão, Lima, açúcar mascavado)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Caipirinha
+            <small>
+              <em>
+                (Cachaça, sumo limas, açúcar mascavado e limas)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Caipiroska
+            <small>
+              <em>
+                (Vodka, sumo limas, açúcar mascavado e limas)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Caipirágua
+            <small>
+              <em>
+                (água, açúcar mascavado e limas)
+              </em>
+            </small>
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Cuba Libre
+            <small>
+              <em>
+                (Rum, Coca Cola e sumo limão)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Daiquiri
+            <small>
+              <em>
+                (Rum, *Sumo e açúcar)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dry Martini
+            <small>
+              <em>
+                (Gin e Martini Branco)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dry Martini com sumo maçã
+            <small>
+              <em>
+                (Gin, Martini Rosso e sumo maçã)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Expresso Martini
+            <small>
+              <em>
+                (Vodka, Kahlua, Café e açucar)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Irish Coffee
+            <small>
+              <em>
+                (Jameson, Café, Açucar e chantily)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack & Coke
+            <small>
+              <em>
+                (Jack Daniels e Coca Cola)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lemon Drop
+            <small>
+              <em>
+                (Vodka, Triple Sec, sumo limão e açúcar)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Long Island Iced Tea
+            <small>
+              <em>
+                (Vodka, Rum, Tequila, Gin, Triple Sec, sumo limão, Coca Cola e açúcar mascavado)
+              </em>
+            </small>
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Margarita
+            <small>
+              <em>
+                (Tequila, *Sumo e açúcar)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mojito
+            <small>
+              <em>
+                (Rum, sumo lima, açúcar, água com gás e hortelã)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Moscow Mule
+            <small>
+              <em>
+                (Vodka, Ginger Beer e sumo lima)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Negroni
+            <small>
+              <em>
+                (Gin, Bitter Campari e Martini Rosso)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Pina Colada
+            <small>
+              <em>
+                (Rum, batida côco e sumo ananás)
+              </em>
+            </small>
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sour
+            <small>
+              <em>
+                (Whiskey, vodka ou rum, sumo limão e açúcar)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tequila Sunrise
+            <small>
+              <em>
+                (Tequila, sumo laranja e groselha)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            White Lady
+            <small>
+              <em>
+                (Gin, Triple Sec, Sumo Limão e açúcar)
+              </em>
+            </small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 
 
 
-  <header class="main-header menu-header">
-
-    <span>Art Restaurant</span>
-    <h1 class="rise">Manezinho</h1>
-    <h2 class="rise subheading">Menu</h2>
 
 
 
-  </header>
-  <div class="menu-nav">
+
+
+    <p class="menu-legend-p">
+      <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
+      <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
+
+
+
+
+
+
+  </section>
+
+
+  <!-- <div class="menu-nav">
     <ul>
-      <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> -->
+      <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> 
       <li class="menu-nav-item"><a href="#wine">Wine</a></li>
       <li class="menu-nav-item"><a href="#bar">Bar</a></li>
       <li class="menu-nav-item"><a href="#food">Food</a></li>
-      <li class="menu-nav-item"><a href="#cocktails">Cocktails</a></li>
+      <li class="menu-nav-item"><a href="#drinks">Drinks</a></li>
     </ul>
-  </div>
-
-
-  <section class="section-stretch" style="margin: 0 auto;">
-
-      <section class="menu-section">
-        <article id="drinks">
-          <h3>drinks</h3>
-
-          <fieldset>
-            <legend align="center">Quentes</legend>
-            <ul class="menu-ul">
-              <li>Café</li>
-              <li>Café Americano</li>
-              <li>Carioca</li>
-              <li>Carioca Limão</li>
-              <li>Café Pingado</li>
-              <li>Garoto</li>
-              <li>Meia de Leite</li>
-              <li>Leite com Chocolate</li>
-              <li>Galão</li>
-              <li>Chá</li>
-            </ul>
-            <ul class="menu-ul-price">
-              <li>0.80€</li>
-              <li>1.60€</li>
-              <li>0.70€</li>
-              <li>0.70€</li>
-              <li>0.80€</li>
-              <li>0.80€</li>
-              <li>1.50€</li>
-              <li>2.00€</li>
-              <li>2.00€</li>
-              <li>1.50€</li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend align="center">SEM GÁS</legend>
-            <ul class="menu-ul">
-              <li>Água</li>
-              <li>Nestea</li>
-              <li>Sumo Natural</li>
-            </ul>
-            <ul class="menu-ul-price">
-              <li>
-                <span class="menu-size-icon">p</span> 1.20€ &nbsp; <span class="menu-size-icon">g</span> 2.50€
-              </li>
-              <li>1.50€</li>
-              <li>3.00€</li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend align="center">COM GÁS</legend>
-            <ul class="menu-ul">
-              <li>Água com Gás</li>
-              <li>Água Tónica</li>
-              <li>Fanta</li>
-              <li>Sprite</li>
-              <li>Coca-Cola</li>
-              <li>Coca-Cola Zero</li>
-            </ul>
-            <ul class="menu-ul-price">
-              <li>1.50€</li>
-              <li>1.50€</li>
-              <li>1.50€</li>
-              <li>1.50€</li>
-              <li>1.50€</li>
-              <li>1.50€</li>
-            </ul>
-          </fieldset>
-          <p class="menu-legend-p">
-            <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
-
-            <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
-          </p>
-        </article>
-      </section>
-
-    <section class="menu-section">
-      <article id="wine">
-        <h3>wine</h3>
-        <p class="menu-subheader">ALENTEJO</p>
-        <img src="assets/img/logo-adega-mayor.png" alt="ADEGA MAYOR COLLECTION" class="menu-winecollection">
-
-        <fieldset>
-          <legend align="center">TINTO</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-
-            <li>Caiado</li>
-            <li>Reserva</li>
-            <li>Seleção Bio</li>
-            <li>Touriga Nacional</li>
-            <li>Alfrocheiro</li>
-            <li>Sangiovese</li>
-            <li>Amálias</li>
-            <li>Tudo ao Molho</li>
-            <li>Trincadeira</li>
-            <li>Paixão </li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-
-            <li>10.00€</li>
-            <li>15.00€</li>
-            <li>16.00€</li>
-            <li>18.00€</li>
-            <li>18.00€</li>
-            <li>18.00€</li>
-            <li>20.00€</li>
-            <li>22.00€</li>
-            <li>20.00€</li>
-            <li>55.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Branco</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-
-            <li>Reserva Comendador</li>
-            <li>Seleção</li>
-            <li>Altitude</li>
-            <li>Viosinho</li>
-            <li>Seleção Bio</li>
-            <li>Gouveio</li>
-            <li>Arinto</li>
-            <li>Verdelho</li>
-            <li>Moscatel Galego Roxo</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-
-            <li>25.00€</li>
-            <li>14.00€</li>
-            <li>28.00€</li>
-            <li>18.00€</li>
-            <li>16.00€</li>
-            <li>18.00€</li>
-            <li>16.00€</li>
-            <li>18.00€</li>
-            <li>20.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">ROSÉ</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Pinot Noir</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>14.00€</li>
-          </ul>
-        </fieldset>
-
-
-        <h3>wine</h3>
-        <p class="menu-subheader">ALENTEJO</p>
-
-        <fieldset>
-          <legend align="center">TINTO</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Trinca Bolotas</li>
-            <li>Gr. Trinca Bolotas</li>
-            <li>Chaminé</li>
-            <li>Defesa</li>
-            <li>Quinta do Paral</li>
-            <li>Quinta do Paral Reserva</li>
-            <li>Esporão</li>
-            <li>Tapada de Coelheiros</li>
-            <li>Dona Maria</li>
-            <li>Dona Maria Reserva</li>
-            <li>Parcelas</li>
-
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-
-            <li>14.00€</li>
-            <li>16.00€</li>
-            <li>14.00€</li>
-            <li>15.00€</li>
-            <li>15.00€</li>
-            <li>30.00€</li>
-            <li>26.00€</li>
-            <li>40.00€</li>
-            <li>16.00€</li>
-            <li>46.00€</li>
-            <li>58.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Branco</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Trinca Bolotas</li>
-            <li>Chaminé</li>
-            <li>Esporão</li>
-            <li>Esporão Reserva</li>
-            <li>Quinta do Paral Reserva</li>
-
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>13.00€</li>
-            <li>13.00€</li>
-            <li>16.00€</li>
-            <li>22.00€</li>
-            <li>28.00€</li>
-          </ul>
-        </fieldset>
-
-        <h3>wine</h3>
-        <p class="menu-subheader">LISBOA</p>
-        <img src="assets/img/adegamae-logo.png" alt="ADEGAMAE COLLECTION" class="menu-winecollection">
-
-
-        <fieldset>
-          <legend align="center">TINTO</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>A.D.M. Atlântico</li>
-            <li>A.D.M. Terroir</li>
-            <li>A.D.M. Touriga Nacional</li>
-            <li>A.D.M. Touriga Franca</li>
-            <li>A.D.M. Merlot</li>
-            <li>A.D.M. Cabernet Sauvignon</li>
-            <li>A.D.M. Petit Verdot</li>
-            <li>A.D.M. Pinot Noir</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>28.00€</li>
-            <li>70.00€</li>
-            <li>14.00€</li>
-            <li>14.00€</li>
-            <li>14.00€</li>
-            <li>14.00€</li>
-            <li>14.00€</li>
-            <li>14.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Branco</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>A.D.M. Alvarinho</li>
-            <li>A.D.M. Alvarinho Reserva</li>
-            <li>A.D.M. 221</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>15.00€</li>
-            <li>40.00€</li>
-            <li>20.00€</li>
-          </ul>
-        </fieldset>
-        <!-- <fieldset>
-          <legend align="center">ROSÉ</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-
-          </ul>
-        </fieldset> -->
-        <h3>wine</h3>
-        <p class="menu-subheader">DOURO</p>
-
-
-        <fieldset>
-          <legend align="center">TINTO</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Assobio</li>
-            <li>Esteva</li>
-            <li>Cabeça Toiro</li>
-            <li>Papa-Figos</li>
-            <li>Vinha Grande</li>
-            <li>Duas Quintas</li>
-            <li>Evel Reserva</li>
-            <li>Callabriga</li>
-            <li>Castas Escondidas</li>
-            <li>Duas Quintas Reserva</li>
-            <li>Quinta da Leda</li>
-            <li>Carvalhas Vinhas Velhas</li>
-            <li>Carvalhas Tinta Francisca</li>
-            <li>Batuta</li>
-            <li>Antónia Adelaide Ferreira</li>
-            <li>Mirabilis</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>13.00€</li>
-            <li>13.00€</li>
-            <li>13.00€</li>
-            <li>15.00€</li>
-            <li>17.00€</li>
-            <li>24.00€</li>
-            <li>26.00€</li>
-            <li>26.00€</li>
-            <li>40.00€</li>
-            <li>45.00€</li>
-            <li>50.00€</li>
-            <li>70.00€</li>
-            <li>70.00€</li>
-            <li>65.00€</li>
-            <li>100.00€</li>
-            <li>180.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Branco</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Papa-Figos</li>
-            <li>Duas Quintas</li>
-            <li>Carvalhas</li>
-            <li>Antónia Adelaide Ferreira</li>
-            <li>Mirabilis</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>15.00€</li>
-            <li>22.00€</li>
-            <li>38.00€</li>
-            <li>65.00€</li>
-            <li>80.00€</li>
-          </ul>
-        </fieldset>
-
-
-        <!-- hier  -->
-
-        <h3>wine</h3>
-        <p class="menu-subheader">AÇORES</p>
-
-        <fieldset>
-          <legend align="center">DOS AÇORES</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Pedras Brancas</li>
-            <li>Pedras Brancas Reserva</li>
-            <li>Frei Gigante</li>
-            <li>Terras de Lava Merlot</li>
-            <li>Terras de Lava Tinto</li>
-            <li>Terras de Lava Branco</li>
-            <li>Terras de Lava Rosé</li>
-            <li>Terroir Vulcânico Verdelho Pico</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">750ml</span></li>
-            <li>26.00€</li>
-            <li>40.00€</li>
-            <li>26.00€</li>
-            <li>18.00€</li>
-            <li>17.00€</li>
-            <li>17.00€</li>
-            <li>17.00€</li>
-            <li>50.00€</li>
-          </ul>
-        </fieldset>
-
-        <p class="menu-subheader">OUTROS</p>
-        <fieldset>
-          <legend align="center">Tinto</legend>
-          <ul class="menu-ul">
-            <li>Quinta da Lapa </li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>15.00€</li>
-
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Branco / Verde</legend>
-          <ul class="menu-ul">
-            <li>Taboadella Grande Villae Dão</li>
-            <li>Quinta da Lapa</li>
-            <li>Muralhas Monção</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>70.00€</li>
-            <li>14.00€</li>
-            <li>10.00€</li>
-
-
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Rosé</legend>
-          <ul class="menu-ul">
-            <li>Lambrusco</li>
-            <li>Mateus</li>
-            <li>Caiado</li>
-            <li>Quinta da Lapa</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>8.00€</li>
-            <li>10.00€</li>
-            <li>10.00€</li>
-            <li>12.00€</li>
-          </ul>
-        </fieldset>
-        <!-- <fieldset>
-        <legend align="center"></legend>
-        <ul class="menu-ul"></ul>
-        <ul class="menu-ul-price"></ul>
-      </fieldset> -->
-      </article>
-    </section>
-
-    <section class="menu-section menu-section-grid">
-      <h3>bar</h3>
-      <article id="bar">
-        <fieldset>
-          <legend align="center">CERVEJA & CIDRA</legend>
-          <ul class="menu-ul">
-            <li>Sagres</li>
-            <li>Superbock</li>
-            <li>Super Bock Green</li>
-            <li>Bandida do Pomar</li>
-            <li>Sommersby</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li><span class="menu-small-text">0,33cl </span> 1.80€</li>
-            <li><span class="menu-small-text">0,33cl </span> 1.80€</li>
-            <li>1.80€</li>
-            <li>2.00€</li>
-            <li>1.50€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">CERVEJA IMPORTADA</legend>
-          <ul class="menu-ul">
-            <li>Heineken</li>
-            <li>Heineken Zero</li>
-            <li>Beck´s</li>
-            <li>Budweiser</li>
-            <li>Corona</li>
-            <li>Stella Artois</li>
-            <li>Leffe Blonde</li>
-            <li>Leffe Brune</li>
-            <li>Hoegaarden</li>
-            <li>Franziskaner</li>
-            <li>La Chouffe</li>
-            <li>Chimay Blue</li>
-            <li>Delirium Tremens</li>
-            <li>Duvel</li>
-            <li>Kwak</li>
-            <li>Rochefort 10</li>
-            <li>Rochefort 8</li>
-            <li>La Trappe Blond</li>
-            <li>Gulden Draak</li>
-            <li>Tripel Karmeliet</li>
-            <li>Diversas</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>
-              <span class="menu-small-text">0,50cl </span> 3.00€ &nbsp;
-              <span class="menu-small-text">0,25cl </span> 1.50€
-            </li>
-            <li>1.50€</li>
-            <li>2.00€</li>
-            <li>3.50€</li>
-            <li>3.00€</li>
-            <li>2.50€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>4.00€</li>
-            <li>7.00€</li>
-            <li>7.00€</li>
-            <li>7.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>7.00€</li>
-            <li>6.00€</li>
-            <li>7.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Gins</legend>
-          <ul class="menu-ul">
-            <li>Baleia</li>
-            <li>Nordés</li>
-            <li>Beefeater</li>
-            <li>Beefeater Pink</li>
-            <li>Bombay Sapphire Dry</li>
-            <li>Gordon's Pink</li>
-            <li>Bombay Sapphire</li>
-            <li>Bombay Bramble</li>
-            <li>Sharish Blue</li>
-            <li>Bulldog</li>
-            <li>Tanqueray</li>
-            <li>Tanqueray Ten</li>
-            <li>Nº13</li>
-            <li>Hendrick's (Diversos)</li>
-            <li>Hendrick's</li>
-            <li>Monkey 47</li>
-            <li>Manezinho</li>
-            <li>Nikka Coffey</li>
-            <li>Azor Gin Reserva</li>
-            <li>Mombasa Club</li>
-            <li>Roku</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>12.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>5.00€</li>
-            <li>7.00€</li>
-            <li>5.00€</li>
-            <li>7.00€</li>
-            <li>8.00€</li>
-            <li>8.00€</li>
-            <li>9.00€</li>
-            <li>7.00€</li>
-            <li>10.00€</li>
-            <li>10.00€</li>
-            <li>12.00€</li>
-            <li>10.00€</li>
-            <li>18.00€</li>
-            <li>10.00€</li>
-            <li>13.00€</li>
-            <li>15.00€</li>
-            <li>14.00€</li>
-            <li>12.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Martini's</legend>
-          <ul class="menu-ul">
-            <li>Branco</li>
-            <li>Rosso</li>
-            <li>Fiero</li>
-            <li>Dry</li>
-            <li>Dirty</li>
-            <li>Strawberry</li>
-            <li>Lemon Drop</li>
-            <li>Cucumbre</li>
-            <li>Caramel</li>
-            <li>Expresso Martini</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>2.50€</li>
-            <li>2.50€</li>
-            <li>3.00€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>4.00€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Shots</legend>
-          <ul class="menu-ul">
-            <li>Mix</li>
-            <li>Tequila</li>
-            <li>Patrón Reposado</li>
-            <li>Patrón Anejo</li>
-            <li>Patrón Silver</li>
-            <li>JaggerMeister</li>
-            <li>Fire Ball</li>
-            <li>Gold Strike</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>2.50€</li>
-            <li>2.50€</li>
-            <li>6.00€</li>
-            <li>7.00€</li>
-            <li>5.00€</li>
-            <li>3.00€</li>
-            <li>4.00€</li>
-            <li>3.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Whiskey</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>Red Label</li>
-            <li>Black Label</li>
-            <li>Jameson</li>
-            <li>Jack Daniel’s</li>
-            <li>Jack Daniel’s Maçã</li>
-            <li>Jack Daniel’s Fire</li>
-            <li>Jack Daniel’s Single Barrel</li>
-            <li>Glenﬁddich</li>
-            <li>Bushmills</li>
-            <li>J. Walker Double Black</li>
-            <li>J. W. Gold Label Reserva</li>
-            <li>J. Walker Ultimate 18</li>
-            <li>Nikka</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>
-              <span class="menu-small-text">½ dose </span> &nbsp;&nbsp;&nbsp;
-              <span class="menu-small-text"> 1 dose </span>
-            </li>
-            <li>2.50€ &nbsp;&nbsp; 4.00€</li>
-            <li>4.00€ &nbsp;&nbsp; 7.00€</li>
-            <li>3.00€ &nbsp;&nbsp; 5.00€</li>
-            <li>3.00€ &nbsp;&nbsp; 5.00€</li>
-            <li>3.50€ &nbsp;&nbsp; 6.00€</li>
-            <li>3.50€ &nbsp;&nbsp; 6.00€</li>
-            <li>6.00€ &nbsp; 12.00€</li>
-            <li>5.00€ &nbsp;&nbsp; 8.00€</li>
-            <li>6.00€</li>
-            <li>10.00€</li>
-            <li>13.00€</li>
-            <li>18.00€</li>
-            <li>18.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Aguardentes</legend>
-          <ul class="menu-ul">
-            <li>&nbsp;</li>
-            <li>CRF extra Reserva</li>
-            <li>CRF</li>
-            <li>Courvoisier</li>
-            <li>Remy Martin</li>
-            <li>Brandy Croft</li>
-            <li>Neveda</li>
-            <li>Canela</li>
-            <li>Limão</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>
-              <span class="menu-small-text">½ dose </span> &nbsp;&nbsp;&nbsp;
-              <span class="menu-small-text"> 1 dose </span>
-            </li>
-            <li>4.50€ &nbsp; 8.00€</li>
-            <li>4.50€</li>
-            <li>7.00€</li>
-            <li>8.00€</li>
-            <li>4.00€</li>
-            <li>3.00€</li>
-            <li>3.00€</li>
-            <li>3.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">licor/outros</legend>
-          <ul class="menu-ul">
-            <li>Vinho do Porto</li>
-            <li>Per Se</li>
-            <li>Per Se (Tónico)</li>
-            <li>Beirão</li>
-            <li>Campari</li>
-            <li>Baileys</li>
-            <li>DramBuie</li>
-            <li>Limoncello</li>
-            <li>Disaronno</li>
-            <li>Amêndoa Amarga</li>
-            <li>Angelica</li>
-            <li>Grand Marnier</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>2.50€</li>
-            <li>3.00€</li>
-            <li>4.50€</li>
-            <li>3.00€</li>
-            <li>3.00€</li>
-            <li>3.00€</li>
-            <li>5.00€</li>
-            <li>3.00€</li>
-            <li>5.00€</li>
-            <li>3.50€</li>
-            <li>3.50€</li>
-            <li>5.00€</li>
-          </ul>
-        </fieldset>
-      </article>
-    </section>
-
-    <section class="menu-section">
-      <article id="food">
-        <h3>food</h3>
-        <fieldset>
-          <legend align="center">Tapas</legend>
-          <ul class="menu-ul">
-            <li>Cesto de pão <span class="menu-small-text">(primeiro grátis)</span></li>
-            <li>Sopa do Dia</li>
-            <li>Tábua de Queijos</li>
-            <li>Tábua de Queijos espacial</li>
-            <li>Tábua Regional</li>
-            <li>Tábua Mista</li>
-            <li>Aros de Cebola</li>
-            <li>Batatas à Manezinho</li>
-            <li>Batata Frita</li>
-            <li>Palitos de Frango Panados</li>
-            <li>Camarão Alhinho</li>
-            <li>Camarão à Manezinho</li>
-            <!-- <li>Camarão à Manezinho</li> -->
-            <li>Atum Braseado</li>
-            <li>Ceviche de camarão</li>
-
-
-
-          </ul>
-          <ul class="menu-ul-price">
-            <li>1.50€</li>
-            <li>2.00€</li>
-            <li>10.00€</li>
-            <li>15.00€</li>
-            <li>12.00€</li>
-            <li>13.00€</li>
-            <li>4.00€</li>
-            <li><span class="menu-small-text">c/Bacon & Queijo &nbsp;</span>5.00€</li>
-            <li><span class="menu-small-text">1 dose &nbsp;</span>3.50€</li>
-            <li>5.00€</li>
-
-            <li><span class="menu-small-text">10 uni &nbsp;</span>15.00€</li>
-            <!-- <li><span class="menu-small-text">6 uni &nbsp;</span>10.00€</li> -->
-
-            <li><span class="menu-small-text">12 uni &nbsp;</span>20.00€</li>
-            <li>12.00€</li>
-            <li>15.00€</li>
-
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Saladas</legend>
-          <ul class="menu-ul">
-            <li>Salada Simples</li>
-            <li>Salada de Frango</li>
-            <li>Salada de Camarão</li>
-            <li>Salada Vegan</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>5.00€</li>
-            <li>12.00€</li>
-            <li>12.00€</li>
-            <li>12.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Peixe</legend>
-          <ul class="menu-ul menu-ul-secondary">
-            <li>Fish and Chips</li>
-            <li>Fish and Salada</li>
-            <li>Peixe do Dia <span class="menu-small-text">(preço sob consulta)</span> </li>
-            <li>Polvo à Manezinho</li>
-          </ul>
-          <ul class="menu-ul-price menu-ul-secondary">
-            <li>17.00€</li>
-            <li>17.00€</li>
-            <li>17.00€ - 28.00€</li>
-            <li>26.00€</li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend align="center">Marisco</legend>
-          <ul class="menu-ul menu-ul-secondary">
-            <li>Cataplana Peixe e Marisco</li>
-            <!-- <li>Cataplana Peixe e Marisco</li> -->
-            <li>Cataplana Especial Manezinho</li>
-            <!-- <li>Cataplana Especial Manezinho</li> -->
-            <li>Lapas <span class="menu-small-text">(meia dose)</span> </li>
-            <li>Lapas <span class="menu-small-text">(dose)</span> </li>
-            <li>Amêijoas <span class="menu-small-text">(meia dose)</span> </li>
-            <li>Amêijoas <span class="menu-small-text">(dose)</span> </li>
-            <li>Cavaco</li>
-          </ul>
-          <ul class="menu-ul-price menu-ul-secondary">
-            <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> 55.00€</li>
-            <!-- <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span> 90.00€</li> -->
-            <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 2 &nbsp;</span> 75.00€</li>
-            <!-- <li><span class="menu-small-text"><i class="fa-regular fa-user"></i>&nbsp;x 4 &nbsp;</span>125.00€</li> -->
-            <li>12.50€</li>
-            <li>25.00€</li>
-            <li>27.50€</li>
-            <li>55.00€</li>
-            <li>60.00€ /kg</li>
-          </ul>
-        </fieldset>
-        <p class="menu-legend-p">
-          <span><i class="fa-regular fa-user"></i> &nbsp = pessoas</span>
-        </p>
-
-
-        <fieldset>
-          <legend align="center">carne</legend>
-          <ul class="menu-ul">
-            <!-- <li>T-Bone</li> -->
-            <li>Picanha Importada</li>
-            <li>Vazia</li>
-            <li>Filet Mignon</li>
-            <li>Bife de Frango Grelhado </li>
-            <li>Bife (vazia) à Manezinho <span class="menu-small-text">(com molho de café)</span></li>
-            <!-- <li>T-Bone Importado</li>
-            <li>Coelhinhos de Porco</li>
-            <li>Francesinha</li> -->
-            <li>Selecção de carnes <span class="menu-small-text">(2 pessoas)</span></li>
-          </ul>
-          <ul class="menu-ul-price">
-            <!-- <li>24.00€</li> -->
-            <li>24.00€</li>
-            <li>20.00€</li>
-            <li>28.00€</li>
-            <li>14.00€</li>
-            <li>22.00€</li>
-            <li>60.00€</li>
-            <li></li>
-
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">Hambúrguer</legend>
-          <ul class="menu-ul">
-            <!-- <li>Peixe</li> -->
-            <!-- <li>Frango Crocante</li> -->
-            <li>Burger de atum</li>
-            <li>Manezinho</li>
-            <li>Manezinho Picante</li>
-            <!-- <li>Manezinho Especial</li> -->
-            <li>Manezinho Simples</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>13.00€</li>
-            <li>12.00€</li>
-            <li>13.00€</li>
-            <li>9.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">CRIANÇA</legend>
-          <ul class="menu-ul menu-ul-secondary">
-            <li><span class="menu-small-text">De 1 a 12 anos</span></li>
-            <li>Menu </li>
-            <li> <span class="menu-small-text">Tiras de Frango Panado com batata frita e sumo natural</span></li>
-            <li>Hambúrguer</li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>&nbsp;</li>
-            <li>7.00€</li>
-            <li>&nbsp;</li>
-            <li>7.00€</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend align="center">sobremesa</legend>
-          <ul class="menu-ul">
-
-            <li>Cheescake </li>
-            <li> <span class="menu-small-text">(Limão, Morango, Maracujá, kiwi, Mirtilo)</span></li>
-            <li>Tarte</li>
-            <li>Mousse</li>
-          </ul>
-          <ul class="menu-ul-price">
-
-            <li>4.00€</li>
-            <li>&nbsp;</li>
-            <li>4.00€</li>
-            <li>4.00€</li>
-          </ul>
-        </fieldset>
-        <!-- <fieldset>
-        <legend align="center"></legend>
-        <ul class="menu-ul"></ul>
-        <ul class="menu-ul-price"></ul>
-      </fieldset> -->
-      </article>
-    </section>
-
-    <section class="menu-section">
-      <article id="cocktails">
-        <h3>cocktails</h3>
-        <fieldset>
-          <legend align="center">Cocktails</legend>
-          <ul class="menu-ul">
-            <li>Caipirinha</li>
-            <li>Caipiroska</li>
-            <li>Caipirágua <span class="menu-small-text">(sem álcool)</span></li>
-            <li>Mojito</li>
-            <li>Jack & Coke</li>
-            <li>Pinã Colada</li>
-            <li>Tequila Sunrise</li>
-            <li>Sex on The Rocks</li>
-            <li>Daiquiri</li>
-            <li>Long Island Iced Tea</li>
-            <li>Bramble</li>
-            <li>Cosmopolitan</li>
-            <li>Cuba Libre</li>
-            <li>Tom Collins</li>
-            <li>Aperol Spritz</li>
-            <li>Blue Hawaii</li>
-            <li>Sour <span class="menu-small-text">(* whisky, rum ou vodka)</span></li>
-            <li>Margarita <span class="menu-small-text">(* limão, ananás ou morango)</span></li>
-            <li><span class="menu-small-text">* escolher uma das bebidas / sabo</span></li>
-          </ul>
-          <ul class="menu-ul-price">
-            <li>5.00€</li>
-            <li>5.00€</li>
-            <li>4.00€</li>
-            <li>6.00€</li>
-            <li>4.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>6.00€</li>
-            <li>7.00€</li>
-            <li>6.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>6.00€</li>
-            <li>5.00€</li>
-            <li>5.00€</li>
-            <li>5.00€</li>
-            <li>4.00€</li>
-            <li>&nbsp</li>
-          </ul>
-        </fieldset>
-      </article>
-    </section>
-    <div class="menu-nav">
-      <ul>
-        <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> -->
-        <li class="menu-nav-item"><a href="#wine">Wine</a></li>
-        <li class="menu-nav-item"><a href="#bar">Bar</a></li>
-        <li class="menu-nav-item"><a href="#food">Food</a></li>
-        <li class="menu-nav-item"><a href="#drinks">Drinks</a></li>
-      </ul>
-    </div>
+  </div> -->
 </main>
 
 <?php
