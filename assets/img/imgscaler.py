@@ -10,9 +10,9 @@ sizes = [
 ]
 
 # Directory containing original images
-input_dir = 'original/'
+input_dir = 'scaleMe/'
 # Directory to save resized images
-output_dir = 'foodSizes/'
+output_dir = 'scaledImg/'
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
