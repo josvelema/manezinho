@@ -281,7 +281,8 @@ footer .menu-nav {
 }
 
 
-table {
+table,
+.sub-menu-nav{
   width: min(99%, 1000px);
   border-collapse: collapse;
   margin-block: 1em;
@@ -361,6 +362,38 @@ th.footnote {
   padding-left: 0.5rem;
 }
 
+.sub-menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.66rem;
+  padding: 0.5em 0.75em;
+  border: 1px solid #fff6;
+  border-radius: 4px;
+  list-style: none;
+  background: #2229;
+  margin: auto 0.25rem;
+}
+
+.sub-menu-nav li {
+  position: relative;
+  padding-inline: 0.25rem;
+}
+
+.sub-menu-nav li::after {
+  content: "-";
+  position: absolute;
+  right: -0.5rem;
+  color: var(--gold-a);
+  font-weight: 900;
+  top: -2px;
+}
+
+.sub-menu-nav li:last-child::after {
+  display: none;
+}
+
+
 @media (max-width: 30rem) {
   table {
     width: 100%;
@@ -373,9 +406,6 @@ th.footnote {
   tr td:first-child {
     max-width: 30ch;
   }
-  tr td:last-child,
-  tr td:nth-child(2){
-    
-  }
+
 }
 

@@ -177,12 +177,12 @@ a:focus-visible {
   opacity: 0.6;
 }
 
-:target:before {
+/* :target:before {
   content: "";
   display: block;
   height: 6.5em;
   margin: -6.5em 0 0;
-}
+} */
 main {
   width: min(100%, 1200px);
   min-height: 100vh;
@@ -299,15 +299,16 @@ h6 {
 
 section.hero {
   position: relative;
-  min-height: calc(100dvh - var(--nav-height));
+  min-height: auto;
+  height: min(calc(100dvh - var(--nav-height)), 1000px);
 }
 
 .img-scroller {
   position: absolute;
     width: 100%;
-    height: 100%;
+    height: min(100%, 900px);
     top: 0;
-    left: 0;
+    left: 0;  
     overflow: hidden;
     
 }

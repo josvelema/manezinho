@@ -11,19 +11,20 @@ include "includes/nav.html"
 
 
 <main class="menu-main">
-    <header class="menu-header">
-      <h1>Menu</h1>
-      <div class="menu-nav">
-        <ul>
-          <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> -->
-          <li class="menu-nav-item"><a href="#wine">Wine</a></li>
-          <li class="menu-nav-item" style="display: none;"><a href="#bar">Bar</a></li>
-          <li class="menu-nav-item"><a href="#food">Food</a></li>
-          <li class="menu-nav-item" style="display: none;"><a href="#cocktails">Cocktails</a></li>
-        </ul>
-      </div>
-    </header>
-  
+  <header class="menu-header">
+    <h1>Menu</h1>
+    <div class="menu-nav">
+      <ul>
+        <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> -->
+        <li class="menu-nav-item"><a href="#wine">Wine</a></li>
+        <li class="menu-nav-item" style="display: none;"><a href="#bar">Bar</a></li>
+        <li class="menu-nav-item"><a href="#food">Food</a></li>
+        <li class="menu-nav-item" style="display: none;"><a href="#cocktails">Cocktails</a></li>
+        
+      </ul>
+    </div>
+  </header>
+
 
   <section id="wine">
     <h3>Wine</h3>
@@ -776,6 +777,20 @@ ananás
   </section>
   <section id="food">
     <h3>Food</h3>
+    <div class="sub-menu-nav">
+      <ul>
+      <li ><a href="#saladas">Saladas</a></li>
+        <li ><a href="#hambúrguer">Hambúrguer</a></li>
+        <li ><a href="#carne">Carne</a></li>
+        <li ><a href="#peixe">Peixe</a></li>
+        <!-- especialidades -->
+        <li ><a href="#especialidades">Especialidades</a></li>
+        <li ><a href="#sobremesas">Sobremesas</a></li>
+        <!-- menu CRIANÇA -->
+        <li ><a href="#Criança">Menu Criança</a></li>
+
+      </ul>
+    </div>
     <table class="menu-table">
       <thead>
         <tr>
@@ -785,6 +800,11 @@ ananás
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td colspan="2">
+            Couvert gratis <small><em>(cesto de pão com manteiga aromatizada)</em></small>
+          </td>
+        </tr>
         <tr>
           <td>
             Sopa do dia
@@ -935,45 +955,12 @@ ananás
             6.00 €
           </td>
         </tr>
-        <!--  Salada simples
-(mistura de alface, cebola roxa e tomate
-cherry)
 
-5.00 €
-
- Salada de camarão
-(camarão frito, mistura de alface, tomate
-cherry, cebola roxa e vinagrete)
-
-15.00 €
-
- Salada de frango
-(frango grelhado, mistura de alface,
-tomate cherry, cebola roxa e
-vinagrete)
-
-12.00 €
-
- Salada vegano
-(mistura de alface, cebola roxa, tomate
-cherry, mistura de legumes da época
-salteados e tofu)
-
-15.00 €
-
- Salada vegetariana
-(mistura de alface, cebola roxa, tomate
-cherry, mistura de legumes da época
-salteados e batata assada)
-
-12.00 €
-   -->
-        <tr class="tr-divider">
+        <tr class="tr-divider" id="saladas">
           <th colspan="2">
-            Saladas:
+            saladas:
           </th>
         </tr>
-
         <tr>
           <td>
             Salada simples
@@ -1081,7 +1068,7 @@ de cebola)
 16.00 €
 
 *Acompanhadas com Salada, batata frita e molhos (açafrão, tártaro e ketchup) -->
-        <tr class="tr-divider">
+        <tr class="tr-divider" id="hambúrguer">
           <th colspan="2">
             Hambúrguer:
           </th>
@@ -1180,7 +1167,7 @@ porco preto
 
 * Acompanhadas de arroz branco, legumes salteados, batata doce e branca assada) -->
 
-        <tr class="tr-divider">
+        <tr class="tr-divider" id="carne">
           <th colspan="2">
             Carne:
           </th>
@@ -1249,6 +1236,15 @@ porco preto
           </td>
         </tr>
         <tr>
+          <td>
+            Bife de frango grelhado
+            <small><em>(com salada, arroz branco e batata frita)</em></small>
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr>
           <th colspan="2" class="footnote">
             * Acompanhadas de arroz branco, legumes salteados, batata doce e branca assada
           </th>
@@ -1274,7 +1270,7 @@ tártaro e batata frita)
 
 * Acompanhado com arroz de grelos ou salada de batata
 -->
-        <tr class="tr-divider">
+        <tr class="tr-divider" id="peixe">
           <th colspan="2">
             Peixe:
           </th>
@@ -1325,16 +1321,171 @@ tártaro e batata frita)
             * Acompanhado com arroz de grelos ou salada de batata
           </th>
         </tr>
+      </tbody>
+    </table>
+    <!-- 
+Especialidades
 
-        <!-- Sobremesas:
+Entradas:
+
+    • Ceviche
+15.00€
+    • Atum braseado
+12.00€
+    • Salada de Polvo
+13.00€
+    • Ameijoas de São Jorge à Chef
+(500gr)
+32.50€
+    • Lapas
+(500gr)
+22.50€
+
+Pratos Principais:
+
+    • Alcatra
+(acompanhada de arroz branco e Massa Sovada)
+18.00€
+    • Bife de Atum
+(acompanhado de salada de batata)
+23.00€
+    • Cataplana de peixe e marisco 
+(2 pessoas) 
+(peixe, camarão, ameijoa de São Jorge em cama de cebola, tomate, batata e salsa)
+60.00€
+ -->
+    <table class="menu-table" id="especialidades">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Especialidades
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Entradas:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Ceviche
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Atum braseado
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Salada de Polvo
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ameijoas de São Jorge à Chef
+            <small>
+              <em>
+                (500gr)
+              </em>
+            </small>
+          </td>
+          <td>
+            32.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lapas
+            <small>
+              <em>
+                (500gr)
+              </em>
+            </small>
+          </td>
+          <td>
+            22.50 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Pratos Principais:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Alcatra
+            <small>
+              <em>
+                (acompanhada de arroz branco e Massa Sovada)
+              </em>
+            </small>
+          </td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bife de Atum
+            <small>
+              <em>
+                (acompanhado de salada de batata)
+              </em>
+            </small>
+          </td>
+          <td>
+            23.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cataplana de peixe e marisco
+            <small>
+              <em>
+                (2 pessoas)
+                (peixe, camarão, ameijoa de São Jorge em cama de cebola, tomate, batata e salsa)
+              </em>
+            </small>
+          </td>
+          <td>
+            60.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+    <!-- Sobremesas:
  À colher 4.00 €
  Ao garfo 4.00 €
  Fruta da época 2.50 € a 3.50 €
  Frutas da época laminada 8 € -->
+    <table class="menu-table" id="sobremesas">
+      <thead>
+
         <tr class="tr-divider">
           <th colspan="2">
             Sobremesas:
           </th>
+
+      </thead>
+      <tbody>
         </tr>
         <tr>
           <td>
@@ -1370,77 +1521,37 @@ tártaro e batata frita)
         </tr>
       </tbody>
     </table>
+    <!-- Menu criança
 
-  </section>
+    • Sopa do dia
+1.50€
+    • Hambúrguer 
+(pão, carne vaca, queijo cheddar, salada e batata frita)
+7.00€
+    • Bife de frango grelhado 
+(ovo estrelado, arroz branco e batata frita)
+8.00€
+    • Nuggets de frango panado 
+(arroz branco e batata frita)
+7.00€
+    • Filete de veja panado 
+(arroz branco e salada)
+8.00€
+    • Fruta da época
+2.50€ -->
 
-
-  <section id="bar" style="display:none;">
-    <h3>Drinks</h3>
-    <table class="menu-table">
+    <table class="menu-table" id="Criança">
       <thead>
         <tr>
           <th colspan="2">
-            Drinks
+            Menu Criança
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-divider">
-          <th colspan="2">
-            Quentes
-          </th>
-        </tr>
         <tr>
           <td>
-            Café
-          </td>
-          <td>
-            0.80 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Café Americano
-          </td>
-          <td>
-            1.60 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Carioca
-          </td>
-          <td>
-            0.70 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Carioca Limão
-          </td>
-          <td>
-            0.70 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Café Pingado
-          </td>
-          <td>
-            0.80 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Garoto
-          </td>
-          <td>
-            0.80 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Meia de Leite
+            Sopa do dia
           </td>
           <td>
             1.50 €
@@ -1448,127 +1559,172 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Leite com Chocolate
+            Hambúrguer
+            <small>
+              <em>
+                (pão, carne vaca, queijo cheddar, salada e batata frita)
+              </em>
+            </small>
           </td>
           <td>
-            2.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Galão
-          </td>
-          <td>
-            2.00 €
+            7.00 €
           </td>
         </tr>
         <tr>
           <td>
-            Chá
+            Bife de frango grelhado
+            <small>
+              <em>
+                (ovo estrelado, arroz branco e batata frita)
+              </em>
+            </small>
           </td>
           <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr class="tr-divider">
-          <th colspan="2">
-            SEM GÁS
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Água
-          </td>
-          <td>
-            <span class="menu-size-icon">p</span> 1.20 € &nbsp; <span class="menu-size-icon">g</span> 2.50 €
+            8.00 €
           </td>
         </tr>
         <tr>
           <td>
-            Nestea
+            Nuggets de frango panado
+            <small>
+              <em>
+                (arroz branco e batata frita)
+              </em>
+            </small>
           </td>
           <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Sumo Natural
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr class="tr-divider">
-          <th colspan="2">
-            COM GÁS
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Água com Gás
-          </td>
-          <td>
-            1.50 €
+            7.00 €
           </td>
         </tr>
         <tr>
           <td>
-            Água Tónica
+            Filete de veja panado
+            <small>
+              <em>
+                (arroz branco e salada)
+              </em>
+            </small>
           </td>
           <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Fanta
-          </td>
-          <td>
-            1.50 €
+            8.00 €
           </td>
         </tr>
         <tr>
           <td>
-            Sprite
+            Fruta da época
           </td>
           <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Coca-Cola
-          </td>
-          <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Coca-Cola Zero
-          </td>
-          <td>
-            1.50 €
+            2.50 €
           </td>
         </tr>
       </tbody>
     </table>
 
+
+  </section>
+
+  <!-- BAR
+
+
+Cerveja & Cidra
+
+Sagres 33cl 
+1.80€
+Super Bock 33cl 
+1.80€
+Super Bock Zero 33cl 
+1.80€
+Super Bock Zero Preta 33cl
+1.80€
+Cidra de Maçã 
+2.50€
+
+
+
+Cerveja importada
+
+
+Ao Copo:
+Heineken 25cl 
+1.50€
+Heineken 50cl 
+3.00€
+
+À Garrafa:
+Beck’s 
+2.00€
+Budweiser 
+3.50€
+Corona 
+3.00€
+Chimay 
+7.00€
+Duvel 
+6.00€
+Erdinger Zero
+5.00€
+Erdinger
+7.00€
+Franziskaner 
+4.00€
+Gordon Platinum 
+7.00€
+Guinness
+7.00€
+Gulden Draak 
+7.00€
+Heineken Zero 
+1.50€
+La Chouffe 
+7.00€
+Leffe Blond 
+3.50€
+Leffe Brune 
+3.50€
+Stella Artois 
+2.50€
+Timmermans
+4.00€
+Triple Karmeliet 
+6.00€
+
+ -->
+  <section id="bar">
     <h3>Bar</h3>
+    <div class="sub-menu-nav">
+      <ul>
+        <li><a href="#cerveja">Cerveja importada</a></li>
+        <li><a href="#cocktails">Cocktails</a></li>
+        <li><a href="#gin">Gin</a></li>
+        <li><a href="#whiskey">Whiskey</a></li>
+        <li><a href="#tequila">Tequila</a></li>
+        <li><a href="#rum">Rum</a></li>
+        <li><a href="#vodka">Vodka</a></li>
+        <!-- aguardentes -->
+        <li><a href="#aguardentes">Aguardentes & cognac</a></li>
+
+        <li><a href="#licores">Licores & outros</a></li>
+        <!-- apertivos -->
+        <li><a href="#apertivos">Aperitivos</a></li>  
+        <!-- semcomgas -->
+        <li><a href="#semcomgas">Sem & com gás</a></li>
+        <!-- quentes  -->
+        <li><a href="#quentes">Bebidas quentes</a></li>
+   
+      </ul>
+    </div>
     <table class="menu-table">
       <thead>
         <tr>
           <th colspan="2">
-            Cerceja & Cidra
+            Cerveja & Cidra
           </th>
         </tr>
       </thead>
-
       <tbody>
         <tr>
           <td>
-            Sagres <span class="menu-small-text">0,33cl </span>
+            Sagres 33cl
           </td>
           <td>
             1.80 €
@@ -1576,7 +1732,7 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Superbock <span class="menu-small-text">0,33cl </span>
+            Super Bock 33cl
           </td>
           <td>
             1.80 €
@@ -1584,61 +1740,68 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Super Bock Green
+            Super Bock Zero 33cl
           </td>
           <td>
             1.80 €
           </td>
-
         </tr>
         <tr>
           <td>
-            Bandida do Pomar
+            Super Bock Zero Preta 33cl
           </td>
           <td>
-            2.00 €
+            1.80 €
           </td>
         </tr>
         <tr>
           <td>
-            Sommersby
+            Cidra de Maçã
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="menu-table" id="cerveja">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Cerveja importada
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Ao Copo:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Heineken 25cl
           </td>
           <td>
             1.50 €
           </td>
         </tr>
         <tr>
-          <th colspan="2">
-            Cerveja Importada
-          </th>
-        </tr>
-        <tr>
           <td>
-            Heineken <span class="menu-small-text">0,50cl </span>
+            Heineken 50cl
           </td>
           <td>
             3.00 €
           </td>
         </tr>
-        <tr>
-          <td>
-            Heineken <span class="menu-small-text">0,25cl </span>
-          </td>
-          <td>
-            1.50 €
-          </td>
+        <tr class="tr-divider">
+          <th colspan="2">
+            À Garrafa:
+          </th>
         </tr>
         <tr>
           <td>
-            Heineken Zero
-          </td>
-          <td>
-            1.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Beck´s
+            Beck’s
           </td>
           <td>
             2.00 €
@@ -1662,63 +1825,7 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Stella Artois
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Leffe Blonde
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Leffe Brune
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Hoegaarden
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Franziskaner
-          </td>
-          <td>
-            4.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            La Chouffe
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Chimay Blue
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Delirium Tremens
+            Chimay
           </td>
           <td>
             7.00 €
@@ -1734,34 +1841,42 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Kwak
+            Erdinger Zero
           </td>
           <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Rochefort 10
-          </td>
-          <td>
-            6.00 €
+            5.00 €
           </td>
         </tr>
         <tr>
           <td>
-            Rochefort 8
+            Erdinger
           </td>
           <td>
-            6.00 €
+            7.00 €
           </td>
         </tr>
         <tr>
           <td>
-            La Trappe Blond
+            Franziskaner
           </td>
           <td>
-            6.00 €
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gordon Platinum
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Guinness
+          </td>
+          <td>
+            7.00 €
           </td>
         </tr>
         <tr>
@@ -1774,60 +1889,15 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Tripel Karmeliet
+            Heineken Zero
           </td>
           <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Diversas
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2">
-            Gins
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Baleia
-          </td>
-          <td>
-            12.00 €
+            1.50 €
           </td>
         </tr>
         <tr>
           <td>
-            Nordés
-          </td>
-          <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Beefeater
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Beefeater Pink
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Bombay Sapphire Dry
+            La Chouffe
           </td>
           <td>
             7.00 €
@@ -1835,163 +1905,7 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Gordon's Pink
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Bombay Sapphire
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Bombay Bramble
-          </td>
-          <td>
-            8.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Sharish Blue
-          </td>
-          <td>
-            8.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Bulldog
-          </td>
-          <td>
-            9.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Tanqueray
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Tanqueray Ten
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Nº13
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Hendrick's (Diversos)
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Hendrick's
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Monkey 47
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Manezinho
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Nikka Coffey
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Azor Gin Reserva
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Mombasa Club
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Roku
-          </td>
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2">
-            Martini's
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Branco
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Rosso
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Fiero
-          </td>
-          <td>
-            3.00 €
-        </tr>
-        <tr>
-          <td>
-            Dry
+            Leffe Blond
           </td>
           <td>
             3.50 €
@@ -1999,14 +1913,23 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Dirty
+            Leffe Brune
           </td>
           <td>
             3.50 €
+          </td>
         </tr>
         <tr>
           <td>
-            Strawberry
+            Stella Artois
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Timmermans
           </td>
           <td>
             4.00 €
@@ -2014,481 +1937,17 @@ tártaro e batata frita)
         </tr>
         <tr>
           <td>
-            Lemon Drop
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Cucumbre
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Caramel
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Expresso Martini
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2">Shots</th>
-        </tr>
-        <tr>
-          <td>
-            Mix
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Tequila
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Patrón Reposado
+            Triple Karmeliet
           </td>
           <td>
             6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Patrón Anejo
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Patrón Silver
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jägermeister
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Fireball
-          </td>
-          <td>
-            4.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Gold Strike
-          </td>
-          <td>
-            3.00 €
           </td>
         </tr>
       </tbody>
     </table>
-    <table class="menu-table">
-      <thead>
-        <tr>
-          <th colspan="3">Whiskey</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th class="dark"></th>
-          <th>½ dose</th>
-          <th>1 dose</th>
-        </tr>
-        <tr>
-          <td>
-            Red Label
-          </td>
-          <td>
-            2.50 €
-          </td>
-          <td>
-            4.00 €
-          </td>
+    <!-- Cocktails
 
-        </tr>
-        <tr>
-          <td>
-            Black Label
-          </td>
-          <td>
-            4.00 €
-          </td>
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jameson
-          </td>
-          <td>
-            3.00 €
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jack Daniel's
-          </td>
-          <td>
-            3.00 €
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jack Daniel’s Maçã
-          </td>
-          <td>
-            3.50 €
-          </td>
-          <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jack Daniel’s Fire
-          </td>
-          <td>
-            3.50 €
-          </td>
-          <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Jack Daniel’s Single Barrel
-          </td>
-          <td>
-            6.00 €
-          </td>
-          <td>
-            12.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Glenfiddich
-          </td>
-          <td>
-            5.00 €
-          </td>
-          <td>
-            8.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Bushmills
-          </td>
-          <td>&nbsp;</td>
-          <td>
-            6.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            J. Walker Double Black
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            10.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            J. Walker Gold Label Reserva
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            13.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            J. Walker Ultimate 18
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            18.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Nikka
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            18.00 €
-          </td>
-        </tr>
-        <tr>
-          <th colspan="3">
-            Aguardentes
-          </th>
-        </tr>
-        <tr>
-          <th class="dark">&nbsp;</th>
-          <th>½ dose</th>
-          <th>1 dose</th>
-        </tr>
-        <tr>
-          <td>
-            CRF extra reserva
-          </td>
-          <td>
-            4.50 €
-          </td>
-          <td>
-            8.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            CRF
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            4.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Couvoisier
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            7.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Remy Martin
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            8.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Brandy Croft
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            4.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Nevada
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Canela
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Limão
-          </td>
-          <td>&nbsp;</td>
-
-          <td>
-            3.00 €
-          </td>
-        </tr>
-
-        <!-- 
-        LICOR/OUTROS
-Vinho do Porto
-Per Se
-Per Se (Tónico)
-Beirão
-Campari
-Baileys
-DramBuie
-Limoncello
-Disaronno
-Amêndoa Amarga
-Angelica
-Grand Marnier
-2.50€
-3.00€
-4.50€
-3.00€
-3.00€
-3.00€
-5.00€
-3.00€
-5.00€
-3.50€
-3.50€
-5.00€ -->
-        <tr>
-          <th colspan="2">
-            Licor/Outros
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Vinho do Porto
-          </td>
-          <td>
-            2.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Per Se
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Per Se (Tónico)
-          </td>
-          <td>
-            4.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Beirão
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Campari
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Baileys
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            DramBuie
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Limoncello
-          </td>
-          <td>
-            3.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Disaronno
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Amêndoa Amarga
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Angelica
-          </td>
-          <td>
-            3.50 €
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Grand Marnier
-          </td>
-          <td>
-            5.00 €
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>Cocktails</h3>
-    Cocktails
-
-    <!-- Aperol Spritz 
+Aperol Spritz 
 (Prosecco, Aperol e água com gás)
 5.00€
 Azedinha
@@ -2562,16 +2021,14 @@ White Lady
 5.00€
 
 * Sumo: Laranja, Lima, Ananás ou Maracujá -->
-
-    <table class="menu-table">
+    <table class="menu-table" id="cocktails">
       <thead>
         <tr>
           <th colspan="2">
-            Cocktails
+            <h3>Cocktails</h3>
           </th>
         </tr>
       </thead>
-
       <tbody>
         <tr>
           <td>
@@ -2664,7 +2121,6 @@ White Lady
             4.00 €
           </td>
         </tr>
-
         <tr>
           <td>
             Cuba Libre
@@ -2886,6 +2342,11 @@ White Lady
             5.00 €
           </td>
         </tr>
+        <tr>
+          <th colspan="2" class="footnote">
+            * Sumo: Laranja, Lima, Ananás ou Maracujá
+          </th>
+        </tr>
       </tbody>
     </table>
 
@@ -2894,12 +2355,1386 @@ White Lady
 
 
 
+    <!-- 
+
+Gin
+
+Black Pig
+9.00€
+Black Pig Montado
+12.00€
+Bombay Sapphire
+7.00€
+Bulldog
+9.00€
+Etsu
+10.00€
+Etsu Reserva
+13.00€
+Gordon
+5.00€
+Gordon Pink
+5.00€
+Hendrick’s 
+10.00€
+Hendrick’s Flora Adora 
+12.00€
+Hendrick’s Lunar
+12.00€
+Hendrick’s Midsummer Solstice 
+12.00€
+Hendrick’s Neptunia
+12.00€
+Hendrick’s Orbium
+12.00€
+Martin Miller’s
+9.00€
+Mombassa
+14.00€
+Monkey 47 
+18.00€
+Nikka
+15.00€
+Nordés 
+6.00€
+Opihr
+7.00€
+Sharish 
+8.00€
+Sharish Blue 
+8.00€
+Tanqueray 
+7.00€
+Tanqueray Ten 
+10.00€
+Manezinho Gin
+12.00€
+
+Gin Dos Açores: 
+Azor Dry
+8.00€
+Azor Premium
+10.00€
+Azor Reserva
+15.00€
+Azor Zero
+8.00€
+Rocha negra
+10.00€ -->
+    <table class="menu-table" id="gin">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Gin
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>
+            Black Pig
+          </td>
+          <td>
+            9.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Black Pig Montado
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bombay Sapphire
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bulldog
+          </td>
+          <td>
+            9.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Etsu
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Etsu Reserva
+          </td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gordon
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gordon Pink
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s Flora Adora
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s Lunar
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s Midsummer Solstice
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s Neptunia
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hendrick’s Orbium
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Martin Miller’s
+          </td>
+          <td>
+            9.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mombassa
+          </td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Monkey 47
+          </td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nikka
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nordés
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Opihr
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sharish
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sharish Blue
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanqueray
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanqueray Ten
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Manezinho Gin
+          </td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Gin Dos Açores:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Azor Dry
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azor Premium
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azor Reserva
+          </td>
+          <td>
+            15.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Azor Zero
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rocha negra
+          </td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Whiskeys
+½ dose
+1 dose
+Bushmills
+3.00€
+5.00€
+Bushmills Black Bush (Sherry Cast)
+4.00€
+8.00€
+Bushmills Single Malt 10 Anos
+
+10.00€
+Glenfiddich 10 Anos
+
+8.00€
+Jack Daniel’s
+3.00€
+5.00€
+Jack Daniel’s Gentleman Jack
+
+12.00€
+Jack Daniel’s Fire
+3.50€
+6.00€
+Jack Daniel’s Honey
+3.50€
+6.00€
+Jack Daniel’s Maçã
+3.50€
+6.00€
+Jack Daniel’s Single Barrel
+
+12.00€
+Jameson
+3.00€
+5.00€
+J. Walker Red Label
+2.50€
+4.00€
+J. Walker Black Label
+4.00€
+7.00€
+J. Walker Double Black
+
+10.00€
+J. Walker Gold Label Reserva
+
+13.00€
+Monkey Shoulders
+
+8.00€
+Nikka the Barrel
+
+14.00€
+Nikka Taketsuru
+
+18.00€ -->
+
+    <table class="menu-table" id="whiskey">
+      <h2></h2>
+      <thead>
+        <tr>
+          <th colspan="3">
+            Whiskeys
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <th>½ dose</th>
+          <th>1 dose</th>
+        </tr>
+        <tr>
+          <td>
+            Bushmills
+          </td>
+          <td>
+            3.00 €
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bushmills Black Bush <small><em>(Sherry Cast)</em></small>
+          </td>
+          <td>
+            4.00 €
+          </td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bushmills Single Malt 10 Anos
+          </td>
+          <td></td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Glenfiddich 10 Anos
+          </td>
+          <td></td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s
+          </td>
+          <td>
+            3.00 €
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Gentleman Jack
+          </td>
+          <td></td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Fire
+          </td>
+          <td>
+            3.50 €
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Honey
+          </td>
+          <td>
+            3.50 €
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Maçã
+          </td>
+          <td>
+            3.50 €
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jack Daniel’s Single Barrel
+          </td>
+          <td></td>
+          <td>
+            12.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jameson
+          </td>
+          <td>
+            3.00 €
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Red Label
+          </td>
+          <td>
+            2.50 €
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Black Label
+          </td>
+          <td>
+            4.00 €
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Double Black
+          </td>
+          <td></td>
+          <td>
+            10.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            J. Walker Gold Label Reserva
+          </td>
+          <td></td>
+          <td>
+            13.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Monkey Shoulders
+          </td>
+          <td></td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nikka the Barrel
+          </td>
+          <td></td>
+          <td>
+            14.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nikka Taketsuru
+          </td>
+          <td></td>
+          <td>
+            18.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    Tequila
+
+    <!-- Tres Sombreros
+2.50€
+Patron Silver
+5.00€
+Patron Repousado 
+6.00€
+Patron Añejo
+7.00€ -->
+    <table class="menu-table" id="tequila">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Tequila
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Tres Sombreros
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patron Silver
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patron Repousado
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Patron Añejo
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Rum
+
+Bacardi
+3.00€
+Barceló Añejo
+6.00€ -->
+    <table class="menu-table" id="rum">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Rum
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Bacardi
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Barceló Añejo
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Vodka
+
+Smirnoff
+3.00€
+Absolut
+4.00€
+Ciroc Ananás
+5.00€
+Ciroc Pessego
+5.00€
+Ciroc Maçã
+5.00€
+Ciroc Manga
+5.00€
+Grey Goose
+6.00€
+Grey Goose Cereja
+6.00€
+Grey Goose Pêra
+6.00€ -->
+
+    <table class="menu-table" id="wodka">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Vodka
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Smirnoff
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Absolut
+          </td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ciroc Ananás
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ciroc Pessego
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ciroc Maçã
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Ciroc Manga
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grey Goose
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grey Goose Cereja
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grey Goose Pêra
+          </td>
+          <td>
+            6.00 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Aguardentes & Cognac
+½ Dose
+1 Dose
+Antiqua Aguardente Velha
+-
+4.00€
+Brandy Croft
+-
+4.00€
+CRF
+-
+4.50€
+CRF Reserva Extra
+-
+8.00€
+Courvoisier Cognac
+4.00€
+7.00€
+Hine Cognac
+4.00€
+7.00€
+
+Aguardentes dos Açores:
+Bagaceira
+
+2.00€
+Bagaço
+
+3.50€
+Canela
+
+3.50€
+Figo
+
+3.50€ -->
+    <table class="menu-table" id="aguardentes">
+      <thead>
+        <tr>
+          <th colspan="3">
+            Aguardentes & Cognac
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <th>½ Dose</th>
+          <th>1 Dose</th>
+        </tr>
+        <tr>
+          <td>
+            Antiqua Aguardente Velha
+          </td>
+          <td></td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Brandy Croft
+          </td>
+          <td></td>
+          <td>
+            4.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            CRF
+          </td>
+          <td></td>
+          <td>
+            4.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            CRF Reserva Extra
+          </td>
+          <td></td>
+          <td>
+            8.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Courvoisier Cognac
+          </td>
+          <td>
+            4.00 €
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hine Cognac
+          </td>
+          <td>
+            4.00 €
+          </td>
+          <td>
+            7.00 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="3">
+            Aguardentes dos Açores:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Bagaceira
+          </td>
+          <td></td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Bagaço
+          </td>
+          <td></td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Canela
+          </td>
+          <td></td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Figo
+          </td>
+          <td></td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Licores & Outros
+
+Amarula
+3.50€
+Amêndoa Amarga
+3.50€
+Beirão
+3.00€
+Baileys
+3.00€
+Campari
+3.00€
+Drambuie
+5.00€
+Grand Marnier
+5.00€
+Jagermeister
+3.00€
+Vinho Porto Tinto
+3.00€
+Vinho Porto Branco
+3.00€
+Vinho Porto Dona Antonia (Reserva)
+4.50€
+Kahlua
+3.50€
+
+Licores dos Açores:
+Amora
+3.50€
+Lajido (licoroso) 
+5.00€
+Neveda
+3.50€
+Angelica
+3.50€ -->
+
+    <table class="menu-table" id="licores">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Licores & Outros
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Amarula
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Amêndoa Amarga
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Beirão
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Baileys
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Campari
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Drambuie
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Grand Marnier
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jagermeister
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vinho Porto Tinto
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vinho Porto Branco
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vinho Porto Dona Antonia <small><em>(Reserva)</em></small>
+          </td>
+          <td>
+            4.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kahlua
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr class="tr-divider">
+          <th colspan="2">
+            Licores dos Açores:
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Amora
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lajido <small><em>(licoroso)</em></small>
+          </td>
+          <td>
+            5.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Neveda
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Angelica
+          </td>
+          <td>
+            3.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Aperitivos
+
+Martini Branco
+2.50€
+Martini Rosso
+2.50€
+Moscatel
+3.00€
+Per Se
+2.50€ -->
+    <table class="menu-table" id="apertivos">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Aperitivos
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Martini Branco
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Martini Rosso
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Moscatel
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Per Se
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+À Garrafa:
+Água 37.5cl
+1.20€
+Água 75cl
+2.50€
+Nestea
+1.50€
+Sumo Natural 
+3.00€
+
+Ao Copo:
+Compal
+(Ananás, Laranja, Maçã e Maracujá) 
+1.50€
+
+Sem Gás
+
+
+À Garrafa:
+Água 37.5cl
+1.20€
+Água 75cl
+2.50€
+Nestea
+1.50€
+Sumo Natural 
+3.00€
+
+Ao Copo:
+Compal
+(Ananás, Laranja, Maçã e Maracujá) 
+1.50€
+
+ -->
+
+    <table class="menu-table" id="semcomgas">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Sem Gás
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <th>À Garrafa:</th>
+        </tr>
+        <tr>
+          <td>
+            Água 37.5cl
+          </td>
+          <td>
+            1.20 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Água 75cl
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nestea
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sumo Natural
+          </td>
+          <td>
+            3.00 €
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Ao Copo:</th>
+        </tr>
+        <tr>
+          <td>
+            Compal <small><em>(Ananás, Laranja, Maçã e Maracujá)</em></small>
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- Quentes
+
+
+Café
+0.80€
+Café Americano
+1.60€
+Café Pingado
+0.80€
+Cappuccino
+2.50€
+Carioca
+0.60€
+Carioca Limão
+0.60€
+Chá
+1.50€
+Descafeinado
+0.80€
+Galão
+2.00€
+Garoto
+0.80€
+Meia de Leite
+1.50€ -->
+
+    <table class="menu-table" id="quentes">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Quentes
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Café
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Café Americano
+          </td>
+          <td>
+            1.60 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Café Pingado
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cappuccino
+          </td>
+          <td>
+            2.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carioca
+          </td>
+          <td>
+            0.60 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Carioca Limão
+          </td>
+          <td>
+            0.60 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chá
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Descafeinado
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Galão
+          </td>
+          <td>
+            2.00 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Garoto
+          </td>
+          <td>
+            0.80 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Meia de Leite
+          </td>
+          <td>
+            1.50 €
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Snacks
 
 
 
-    <p class="menu-legend-p">
-      <span><i class="menu-size-icon">p</i> &nbsp;Pequeno</i></span>
-      <span><i class="menu-size-icon">g</i> &nbsp;Grande </span>
+
 
 
 
@@ -2909,15 +3744,7 @@ White Lady
   </section>
 
 
-  <!-- <div class="menu-nav">
-    <ul>
-      <!-- <li class="menu-nav-item"><a href="#drinks">Drinks</a></li> 
-      <li class="menu-nav-item"><a href="#wine">Wine</a></li>
-      <li class="menu-nav-item"><a href="#bar">Bar</a></li>
-      <li class="menu-nav-item"><a href="#food">Food</a></li>
-      <li class="menu-nav-item"><a href="#drinks">Drinks</a></li>
-    </ul>
-  </div> -->
+
 </main>
 
 <?php
