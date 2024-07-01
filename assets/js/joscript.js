@@ -12,7 +12,10 @@ navLink.forEach((link) => {
   
   // console.log((link.href, window.location.href));
   console.log(link.href)
-  if (link.href === window.location.href) {
+
+  // get current url without the # or ? 
+  const currentURL = window.location.href.split("#")[0].split("?")[0];
+  if (link.href === currentURL) {
     link.setAttribute("aria-current", "page");
     link.setAttribute("title","You are currently on this page")
   }
