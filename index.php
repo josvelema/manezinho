@@ -72,14 +72,13 @@ include "includes/nav.html";
       </button>
     </div>
   </section>
-  <header class="main-food">
-    <div class="food-content">
+  <header class="home-divider home-food-header">
       <h2>Our Menu</h2>
       <p>
         Our menu is inspired by the local cuisine of the Azores. We use fresh and local ingredients to create our dishes. We also have a selection of wines and cocktails to accompany your meal. You can find more information about our menu on the
         <a href="/menu">Menu page</a>.
       </p>
-    </div>
+  
   </header>
 
   <section class="home-food">
@@ -133,24 +132,22 @@ include "includes/nav.html";
 
   </section>
 
-  <div class="home-divider music">
+  <header class="home-divider music">
     <h2>Live Music</h2>
-  </div>
+  </header>
   <section class="home-music">
-
-    <div class="music-content">
+    <article>
+      <div class="home-music-img">
+        <img src="assets/img/pieterJet.png" alt="Pieter & Jet on stage">
+        <h3>Pieter & Jet on stage</h3>
+      </div>
       <p>
         Besides our resident artists, we regularly have guest playing on our stage. Sometime we also have jamsessions , where anyone can join in the fun. You can find more information about the events on the
         <a href="events.php">Event page</a>.
       </p>
-    </div>
+    </article>
 
-
-
-
-
-
-
+  
   </section>
 
 </main>
@@ -199,7 +196,7 @@ include "includes/nav.html";
       foodImages.querySelector(".active").classList.remove("active");
       j = (j + 1) % foodImages.children.length;
       foodImages.children[j].classList.add("active");
-    }, 3500);
+    }, 4500);
   }
 
   // observer to start foodScoller when in view
@@ -214,9 +211,7 @@ include "includes/nav.html";
 
 
   observer.observe(foodImages);
-</script>
 
-<script>
   const modal = document.querySelector(".modal");
   const openModal = document.querySelector(".open-button");
   const closeModal = document.querySelector(".close-button");
@@ -228,7 +223,18 @@ include "includes/nav.html";
   openModal.addEventListener("click", () => {
     modal.style.display = "flex";
     modalBg.style.display = "block";
+    modal.setAttribute("opening", "");
+    modal.addEventListener(
+      "animationend",
+      () => {
+        modal.removeAttribute("opening");
+      }, {
+        once: true
+      }
+    );
+
   });
+
 
   closeModal.addEventListener("click", () => {
     modal.setAttribute("closing", "");
