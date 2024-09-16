@@ -24,9 +24,9 @@ currentTime.setUTCHours(currentTime.getUTCHours() - 1);
 const currentDay = currentTime.getDay();
 const nextDay = currentDay + 1
 
-let neonAreWeOpen = document.querySelector(".neon-top");
-let neonSign = document.querySelector(".neon h3");
-let neonOpensIn = document.querySelector(".neon-down")
+// let neonAreWeOpen = document.querySelector(".neon-top");
+// let neonSign = document.querySelector(".neon h3");
+// let neonOpensIn = document.querySelector(".neon-down")
 
 
 const convertToDMY = (date) => {
@@ -226,5 +226,5 @@ if(currentLocation.substr(currentLocation.length - 4 == "com/") || currentLocati
 // (getClosedDates == "") ? console.log("No upcoming holidays") : datesClosed.innerHTML = getClosedDates();
 const currentDayHours = getHoursForDay(currentDay);
 const nextDayHours = getHoursForDay(nextDay);
-console.log(getOpenStatus(currentDayHours));
+// console.log(getOpenStatus(currentDayHours));
 }

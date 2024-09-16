@@ -638,6 +638,7 @@ section.home-music {
   .home-music article {
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: start;
 }
 }
 
@@ -986,9 +987,9 @@ li[role="none"], .nav-link {
   border-right: none;
 }
 
-nav.active .nav-link[aria-current="page"] {
+/* nav.active .nav-link[aria-current="page"] {
   border: unset;
-}
+} */
 
 @media (min-width: 768px) {
   .btn--menu {

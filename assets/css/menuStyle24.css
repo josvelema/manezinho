@@ -110,7 +110,7 @@
   text-align: center;
   text-transform: capitalize;
   font-family: "Sword", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: clamp(1.5rem, 15vw + 1.5rem, 4.5rem);
+  font-size: clamp(1.5rem, 15vw + 1.5rem, 3.5rem);
   font-weight: 300;
   letter-spacing: 2px;
   text-shadow: 0 1px 2px var(--gold-tint-1);
