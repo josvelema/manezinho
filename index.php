@@ -60,25 +60,76 @@ include "includes/nav.html";
     </header>
 
     <div class="btn-container">
-      <p>
+      <!-- <p>
         Art Restaurant Manezinho | <a href="https://www.facebook.com/Art-Restaurant-Manezinho-100617402655398" target="_blank">Canada do Açougue 9800-429 Urzelina, Sao Jorge</a>
-      </p>
+      </p> -->
+      <div class="open-closed-info"></div>
+      <button class="btn btn--dark openorclosed open-button">
+        <i class="fa-solid fa-circle-info"></i><span>Opening Hours</span>
+      </button>
       <a href="tel:+351 968 990 696" class="btn btn--dark">
         <i class="fa-solid fa-phone"></i>
         <span>+351 968 990 696</span>
       </a>
-      <button class="btn btn--dark openorclosed open-button">
-        <i class="fa-solid fa-circle-info"></i>
-      </button>
     </div>
   </section>
+  <section>
+  <form class="contact-form" action="" method="post" enctype="multipart/form-data">
+
+<div class="fields">
+  <div class="field half">
+    <label for="name">Name <span class="form-required">* required</span></label>
+    <input type="text" id="first_name" name="first_name" placeholder="Enter your name"
+      title="First name must contain only characters!" required>
+
+  </div>
+
+  <div class="field half">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"
+      title="Please enter a valid email address!" required>
+
+  </div>
+  <!-- accept phone number with numbers , () and - only -->
+  <div class="field half">
+    <label for="phone">Phone <span class="form-required">* required</span></label>
+    <input type="text" name="phone" id="" placeholder="Enter your phone number"
+      title="Please enter a valid phone number!" required>
+  </div>
+  <!-- // datepicker  -->
+  <div class="field quarter">
+    <label for="persons">Number of persons <span class="form-required">* required</span></label>
+    <input type="number" name="persons" id="persons" placeholder="Enter number of persons" min=1 max=20 required>
+  </div>
+  <div class="field quarter">
+    <label for="date">Date <span class="form-required">* required</span></label>
+    <input type="date" name="date" id="date" required>
+  </div>
+  <!-- number of persons  -->
+
+  <div class="field half">
+    <label for="message">Additional information (optional)</label>
+    <textarea name="message" id="message" rows="4" placeholder=" "></textarea>
+  </div>
+  <div class="field last-field">
+    <p class="errors-msg"></p>
+    <!-- <div class="g-recaptcha" data-sitekey="6LfUEvQpAAAAABZlIBzegXpvRMnnVGGwtCKaUMZ2"></div> -->
+
+    <div class="field">
+        <input type="submit" value="Send Message" class="btn btn--dark" />
+        <input type="reset" value="Clear" class="btn btn--dark clear-form" />
+      </ul>
+    </div>
+  </div>
+</form>
+  </section>
   <header class="home-divider home-food-header">
-      <h2>Our Menu</h2>
-      <p>
-        Our menu is inspired by the local cuisine of the Azores. We use fresh and local ingredients to create our dishes. We also have a selection of wines and cocktails to accompany your meal. You can find more information about our menu on the
-        <a href="/menu">Menu page</a>.
-      </p>
-  
+    <h2>Our Menu</h2>
+    <p>
+      Our menu is inspired by the local cuisine of the Azores. We use fresh and local ingredients to create our dishes. We also have a selection of wines and cocktails to accompany your meal. You can find more information about our menu on the
+      <a href="/menu">Menu page</a>.
+    </p>
+
   </header>
 
   <section class="home-food">
@@ -147,111 +198,13 @@ include "includes/nav.html";
       </p>
     </article>
 
-  
+
   </section>
 
 </main>
-<script>
-  const imgScroller = document.querySelector(".img-scroller");
-  const imgScrollerControls = document.querySelector(".img-scroller-controls");
-  const foodImages = document.querySelector(".food-images");
 
-
-  function mainScroller() {
-    imgScroller.querySelectorAll(".image-scroll").forEach((img, index) => {
-      const dot = document.createElement("div");
-      dot.classList.add("dot");
-      dot.addEventListener("click", () => {
-        imgScroller.querySelector(".active").classList.remove("active");
-        img.classList.add("active");
-        imgScrollerControls.querySelector(".active").classList.remove("active");
-        dot.classList.add("active");
-      });
-      imgScrollerControls.appendChild(dot);
-      if (index === 0) {
-        img.classList.add("active");
-        dot.classList.add("active");
-      }
-    });
-    // scroll trough images
-    let i = 0;
-    setInterval(() => {
-      imgScroller.querySelector(".active").classList.remove("active");
-      imgScrollerControls.querySelector(".active").classList.remove("active");
-      i = (i + 1) % imgScroller.children.length;
-      imgScroller.children[i].classList.add("active");
-      imgScrollerControls.children[i].classList.add("active");
-    }, 5000);
-  }
-  document.addEventListener("DOMContentLoaded", mainScroller);
-
-  function foodScoller() {
-    foodImages.querySelectorAll(".food-scroll").forEach((img, index) => {
-      if (index === 0) {
-        img.classList.add("active");
-      }
-    });
-    let j = 0;
-    setInterval(() => {
-      foodImages.querySelector(".active").classList.remove("active");
-      j = (j + 1) % foodImages.children.length;
-      foodImages.children[j].classList.add("active");
-    }, 4500);
-  }
-
-  // observer to start foodScoller when in view
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        foodScoller();
-        observer.disconnect();
-      }
-    });
-  });
-
-
-  observer.observe(foodImages);
-
-  const modal = document.querySelector(".modal");
-  const openModal = document.querySelector(".open-button");
-  const closeModal = document.querySelector(".close-button");
-  const modalBg = document.querySelector(".modal-background");
-  const aboutUs = document.querySelector(".main-about");
-  // const readMore = document.querySelector(".read-main");
-  const scrollHere = document.querySelector("#scrollHere");
-
-  openModal.addEventListener("click", () => {
-    modal.style.display = "flex";
-    modalBg.style.display = "block";
-    modal.setAttribute("opening", "");
-    modal.addEventListener(
-      "animationend",
-      () => {
-        modal.removeAttribute("opening");
-      }, {
-        once: true
-      }
-    );
-
-  });
-
-
-  closeModal.addEventListener("click", () => {
-    modal.setAttribute("closing", "");
-
-    modal.addEventListener(
-      "animationend",
-      () => {
-        modal.removeAttribute("closing");
-        modal.style.display = "none";
-        modalBg.style.display = "none";
-      }, {
-        once: true
-      }
-    );
-  });
-</script>
-
+<script src="assets/js/home.js"></script>
+<script src="assets/js/closedOrOpen.js" defer></script>
 <?php
 
 include "includes/footer.html";

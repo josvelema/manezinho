@@ -1,6 +1,6 @@
 cms/
 _new_database.sql
-# .htaccess
+.htaccess
 author_posts.php
 category.php
 contact.php
