@@ -164,13 +164,20 @@ include "includes/nav.html";
   </header>
 
   <section id="reservation">
-    <p>
-      You can make a reservation request by filling in the form below. We will contact you as soon as possible to confirm your reservation.
-    </p>
-    <p>
-      You can also call us at <a href="tel:+351 968 990 696">+351 968 990 696</a>. We are open from 17:00 to 02:00 from Wednesday to Sunday.
-    </p>
- 
+  <p>
+  You can request a reservation by filling out the form below. We will contact you via email as soon as possible to confirm your reservation.
+  Please note, your reservation is only confirmed once you receive a confirmation from us.
+  <br>
+  For groups of more than 4 people, a phone number is required.
+</p>
+<p>
+  You can also make a reservation by phone during our open hours, starting in the afternoon.
+  <strong>Phone:</strong> <a href="tel:+351968990696">+351 968 990 696</a>
+</p>
+<p>
+  Please note, we are <span style="text-decoration: underline; font-weight: 600">closed on Mondays and Tuesdays</span>, so reservation requests made on those days will likely be answered on our next open day.
+</p>
+
     <form class="reservation-form" action="" method="post" enctype="multipart/form-data">
 
       <div class="fields">
@@ -182,16 +189,16 @@ include "includes/nav.html";
         </div>
 
         <div class="field half">
-          <label for="email">Email</label>
+          <label for="email">Email <span class="form-required">* required</span></label>
           <input type="email" id="email" name="email" placeholder="Enter your email"
             title="Please enter a valid email address!" required>
 
         </div>
         <!-- accept phone number with numbers , () and - only -->
         <div class="field half">
-          <label for="phone">Phone <span class="form-required">* required</span></label>
+          <label for="phone">Phone</label>
           <input type="text" name="phone" id="" placeholder="Enter your phone number"
-            title="Please enter a valid phone number!" required>
+            title="Please enter a valid phone number!">
         </div>
         <!-- // datepicker  -->
         <div class="field quarter">
@@ -209,7 +216,7 @@ include "includes/nav.html";
           <textarea name="message" id="message" rows="3" placeholder=" "></textarea>
         </div>
         <div class="field half button-field">
-          <input type="submit" value="Send" class="btn btn--success" />
+          <input type="submit" value="Send" class="btn btn--a" />
           <input type="reset" value="Clear" class="btn btn--danger clear-form" />
         </div>
         <div class="field half last-field">

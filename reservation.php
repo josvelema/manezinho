@@ -15,12 +15,12 @@ require 'lib/phpmailer/SMTP.php';
 $mail = new PHPMailer(true);
 
 // Check if user submitted the contact form
-if (isset($_POST['first_name'], $_POST['phone'],  $_POST['persons'], $_POST['date'])) {
+if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['date'])) {
     // Errors array
     $errors = [];
     // Extra values to store in the database
     $extra = [
-  'email' => '',
+  'phone' => '',
   'message' => '',
      ];
     // Form validation
@@ -77,18 +77,16 @@ if (isset($_POST['first_name'], $_POST['phone'],  $_POST['persons'], $_POST['dat
         if (isset($_POST['email']) && !empty($_POST['email'])) {
             $final_msg .= 'Email: ' . $_POST['email'] . '<br>';
         }
-        $final_msg .= 'Phone: ' . $_POST['phone'] . '<br>';
+        // check if the phone is set and not empty
+        if (isset($_POST['phone']) && !empty($_POST['phone'])) {
+            $final_msg .= 'Phone: ' . $_POST['phone'] . '<br>';
+        }
         $final_msg .= 'Number of persons: ' . $_POST['persons'] . '<br>';
         $final_msg .= 'Date: ' . $dateReservation . '<br>';
         // check if the message is set and not empty
         if (isset($_POST['message']) && !empty($_POST['message'])) {
             $final_msg .= 'Message: ' . $_POST['message'] . '<br>';
         }
-
-        // check if email is set else use the default email
-        
-
-
 
         // Try to send the mail using PHPMailer
         try {

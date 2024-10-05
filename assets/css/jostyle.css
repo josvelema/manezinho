@@ -1401,7 +1401,12 @@ button {
 .btn--dark:hover,
 .btn--dark:focus,
 .btn--dark:focus-visible {
-  background-color: var(--blue-shade-1);
+  background-color: var(--blue-shade-1);  
+}
+
+.btn--a {
+  background-color: rgba(40, 45 , 35,0.85);
+  margin: unset;
 }
 
 .btn--success {
@@ -1413,8 +1418,7 @@ button {
 }
 
 .btn--danger {
-  background-color: rgba(255, 132, 0,0.9);
-  color: #2d2d2d;
+  background-color: rgba(255, 132, 0,0.75);
   margin: unset;
   border: 1px solid #f0f0f0;
 
