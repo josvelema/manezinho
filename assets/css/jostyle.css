@@ -1358,12 +1358,14 @@ button {
   padding: 0.5rem 1rem;
   margin: 2.5em;
   cursor: pointer;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 1px solid var(--gold-tint-1);
+  outline: 1px solid transparent;
+  outline-offset: 2px;
   /* text-transform: uppercase; */
   font-weight: 300;
   letter-spacing: 1px;
-  transition: 150ms ease-in-out;
+  transition: all 180ms ease-in-out;
   /* font-size: 1.1rem; */
   display: flex;
   gap: 0.5rem;
@@ -1400,6 +1402,37 @@ button {
 .btn--dark:focus,
 .btn--dark:focus-visible {
   background-color: var(--blue-shade-1);
+}
+
+.btn--success {
+  background-color: rgba(6, 201, 6, 0.9);
+  color: #f0f0f0;
+  margin: unset;
+  border: 1px solid #f0f0f0;
+  /* padding: 0.3rem 2rem; */
+}
+
+.btn--danger {
+  background-color: rgba(255, 132, 0,0.9);
+  color: #2d2d2d;
+  margin: unset;
+  border: 1px solid #f0f0f0;
+
+  /* padding: 0.3rem 2rem; */
+}
+
+.btn--danger:hover,
+.btn--danger:focus,
+.btn--danger:focus-visible {
+  background-color: rgba(255, 132, 0,0.8);
+  outline: 1px solid #f0f0f0;
+}
+
+.btn--success:hover,
+.btn--success:focus,
+.btn--success:focus-visible {
+  background-color: rgba(6, 201, 6, 0.8);
+  outline: 1px solid #f0f0f0;
 }
 
 .btn--menu {

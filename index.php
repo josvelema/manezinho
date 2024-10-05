@@ -209,8 +209,8 @@ include "includes/nav.html";
           <textarea name="message" id="message" rows="3" placeholder=" "></textarea>
         </div>
         <div class="field half button-field">
-          <input type="submit" value="Send Message" class="btn btn--dark" />
-          <input type="reset" value="Clear" class="btn btn--dark clear-form" />
+          <input type="submit" value="Send" class="btn btn--success" />
+          <input type="reset" value="Clear" class="btn btn--danger clear-form" />
         </div>
         <div class="field half last-field">
           <p class="errors-msg"></p>
