@@ -6,12 +6,12 @@ include "includes/header.html";
 include "includes/nav.html";
 ?>
 <div class="response-wrapper">
-      <div class="response">
-        <h2>Thank you for your contacting us!</h2>
-        <p class="response-msg"></p>
-        <button class="btn btn--dark" id="response-exit-btn" title="go back to page">close</button>
-      </div>
-    </div>
+  <div class="response">
+    <h2>Thank you for your request!</h2>
+    <p class="response-msg"></p>
+    <button class="btn btn--dark" id="response-exit-btn" title="go back to page">close</button>
+  </div>
+</div>
 
 <main>
 
@@ -51,7 +51,7 @@ include "includes/nav.html";
     ./assets/img/scaledImg/Manezinho-Frente-small.jpg 480w" loading="lazy" alt="Descriptive alt text" class="image-scroll" style="object-position: 66%;">
 
     </div>
-    
+
     <div class="img-scroller-controls">
       <!-- insert scroll dots here  -->
     </div>
@@ -165,59 +165,60 @@ include "includes/nav.html";
 
   <section id="reservation">
     <p>
-      You can make a reservation by filling in the form below. We will contact you as soon as possible to confirm your reservation.
+      You can make a reservation request by filling in the form below. We will contact you as soon as possible to confirm your reservation.
     </p>
-   <p>
-    You can also call us at <a href="tel:+351 968 990 696">+351 968 990 696</a>. We are open from 17:00 to 02:00 from Wednesday to Sunday.
-  </p> 
-  <form class="reservation-form" action="" method="post" enctype="multipart/form-data">
+    <p>
+      You can also call us at <a href="tel:+351 968 990 696">+351 968 990 696</a>. We are open from 17:00 to 02:00 from Wednesday to Sunday.
+    </p>
+ 
+    <form class="reservation-form" action="" method="post" enctype="multipart/form-data">
 
-<div class="fields">
-  <div class="field half">
-    <label for="name">Name <span class="form-required">* required</span></label>
-    <input type="text" id="first_name" name="first_name" placeholder="Enter your name"
-      title="First name must contain only characters!" required>
+      <div class="fields">
+        <div class="field half">
+          <label for="name">Name <span class="form-required">* required</span></label>
+          <input type="text" id="first_name" name="first_name" placeholder="Enter your name"
+            title="First name must contain only characters!" required>
 
-  </div>
+        </div>
 
-  <div class="field half">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email"
-      title="Please enter a valid email address!" required>
+        <div class="field half">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+            title="Please enter a valid email address!" required>
 
-  </div>
-  <!-- accept phone number with numbers , () and - only -->
-  <div class="field half">
-    <label for="phone">Phone <span class="form-required">* required</span></label>
-    <input type="text" name="phone" id="" placeholder="Enter your phone number"
-      title="Please enter a valid phone number!" required>
-  </div>
-  <!-- // datepicker  -->
-  <div class="field quarter">
-    <label for="persons">Number of persons <span class="form-required">* required</span></label>
-    <input type="number" name="persons" id="persons" placeholder="Enter number of persons" min=1 max=20 required title="Please enter a number between 1 and 20!">
-  </div>
-  <div class="field quarter">
-      <label for="date">Date <span class="form-required">* required</span></label>
-    <input type="date" name="date" id="date-reservation" required>
-  </div>
-  <!-- number of persons  -->
+        </div>
+        <!-- accept phone number with numbers , () and - only -->
+        <div class="field half">
+          <label for="phone">Phone <span class="form-required">* required</span></label>
+          <input type="text" name="phone" id="" placeholder="Enter your phone number"
+            title="Please enter a valid phone number!" required>
+        </div>
+        <!-- // datepicker  -->
+        <div class="field quarter">
+          <label for="persons">Number of persons <span class="form-required">* required</span></label>
+          <input type="number" name="persons" id="persons" placeholder="Enter number of persons" min=1 max=20 required title="Please enter a number between 1 and 20!">
+        </div>
+        <div class="field quarter">
+          <label for="date">Date <span class="form-required">* required</span></label>
+          <input type="date" name="date" id="date-reservation" required>
+        </div>
+        <!-- number of persons  -->
 
-  <div class="field half">
-    <label for="message">Additional information </label>
-    <textarea name="message" id="message" rows="3" placeholder=" "></textarea>
-  </div>
-  <div class="field half button-field">
-        <input type="submit" value="Send Message" class="btn btn--dark" />
-        <input type="reset" value="Clear" class="btn btn--dark clear-form" />
-    </div>
-  <div class="field half last-field">
-    <p class="errors-msg"></p>
-    <!-- <div class="g-recaptcha" data-sitekey="6LfUEvQpAAAAABZlIBzegXpvRMnnVGGwtCKaUMZ2"></div> -->
+        <div class="field half">
+          <label for="message">Additional information </label>
+          <textarea name="message" id="message" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="field half button-field">
+          <input type="submit" value="Send Message" class="btn btn--dark" />
+          <input type="reset" value="Clear" class="btn btn--dark clear-form" />
+        </div>
+        <div class="field half last-field">
+          <p class="errors-msg"></p>
+          <!-- <div class="g-recaptcha" data-sitekey="6LfUEvQpAAAAABZlIBzegXpvRMnnVGGwtCKaUMZ2"></div> -->
 
 
-  </div>
-</form>
+        </div>
+    </form>
   </section>
 
 </main>

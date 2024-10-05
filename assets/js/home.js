@@ -124,15 +124,9 @@ let page = window.location.pathname.split("/").pop().split(".")[0];
 
 // console.log(page);
 
-// exitBtn.addEventListener('click', () => {
-//   responseWrapper.style.display = 'none';
-//   if(page == 'contact') {
-//     window.location.href = '/';
-//   } else {
-//     whatNext.classList.add('active');
-//   whatNext.scrollIntoView({behavior: 'smooth'});
-//   }
-// });
+exitBtn.addEventListener('click', () => {
+  responseWrapper.style.display = 'none';
+});
 
 form.addEventListener("submit", async (event) => {
   console.log("submitting form");

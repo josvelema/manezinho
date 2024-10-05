@@ -68,6 +68,9 @@ if (isset($_POST['first_name'], $_POST['phone'],  $_POST['persons'], $_POST['dat
             }
         }
 
+        // format the date into 'monday 12 october 2020'
+        $dateReservation = date('l j F Y', strtotime($_POST['date']));
+
         // Prepare the final message
         $final_msg = 'Name: ' . $_POST['first_name'] . '<br>';
         // check if the email is set and not empty
@@ -76,7 +79,7 @@ if (isset($_POST['first_name'], $_POST['phone'],  $_POST['persons'], $_POST['dat
         }
         $final_msg .= 'Phone: ' . $_POST['phone'] . '<br>';
         $final_msg .= 'Number of persons: ' . $_POST['persons'] . '<br>';
-        $final_msg .= 'Date: ' . $_POST['date'] . '<br>';
+        $final_msg .= 'Date: ' . $dateReservation . '<br>';
         // check if the message is set and not empty
         if (isset($_POST['message']) && !empty($_POST['message'])) {
             $final_msg .= 'Message: ' . $_POST['message'] . '<br>';
@@ -104,7 +107,7 @@ if (isset($_POST['first_name'], $_POST['phone'],  $_POST['persons'], $_POST['dat
             // Send mail
             $mail->send();
             // Output success message
-            echo '{"success":"<p>We will respond to you as soon as possible!</p>"}';
+            echo '{"success":"<p>We will confirm your reservation as soon as possible!</p>"}';
         } catch (Exception $e) {
             // Output error message
             $errors[] = 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
