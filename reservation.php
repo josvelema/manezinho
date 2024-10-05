@@ -95,11 +95,11 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
             // Recipients
             $mail->setFrom('info@artrestaurantmanezinho.com', $_POST['first_name']);
             $mail->addAddress('rjvelemail@gmail.com', 'Support');
-            $mail->addReplyTo($extra['email'], $_POST['first_name']);
+            $mail->addReplyTo($_POST['email'], $_POST['first_name']);
      
             // Content
             $mail->isHTML(true);
-            $mail->Subject = 'RESERVATION for '  . $_POST['first_name'] . ' - ' . $extra['email'];
+            $mail->Subject = 'RESERVATION for '  . $_POST['first_name'] . ' - ' . $_POST['email'];
             $mail->Body = $final_msg;
             $mail->AltBody = strip_tags($final_msg);
             // Send mail
