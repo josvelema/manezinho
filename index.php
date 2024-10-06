@@ -75,9 +75,9 @@ include "includes/nav.html";
       <button class="btn btn--dark openorclosed open-button">
         <i class="fa-solid fa-circle-info"></i><span>Opening Hours</span>
       </button>
-      <a href="tel:+351 968 990 696" class="btn btn--dark">
-        <i class="fa-solid fa-phone"></i>
-        <span>+351 968 990 696</span>
+      <a href="#reservation" class="btn btn--dark">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Reservation</span>
       </a>
     </div>
   </section>
@@ -159,24 +159,27 @@ include "includes/nav.html";
 
 
   </section>
-  <header class="home-divider reservations">
+  <header class="home-divider reservations" id="reservation">
     <h2>Reservations</h2>
   </header>
 
-  <section id="reservation">
-  <p>
-  You can request a reservation by filling out the form below. We will contact you via email as soon as possible to confirm your reservation.
-  Please note, your reservation is only confirmed once you receive a confirmation from us.
-  <br>
-  For groups of more than 4 people, a phone number is required.
-</p>
-<p>
-  You can also make a reservation by phone during our open hours, starting in the afternoon.
-  <strong>Phone:</strong> <a href="tel:+351968990696">+351 968 990 696</a>
-</p>
-<p>
-  Please note, we are <span style="text-decoration: underline; font-weight: 600">closed on Mondays and Tuesdays</span>, so reservation requests made on those days will likely be answered on our next open day.
-</p>
+  <section>
+    <p>
+      You can request a reservation by filling out the form below. We will contact you via email as soon as possible to confirm your reservation.
+      Please note, your reservation is only confirmed once you receive a confirmation from us.
+      <br>
+      For groups of more than 4 people, a phone number is required.
+    </p>
+    <p>
+      You can also make a reservation by phone on the days we are open, starting in the afternoon. 
+      <strong>Phone:</strong> <a href="tel:+351968990696">+351 968 990 696</a>
+    </p>
+
+    <p>
+      Please note, we are <span style="text-decoration: underline; font-weight: 600">closed on Mondays and Tuesdays</span>, so reservation requests made on those days will likely
+      be answered on our next open day and <span style="text-decoration: underline; font-weight: 600">reservations for the same day can only be made until 15:00</span>.
+    </p>
+
 
     <form class="reservation-form" action="" method="post" enctype="multipart/form-data">
 

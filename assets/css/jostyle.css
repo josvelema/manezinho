@@ -71,8 +71,10 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--nav-height);
+  scroll-padding-top: 6rem;
 }
+
+
 
 body {
   font-family: "Libre Franklin", sans-serif;
