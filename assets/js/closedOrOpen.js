@@ -1,11 +1,11 @@
 let today = new Date();
 let todayReservations = new Date();
-let todayDay = today.getDay();
-let todayInWords = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(today);
-let todayDate = today.getDate();
-let todayMonth = today.getMonth();
-let monthInWords = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(today);
-let todayYear = today.getFullYear();
+let todayDay = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', weekday: 'long' });
+let todayInWords = new Intl.DateTimeFormat('en-US', { timeZone: 'Atlantic/Azores', weekday: 'long' }).format(today);
+let todayDate = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', day: '2-digit' });
+let todayMonth = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', month: '2-digit' });
+let monthInWords = new Intl.DateTimeFormat('en-US', { timeZone: 'Atlantic/Azores', month: 'long' }).format(today);
+let todayYear = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', year: 'numeric' });
 let openClosedInfo = document.querySelector(".open-closed-info");
 
 let dateReservation = document.querySelector("#date-reservation");
@@ -14,14 +14,13 @@ let dateReservation = document.querySelector("#date-reservation");
 let maxDate = new Date(today);
 maxDate.setMonth(maxDate.getMonth() + 1);
 dateReservation.max = maxDate.toISOString().substring(0, 10);
+
 // check if today is not monday , if so, add 2 days to the date reservation
-if (todayDay === 1) {
+if (todayDay === 'Monday') {
   todayReservations.setDate(todayReservations.getDate() + 2);
   dateReservation.value = todayReservations.toISOString().substring(0, 10);
   dateReservation.min = todayReservations.toISOString().substring(0, 10);
-  
-  
-} else if (todayDay === 2) {
+} else if (todayDay === 'Tuesday') {
   todayReservations.setDate(todayReservations.getDate() + 1);
   dateReservation.value = todayReservations.toISOString().substring(0, 10);
   dateReservation.min = todayReservations.toISOString().substring(0, 10);
@@ -30,8 +29,14 @@ if (todayDay === 1) {
   dateReservation.min = todayReservations.toISOString().substring(0, 10);
 }
 
-
-
+// check if it is not monday or tuesday and if its after 15:00 (azorean time), add 1 day to the date reservation
+if (!todayDay === 'Monday' || !todayDay === 'Tuesday') {
+  if (today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', hour: '2-digit', hour12: false }) >= 15) {
+    todayReservations.setDate(todayReservations.getDate() + 1);
+    dateReservation.value = todayReservations.toISOString().substring(0, 10);
+    dateReservation.min = todayReservations.toISOString().substring(0, 10);
+  }
+}
 
 console.log(todayDay);
 console.log(todayInWords);
