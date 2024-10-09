@@ -1417,8 +1417,9 @@ button {
 
 .btn--gold {
   background-color: var(--gold);
-  color: var(--blue-dark);
+  color: #0b0b0b;
   margin: unset;
+  font-weight: 500;
 }
 
 .btn--gold:hover,

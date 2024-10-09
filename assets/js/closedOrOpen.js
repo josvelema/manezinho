@@ -1,5 +1,6 @@
 let today = new Date();
 let todayReservations = new Date();
+let todayDayNumber = today.getDay();
 let todayDay = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', weekday: 'long' });
 let todayInWords = new Intl.DateTimeFormat('en-US', { timeZone: 'Atlantic/Azores', weekday: 'long' }).format(today);
 let todayDate = today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', day: '2-digit' });
@@ -39,6 +40,7 @@ if (!todayDay === 'Monday' || !todayDay === 'Tuesday') {
 }
 
 console.log(todayDay);
+console.log(todayDayNumber);
 console.log(todayInWords);
 console.log(todayDate);
 console.log(todayMonth);
@@ -60,8 +62,9 @@ fetch("assets/js/openhours.json")
     let msg = document.createElement("span");
     
     // check data.regular[todayDay] if the status is closed
+    console.log(data.regular[todayDayNumber].status);
 
-    if (exception || data.regular[todayDay].status === "closed") {
+    if (exception || data.regular[todayDayNumber].status === "closed") {
       msg.textContent = `Sorry, today we are closed.`
       msg.classList.add("today-closed");
       openClosedInfo.appendChild(msg);
