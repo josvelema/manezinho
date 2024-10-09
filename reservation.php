@@ -94,7 +94,7 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
  
             // Recipients
             $mail->setFrom('info@artrestaurantmanezinho.com', $_POST['first_name']);
-            $mail->addAddress('rjvelemail@gmail.com', 'Support');
+            $mail->addAddress('reservations@artrestaurantmanezinho.com', 'Support');
             $mail->addReplyTo($_POST['email'], $_POST['first_name']);
      
             // Content
