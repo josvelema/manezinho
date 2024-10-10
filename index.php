@@ -198,7 +198,7 @@ include "includes/nav.html";
 
         </div>
         <!-- accept phone number with numbers , () and - only -->
-        <div class="field half">
+        <div class="field quarter">
           <label for="phone">Phone</label>
           <input type="text" name="phone" id="" placeholder="Enter your phone number"
             title="Please enter a valid phone number!">
@@ -213,12 +213,31 @@ include "includes/nav.html";
           <input type="date" name="date" id="date-reservation" required>
         </div>
         <!-- number of persons  -->
-
+        <div class="field quarter">
+          <label for="time">Time <span class="form-required">* required</span></label>
+          <!-- 15 minutes intervals selection betweeen 1830 and 2130 -->
+          <select name="time" id="time" required>
+            <option value="" disabled selected>Select a time</option>
+            <option value="18:30">18:30</option>
+            <option value="18:45">18:45</option>
+            <option value="19:00" selected>19:00</option>
+            <option value="19:15">19:15</option>
+            <option value="19:30">19:30</option>
+            <option value="19:45">19:45</option>
+            <option value="20:00">20:00</option>
+            <option value="20:15">20:15</option>
+            <option value="20:30">20:30</option>
+            <option value="20:45">20:45</option>
+            <option value="21:00">21:00</option>
+            <option value="21:15">21:15</option>
+            <option value="21:30">21:30</option>
+          </select>
+        </div>
         <div class="field half">
           <label for="message">Additional information </label>
           <textarea name="message" id="message" rows="3" placeholder=" "></textarea>
         </div>
-        <div class="field half button-field">
+        <div class="field quarter button-field">
           <input type="submit" value="Send" class="btn btn--gold" />
           <input type="reset" value="Clear" class="btn btn--a clear-form" />
         </div>

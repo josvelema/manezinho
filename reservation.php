@@ -15,14 +15,14 @@ require 'lib/phpmailer/SMTP.php';
 $mail = new PHPMailer(true);
 
 // Check if user submitted the contact form
-if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['date'])) {
+if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['date'], $_POST['time'])) {
     // Errors array
     $errors = [];
     // Extra values to store in the database
     $extra = [
-  'phone' => '',
-  'message' => '',
-     ];
+        'phone' => '',
+        'message' => '',
+    ];
     // Form validation
     // Check to see if the email is valid.
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -36,7 +36,7 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
     if (!preg_match('/^[\p{L}\s\'\-]+$/', $_POST['first_name'])) {
         $errors['first_name'] = 'First name must contain only characters!';
     }
-    
+
     // phone number must contain only numbers, () ,- and + characters
     if (!preg_match('/^[\d\(\)\-\+]+$/', $_POST['phone'])) {
         $errors['phone'] = 'Please enter a valid phone number!';
@@ -46,6 +46,18 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
     if ($_POST['persons'] < 1 || $_POST['persons'] > 20) {
         $errors['persons'] = 'Please enter a number between 1 and 20!';
     }
+
+    // date must date and date must be in the future
+    if (!strtotime($_POST['date']) || strtotime($_POST['date']) < strtotime('today')) {
+        $errors['date'] = 'Please enter a valid date!';
+    }
+
+    // time must be set
+    if (!isset($_POST['time']) || empty($_POST['time'])) {
+        $errors['time'] = 'Please select a time!';
+    }
+
+
 
     // 
     // Message must not be empty
@@ -83,6 +95,7 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
         }
         $final_msg .= 'Number of persons: ' . $_POST['persons'] . '<br>';
         $final_msg .= 'Date: ' . $dateReservation . '<br>';
+        $final_msg .= 'Time: ' . $_POST['time'] . '<br>';
         // check if the message is set and not empty
         if (isset($_POST['message']) && !empty($_POST['message'])) {
             $final_msg .= 'Message: ' . $_POST['message'] . '<br>';
@@ -91,12 +104,12 @@ if (isset($_POST['first_name'], $_POST['email'],  $_POST['persons'], $_POST['dat
         // Try to send the mail using PHPMailer
         try {
             // Server settings
- 
+
             // Recipients
             $mail->setFrom('info@artrestaurantmanezinho.com', $_POST['first_name']);
             $mail->addAddress('reservations@artrestaurantmanezinho.com', 'Support');
             $mail->addReplyTo($_POST['email'], $_POST['first_name']);
-     
+
             // Content
             $mail->isHTML(true);
             $mail->Subject = 'RESERVATION for '  . $_POST['first_name'] . ' - ' . $_POST['email'];

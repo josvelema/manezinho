@@ -291,6 +291,7 @@ textarea {
 
 form {
   margin: 0 0 1.5rem 0;
+  padding-inline: 1rem;
 }
 
 form > :last-child {
@@ -2795,6 +2796,9 @@ pre {
   }
   .holidays {
     display: none;
+  }
+  .form-required {
+    display: inline;
   }
 
 }
