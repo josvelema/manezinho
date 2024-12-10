@@ -1,0 +1,336 @@
+@font-face {
+  font-family: Antonio;
+  src: url(../fonts/Antonio-Light.ttf);
+}
+
+@font-face {
+  font-family: Sword;
+  src: url(../fonts/Blacksword.otf);
+}
+
+@font-face {
+  font-family: DIN400;
+  src: url(../fonts/otf/D-DIN-PRO-400-Regular.otf);
+}
+
+@font-face {
+  font-family: Limosine;
+  src: url(../fonts/Champagne\ &\ Limousines\ Italic.ttf);
+}
+
+@font-face {
+  font-family: Limosine-reg;
+  src: url(../fonts/Champagne\ &\ Limousines.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: hsl(0, 0%, 4%);
+  color: #fafafa;
+  font-size: 66, 8%;
+  font-family: "Antonio", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: dotted;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: hsl(43, 88%, 60%);
+  transition: all 200ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: hsl(43, 98%, 50%);
+} */
+
+
+
+.menu-header {
+  margin-top: calc(4vh + 1vw + 4em);
+}
+
+
+.menu-main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../svg/manezinhologo.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50vw;
+  background-attachment: fixed;
+  isolation: isolate;
+  display: grid;
+  place-content: center;
+}
+
+.menu-main::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  opacity: 0.65;
+}
+
+
+/* .menu-main header:first-of-type {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-family: "Limosine";
+  margin-top: 0.5em;
+} */
+
+/* .menu-main header:first-of-type small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.menu-main h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 0.85em;
+} */
+
+/* .menu-header {
+  margin-top: 3em;
+} */
+
+.menu-nav {
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.25em;
+}
+
+.menu-home {
+  margin: 0.5em 0.25em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.menu-home-btn {
+  width: 26px;
+  background-color: hsl(43, 98%, 50%);
+  padding: 4px;
+  border-radius: 100vw;
+  transition: all 200ms ease-in-out ;
+}
+.menu-home-btn:hover,
+.menu-home-btn:focus {
+  transform: translateY(-2px);
+  background-color: hsl(66, 88%, 50%);
+
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0.5em 0.75em;
+  border: 1px solid #fff6;
+  border-radius: 4px;
+}
+
+.menu-nav li:not(li:last-child) {
+  margin-right: 0.55em;
+}
+
+.menu-nav li {
+  font-family: "Limosine-reg";
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu-section {
+  margin-top: 0.75em;
+  margin-bottom: 2em;
+  padding: 0.25em;
+  min-height: 300px;
+  
+  
+  /* border: 1px solid #fff1; */
+  
+}
+.menu-section h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Sword", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1.5rem, 15vw + 1.5rem, 4.5rem);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 2px var(--gold-tint-1);
+  margin-block: 0.5em;
+}
+
+.menu-section article {
+  width: 400px;
+  padding: 0.25em;
+  backdrop-filter: blur(1px);
+  border-bottom: 2px solid var(--gold);
+}
+
+@media (max-width: 30em) {
+  .menu-section article {
+    width: 100%;
+    
+  }
+}
+
+@media (max-width: 340px) {
+  
+    * {
+      font-size: 98%;
+    }
+    
+  }
+
+
+
+
+.menu-section article ul {
+  list-style: none;
+}
+.menu-section article ul li {
+  line-height: 1.4em;
+}
+
+.menu-section article .menu-ul-price li {
+  text-align: right;
+}
+
+/* .menu-ul-price {
+  
+} */
+
+.menu-section fieldset:not(legend) {
+  border: 1px solid #eee6;
+  padding: 0.75em 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  font-family: "DIN400", monospace, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-block: 1em;
+}
+
+.menu-section fieldset legend {
+  text-align: center;
+  padding: 0.35em;
+  text-transform: uppercase;
+}
+
+.menu-section fieldset ul:nth-child(even) {
+  margin-right: 0.25em;
+}
+
+/* .menu-section fieldset ul li:nth-child(even) {
+    color: antiquewhite;
+  } */
+
+.menu-small-text {
+  font-size: 0.7rem;
+  color: #e0e0e0;
+}
+
+/* .menu-ul-secondary {
+  font-size: 0.9rem;
+} */
+
+.menu-ul-secondary .menu-small-text {
+  font-size: 0.7rem;
+}
+
+.menu-section fieldset.menu-special:not(legend) {
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2em;
+  font-size: 1.1rem;
+  margin: 0.5em 0 1.5em 0;
+}
+
+
+
+section {
+  margin-bottom: 4em;
+}
+
+section:last-of-type {
+  margin-bottom: 10em;
+}
+
+.menu-size-icon {
+  color: #efefef;
+  font-family: "DIN400" , monospace;
+  font-style: normal;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 2px 4px;
+  /* position: relative; */
+  border: 1px solid #efefef;
+  border-radius: 100vw;
+  
+}
+
+.menu-legend-p {
+  font-family: "DIN400" , monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0.50em;
+
+}
+
+.menu-legend-p span {
+  text-align: center;
+
+}
+
+footer .menu-nav {
+  margin-bottom: 1em;
+}
+
+.menu-subheader {
+  text-align: center;
+  font-size: 1.1 rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-block: 0.5em;
+}
+
+.menu-winecollection {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-inline: 0.5em;
+  margin-block: 0.5em;
+}
+
+
