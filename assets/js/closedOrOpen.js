@@ -21,17 +21,20 @@ if (todayDay === 'Monday') {
   todayReservations.setDate(todayReservations.getDate() + 2);
   dateReservation.value = todayReservations.toISOString().substring(0, 10);
   dateReservation.min = todayReservations.toISOString().substring(0, 10);
-} else if (todayDay === 'Tuesday') {
-  todayReservations.setDate(todayReservations.getDate() + 1);
-  dateReservation.value = todayReservations.toISOString().substring(0, 10);
-  dateReservation.min = todayReservations.toISOString().substring(0, 10);
-} else {
+}
+//  else if (todayDay === 'Tuesday') {
+//   todayReservations.setDate(todayReservations.getDate() + 1);
+//   dateReservation.value = todayReservations.toISOString().substring(0, 10);
+//   dateReservation.min = todayReservations.toISOString().substring(0, 10);
+// }
+ else {
   dateReservation.value = todayReservations.toISOString().substring(0, 10);
   dateReservation.min = todayReservations.toISOString().substring(0, 10);
 }
 
 // check if it is not monday or tuesday and if its after 15:00 (azorean time), add 1 day to the date reservation
-if (!todayDay === 'Monday' || !todayDay === 'Tuesday') {
+// if (!todayDay === 'Monday' || !todayDay === 'Tuesday') {
+if (!todayDay === 'Monday' ) {
   if (today.toLocaleString('en-US', { timeZone: 'Atlantic/Azores', hour: '2-digit', hour12: false }) >= 15) {
     todayReservations.setDate(todayReservations.getDate() + 1);
     dateReservation.value = todayReservations.toISOString().substring(0, 10);
